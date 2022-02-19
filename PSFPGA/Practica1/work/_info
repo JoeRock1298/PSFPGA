@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1
+vaccumulator
+Z0 !s110 1645286198
+!i10b 1
+!s100 PYFe7[3O3SOj?=2XAYPXl2
+Ie<6g^2Z1T832SmX4ASGQE1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1
+w1645282615
+8C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v
+FC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v
+L0 26
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1645286198.000000
+!s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vDDS_test
+R0
+!i10b 1
+!s100 WRYCLP?OAc@W[eB[AXXAg1
+Il5<^g6JPf`DklNBXI7H8^1
+R1
+R2
+Z7 w1645285374
+Z8 8C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
+Z9 FC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
+!i113 1
+R5
+R6
+n@d@d@s_test
+vrom_mem
+R0
+!i10b 1
+!s100 GZ4ng86h^;]WhTO^MNAlo0
+I?XM5lco>VZQDMS9FWIXQN0
+R1
+R2
+R7
+R8
+R9
+L0 42
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
+vTB_DDS_test
+!s110 1645286199
+!i10b 1
+!s100 Po_Ozb_MgfoNd8dJ@JY8S3
+I:DCm`@SdIld:75Me9:@oP0
+R1
+R2
+w1613235417
+8C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/TB_DDS_test.v
+FC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/TB_DDS_test.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/TB_DDS_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/TB_DDS_test.v|
+!i113 1
+R5
+R6
+n@t@b_@d@d@s_test

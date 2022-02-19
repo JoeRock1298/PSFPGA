@@ -1,0 +1,105 @@
+./TB_DDS_test.v {0 {vlog -work work -stats=none C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/TB_DDS_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/work/_lock".
+
+} {} {}} ./DDS_test.v {0 {vlog -work work -stats=none C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/DDS_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+** Warning: (vlog-6) -- Waiting for lock by "jose_@DESKTOP-LV6HA8E, pid = 23948
+". Lockfile is "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/PSSE/PSFPGA/Practica1/work/_lock".
+
+} {} {}}
