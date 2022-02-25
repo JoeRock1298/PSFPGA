@@ -16,7 +16,7 @@ output val_out
 	//Auxiliar wires variables
 	wire [M-1:0] accumulated_phase;
 
-	//Paramiter
+	//Parameter
 	localparam pos_sat = {W{1'b1}} >> 1, neg_sat = ~pos_sat + 1'b1;
 
 	//Adder instantiation
@@ -29,9 +29,9 @@ output val_out
 	//Definition of the square wave
 	always @(posedge clk )
 		if(accumulated_phase[M-1]) // MSB == 1
-			sqr_wave <= pos_sat; //0.9999
+			sqr_wave <= neg_sat; //0.9999
 		else
-			sqr_wave <= neg_sat; //-0.9999 (Symetric saturation output)
+			sqr_wave <= pos_sat; //-0.9999 (Symetric saturation output)
 
 	//Definition of the ramp wave
 	always @(posedge clk )
