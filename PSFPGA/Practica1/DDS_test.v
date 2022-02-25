@@ -15,6 +15,9 @@ output val_out
 
 	//Auxiliar wires variables
 	wire [M-1:0] accumulated_phase;
+	wire [L-3:0] ADDR_ROM;
+	wire [W-1:0] half_sin;
+	wire [W-1:0] aux_sin;
 
 	//Parameter
 	localparam pos_sat = {W{1'b1}} >> 1, neg_sat = ~pos_sat + 1'b1;
@@ -36,6 +39,21 @@ output val_out
 	//Definition of the ramp wave
 	always @(posedge clk )
 		ramp_wave <= accumulated_phase[M-1:M-W];
+
+	//Definition of the sinusoidal wave
+	preprocesado #(.L(L)) pre_pro (.trunc_phase(accumulated_phase[M-1:M-L]),
+								   . ADDR_ROM (ADDR_ROM));
+
+	rom_mem #(.DATA_WIDTH (W), .ADDR_WIDTH (L-2)) rom_sin (.addr(ADDR_ROM),
+																 .clk(clk),
+																 .q(half_sin));
+
+	postprocesado #(.W(W)) post_pro (.L_MSB(accumulated_phase[M-1]),
+									 .half_sin(half_sin),
+									 .sin_wave(aux_sin));
+
+	always @(posedge clk )
+		sin_wave <= aux_sin;
 
 endmodule 
 

@@ -9,13 +9,13 @@ file_test_gen = 1; %1-> sí; 0->no
 file_dir = './';
 %% Configuración DDS
 % Accumulator length
-M = 16 % bits
+M = 27 % bits
 
 % Accumulator truncated phase (L <= M)
-L = 6 % bits
+L = 15 % bits
 
 % Sine LUT word-lemgth
-W = 16 % bits
+W = 14 % bits
 
 % DDS clock frequency : Sampling frequency (kHz)
 fclk = 100; % MHz
