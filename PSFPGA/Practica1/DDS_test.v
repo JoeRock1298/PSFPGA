@@ -15,9 +15,15 @@ output val_out
 
 	//Auxiliar wires variables
 	wire [M-1:0] accumulated_phase;
-	wire [L-3:0] ADDR_ROM;
+	wire [L-3:0] addr_rom;
 	wire [W-1:0] half_sin;
 	wire [W-1:0] aux_sin;
+
+	//Auxiliar register for pipelining
+	reg val_pipe1, val_pipe2, val_pipe3, val_pipe4, sqr_pipe1; //
+	reg [L-3:0] addr_rom_pipe;
+	reg [W-1:0] ramp_pipe1, ramp_pipe2;
+
 
 	//Parameter
 	localparam pos_sat = {W{1'b1}} >> 1, neg_sat = ~pos_sat + 1'b1;
@@ -31,29 +37,48 @@ output val_out
 
 	//Definition of the square wave
 	always @(posedge clk )
-		if(accumulated_phase[M-1]) // MSB == 1
-			sqr_wave <= neg_sat; //0.9999
-		else
-			sqr_wave <= pos_sat; //-0.9999 (Symetric saturation output)
-
+			if(ramp_pipe2[W-1]) // MSB == 1 -> sign bit
+				sqr_wave <= neg_sat; //0.9999
+			else
+				sqr_wave <= pos_sat; //-0.9999 (Symetric saturation output)
+		
 	//Definition of the ramp wave
 	always @(posedge clk )
-		ramp_wave <= accumulated_phase[M-1:M-W];
-
+		begin
+			ramp_pipe1 <= accumulated_phase[M-1:M-W];
+			ramp_pipe2 <= ramp_pipe1;
+			ramp_wave <= ramp_pipe2;
+		end
+		
 	//Definition of the sinusoidal wave
 	preprocesado #(.L(L)) pre_pro (.trunc_phase(accumulated_phase[M-1:M-L]),
-								   . ADDR_ROM (ADDR_ROM));
+								   . ADDR_ROM (addr_rom));
 
-	rom_mem #(.DATA_WIDTH (W), .ADDR_WIDTH (L-2)) rom_sin (.addr(ADDR_ROM),
+	//Pipelining 
+	always @(posedge clk )
+			addr_rom_pipe <= addr_rom;
+
+	rom_mem #(.DATA_WIDTH (W), .ADDR_WIDTH (L-2)) rom_sin (.addr(addr_rom_pipe),
 																 .clk(clk),
 																 .q(half_sin));
 
-	postprocesado #(.W(W)) post_pro (.L_MSB(accumulated_phase[M-1]),
+	postprocesado #(.W(W)) post_pro (.L_MSB(ramp_pipe2[W-1]), // this correspond to the L_MSB
 									 .half_sin(half_sin),
 									 .sin_wave(aux_sin));
 
 	always @(posedge clk )
 		sin_wave <= aux_sin;
+
+	// Añadiendo latencia a val_in
+	always @(posedge clk )
+		begin
+			val_pipe1 <= val_in;
+			val_pipe2 <= val_pipe1;
+			val_pipe3 <= val_pipe2;
+			val_pipe4 <= val_pipe3;
+		end
+	
+	assign val_out = val_pipe4;
 
 endmodule 
 
