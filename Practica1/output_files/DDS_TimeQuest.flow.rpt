@@ -1,5 +1,5 @@
 Flow report for DDS_TimeQuest
-Tue Mar 01 11:28:18 2022
+Tue Mar 01 12:21:26 2022
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                                  ;
 +------------------------------------+----------------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 01 11:28:15 2022                    ;
+; Flow Status                        ; Successful - Tue Mar 01 12:21:23 2022                    ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
 ; Revision Name                      ; DDS_TimeQuest                                            ;
 ; Top-level Entity Name              ; DDS_test                                                 ;
 ; Family                             ; Cyclone IV E                                             ;
 ; Device                             ; EP4CE115F29C7                                            ;
 ; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 99 / 114,480 ( < 1 % )                                   ;
-;     Total combinational functions  ; 93 / 114,480 ( < 1 % )                                   ;
-;     Dedicated logic registers      ; 75 / 114,480 ( < 1 % )                                   ;
-; Total registers                    ; 75                                                       ;
+; Total logic elements               ; 133 / 114,480 ( < 1 % )                                  ;
+;     Total combinational functions  ; 86 / 114,480 ( < 1 % )                                   ;
+;     Dedicated logic registers      ; 113 / 114,480 ( < 1 % )                                  ;
+; Total registers                    ; 113                                                      ;
 ; Total pins                         ; 74 / 529 ( 14 % )                                        ;
 ; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 114,730 / 3,981,312 ( 3 % )                              ;
+; Total memory bits                  ; 114,688 / 3,981,312 ( 3 % )                              ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                            ;
 +------------------------------------+----------------------------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/01/2022 11:27:39 ;
+; Start date & time ; 03/01/2022 12:20:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DDS_TimeQuest       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 242211430917473.164613045911344        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 242211430917473.164613364612616        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4778 MB             ; 00:00:24                           ;
-; Fitter                    ; 00:00:19     ; 1.0                     ; 5742 MB             ; 00:00:27                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4683 MB             ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4776 MB             ; 00:00:24                           ;
+; Fitter                    ; 00:00:19     ; 1.0                     ; 5743 MB             ; 00:00:28                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4845 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:56                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:57                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

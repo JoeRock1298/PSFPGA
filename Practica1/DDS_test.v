@@ -22,7 +22,7 @@ output val_out
 	//Auxiliar register for pipelining
 	reg val_pipe1, val_pipe2, val_pipe3, val_pipe4, sqr_pipe1; //
 	reg [L-3:0] addr_rom_pipe;
-	reg [W-1:0] ramp_pipe1, ramp_pipe2;
+	(* ramstyle = "logic" *)  reg [W-1:0] ramp_pipe1, ramp_pipe2;
 
 
 	//Parameter
