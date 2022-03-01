@@ -1,7 +1,7 @@
 module DDS_test
-#(parameter M=16,
-  parameter L=6,
-  parameter W=16)
+#(parameter M=27,
+  parameter L=15,
+  parameter W=14)
 (
 input [M-1:0] P,
 input val_in,

@@ -1,4 +1,4 @@
-module DDS_wrap_test
+module DDS_test_wrap
 	(
 	input [26:0] P,
 	input val_in,
@@ -7,7 +7,7 @@ module DDS_wrap_test
 	output reg signed [13:0] sqr_wave,
 	output reg signed [13:0] ramp_wave,
 	output reg signed [13:0] sin_wave,
-	output val_out
+	output reg val_out
 	);
 
 reg [26:0] P_reg;
