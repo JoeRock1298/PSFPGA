@@ -9,17 +9,17 @@
 //
 // Descripción: Este código Verilog implementa un acumulador parametrizable en modulo y paso.
 // Sus funcionalidades son:
-//      - iRST_n, activo a nivel alto, sincrono
-//      - iCLK, Reloj activo por flanco de subida
-//      - iENABLE sincrono activo a nivel alto
-//      - iP, paso del acumulador
-//		- oQ, Salida del acumulador
+//      - iRST_n, activo a nivel alto, sincrono.
+//      - iCLK, Reloj activo por flanco de subida.
+//      - iENABLE sincrono activo a nivel alto.
+//      - iP, paso del acumulador.
+//		- oQ, Salida del acumulador.
 //
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 19/02/2022
 //
 //      Autor: Jose Luis Rocabado Rocha
-//		Autor: Gianmarco Sangoi Da Roza
+//	Autor: Gianmarco Sangoi Da Roza
 //
 // -------------------------------------------------------------------------------------------------------------------------
 
