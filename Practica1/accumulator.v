@@ -19,7 +19,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 19/02/2022
 //
 //      Autor: Jose Luis Rocabado Rocha
-//	Autor: Gianmarco Sangoi Da Roza
+//	    Autor: Gianmarco Sangoi Da Roza
 //
 // -------------------------------------------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ module accumulator (iCLK, iRESET, iENABLE, iP, oQ);
 	
 	parameter n = 16; //16
 	input iCLK, iRESET, iENABLE;
-	input [n-1:0] iP;
+	input [n-1:0] iP; // Input -> Counter step
 	output reg [n-1:0] oQ;
 
 	always @(posedge iCLK)

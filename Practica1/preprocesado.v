@@ -11,7 +11,7 @@
 //              2° MSB, generando simetría en el eje vertcial de la señal sinusoidal. 
 // Sus funcionalidades son:
 //      - trunc_phase, fase truncada del acumulador.
-//              -ADDR_ROM, direccionaiento de la memoria ROM.
+//      -ADDR_ROM, direccionaiento de la memoria ROM.
 //
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 25/02/2022
@@ -22,7 +22,7 @@
 // ------------------------------------------------------------------------------------------------------------------------
 module preprocesado
 
-#(parameter L)
+#(parameter L) // Truncated bits
 (input [L-1:0] trunc_phase, output [L-3:0] ADDR_ROM);
 
 assign ADDR_ROM = (trunc_phase [L-2]) ? ~(trunc_phase[L-3:0]) : trunc_phase[L-3:0];

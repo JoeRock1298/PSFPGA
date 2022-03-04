@@ -25,7 +25,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 03/03/2022
 //
 //      Autor: Jose Luis Rocabado Rocha
-//	Autor: Gianmarco Sangoi Da Roza
+//		Autor: Gianmarco Sangoi Da Roza
 //
 // ------------------------------------------------------------------------------------------------------------------------
 module DDS_test
@@ -50,7 +50,7 @@ output val_out
 	wire [W-1:0] aux_sin;
 
 	//Auxiliar register for pipelining
-	reg val_pipe1, val_pipe2, val_pipe3, val_pipe4, sqr_pipe1; //
+	reg val_pipe1, val_pipe2, val_pipe3, val_pipe4; 
 	reg [L-3:0] addr_rom_pipe;
 	(* ramstyle = "logic" *)  reg [W-1:0] ramp_pipe1, ramp_pipe2;
 
@@ -99,7 +99,7 @@ output val_out
 	always @(posedge clk )
 		sin_wave <= aux_sin;
 
-	// Añadiendo latencia a val_in
+	// Adding latency to val_in variable
 	always @(posedge clk )
 		begin
 			val_pipe1 <= val_in;
