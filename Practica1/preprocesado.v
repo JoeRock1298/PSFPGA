@@ -1,3 +1,26 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: preprocesado.v
+//
+// Descripción: Este código Verilog implementa un módulo de preprocesado que permite direccionar la memoria ROM con el
+//              2° MSB, generando simetría en el eje vertcial de la señal sinusoidal. 
+// Sus funcionalidades son:
+//      - trunc_phase, fase truncada del acumulador.
+//              -ADDR_ROM, direccionaiento de la memoria ROM.
+//      - ena_ac, clock enable del acumulador (activo a nivel bajo).
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 25/02/2022
+//
+//      Autor: Jose Luis Rocabado Rocha
+//	    Autor: Gianmarco Sangoi Da Roza
+//
+// ------------------------------------------------------------------------------------------------------------------------
 module preprocesado
 
 #(parameter L)
