@@ -17,7 +17,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 25/02/2022
 //
 //      Autor: Jose Luis Rocabado Rocha
-//	    Autor: Gianmarco Sangoi Da Roza
+//      Autor: Gianmarco Sangoi Da Roza
 //
 // ------------------------------------------------------------------------------------------------------------------------
 
