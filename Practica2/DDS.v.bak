@@ -26,7 +26,7 @@
 //	Autor: Gianmarco Sangoi Da Roza
 //
 // ------------------------------------------------------------------------------------------------------------------------
-module DDS
+module DDS_test
 #(parameter M=24,
   parameter L=15,
   parameter W=16)
@@ -35,6 +35,8 @@ input [M-1:0] P,
 input val_in,
 input rst_ac, ena_ac,
 input clk,
+output reg signed [W-1:0] sqr_wave,
+output reg signed [W-1:0] ramp_wave,
 output reg signed [W-1:0] sin_wave,
 output val_out
 );
@@ -64,7 +66,7 @@ output val_out
 	//Definition of the ramp wave
 	always @(posedge clk )
 		begin
-			MSB_pipe1 <= accumulated_phase[M-1];
+			MSB_pipe1 <= accumulated_phase[M-1:M-W];
 			MSB_pipe2 <= MSB_pipe1;
 		end
 		
