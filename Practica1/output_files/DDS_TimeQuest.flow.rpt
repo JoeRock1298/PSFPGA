@@ -1,6 +1,6 @@
 Flow report for DDS_TimeQuest
-Tue Mar 01 12:21:26 2022
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Thu Mar 03 23:17:06 2022
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow Summary                                                                                  ;
-+------------------------------------+----------------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 01 12:21:23 2022                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; DDS_TimeQuest                                            ;
-; Top-level Entity Name              ; DDS_test                                                 ;
-; Family                             ; Cyclone IV E                                             ;
-; Device                             ; EP4CE115F29C7                                            ;
-; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 133 / 114,480 ( < 1 % )                                  ;
-;     Total combinational functions  ; 86 / 114,480 ( < 1 % )                                   ;
-;     Dedicated logic registers      ; 113 / 114,480 ( < 1 % )                                  ;
-; Total registers                    ; 113                                                      ;
-; Total pins                         ; 74 / 529 ( 14 % )                                        ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 114,688 / 3,981,312 ( 3 % )                              ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                            ;
-+------------------------------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Flow Summary                                                                              ;
++------------------------------------+------------------------------------------------------+
+; Flow Status                        ; Successful - Thu Mar 03 23:17:03 2022                ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
+; Revision Name                      ; DDS_TimeQuest                                        ;
+; Top-level Entity Name              ; DDS_test_wrap                                        ;
+; Family                             ; Cyclone IV E                                         ;
+; Device                             ; EP4CE115F29C7                                        ;
+; Timing Models                      ; Final                                                ;
+; Total logic elements               ; 175 / 114,480 ( < 1 % )                              ;
+;     Total combinational functions  ; 86 / 114,480 ( < 1 % )                               ;
+;     Dedicated logic registers      ; 172 / 114,480 ( < 1 % )                              ;
+; Total registers                    ; 172                                                  ;
+; Total pins                         ; 74 / 529 ( 14 % )                                    ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 114,688 / 3,981,312 ( 3 % )                          ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                      ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
++------------------------------------+------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,29 +64,29 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/01/2022 12:20:47 ;
+; Start date & time ; 03/03/2022 23:16:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DDS_TimeQuest       ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 242211430917473.164613364612616        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DDS_test    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DDS_test    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DDS_test    ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; DDS_test                               ; DDS_TimeQuest ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                          ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; COMPILER_SIGNATURE_ID               ; 49410870802600.164634579410572         ; --            ; --            ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DDS_test_wrap ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DDS_test_wrap ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DDS_test_wrap ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; DDS_test_wrap                          ; DDS_TimeQuest ; --            ; --         ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4776 MB             ; 00:00:24                           ;
-; Fitter                    ; 00:00:19     ; 1.0                     ; 5743 MB             ; 00:00:28                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4845 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:57                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4780 MB             ; 00:00:17                           ;
+; Fitter                    ; 00:00:15     ; 1.0                     ; 5818 MB             ; 00:00:22                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.1                     ; 4865 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; labpro07         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; labpro07         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; labpro07         ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; labpro07         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

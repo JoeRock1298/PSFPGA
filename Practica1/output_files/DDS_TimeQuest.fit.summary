@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Mar 01 12:21:18 2022
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Fitter Status : Successful - Thu Mar 03 23:17:00 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : DDS_TimeQuest
-Top-level Entity Name : DDS_test
+Top-level Entity Name : DDS_test_wrap
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 133 / 114,480 ( < 1 % )
+Total logic elements : 175 / 114,480 ( < 1 % )
     Total combinational functions : 86 / 114,480 ( < 1 % )
-    Dedicated logic registers : 113 / 114,480 ( < 1 % )
-Total registers : 113
+    Dedicated logic registers : 172 / 114,480 ( < 1 % )
+Total registers : 172
 Total pins : 74 / 529 ( 14 % )
 Total virtual pins : 0
 Total memory bits : 114,688 / 3,981,312 ( 3 % )

@@ -1,4 +1,81 @@
-|DDS_test
+|DDS_test_wrap
+P[0] => P_reg[0].DATAIN
+P[1] => P_reg[1].DATAIN
+P[2] => P_reg[2].DATAIN
+P[3] => P_reg[3].DATAIN
+P[4] => P_reg[4].DATAIN
+P[5] => P_reg[5].DATAIN
+P[6] => P_reg[6].DATAIN
+P[7] => P_reg[7].DATAIN
+P[8] => P_reg[8].DATAIN
+P[9] => P_reg[9].DATAIN
+P[10] => P_reg[10].DATAIN
+P[11] => P_reg[11].DATAIN
+P[12] => P_reg[12].DATAIN
+P[13] => P_reg[13].DATAIN
+P[14] => P_reg[14].DATAIN
+P[15] => P_reg[15].DATAIN
+P[16] => P_reg[16].DATAIN
+P[17] => P_reg[17].DATAIN
+P[18] => P_reg[18].DATAIN
+P[19] => P_reg[19].DATAIN
+P[20] => P_reg[20].DATAIN
+P[21] => P_reg[21].DATAIN
+P[22] => P_reg[22].DATAIN
+P[23] => P_reg[23].DATAIN
+P[24] => P_reg[24].DATAIN
+P[25] => P_reg[25].DATAIN
+P[26] => P_reg[26].DATAIN
+val_in => val_in_reg.DATAIN
+rst_ac => rst_ac_reg.DATAIN
+ena_ac => ena_ac_reg.DATAIN
+clk => clk.IN1
+sqr_wave[0] << sqr_wave[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[1] << sqr_wave[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[2] << sqr_wave[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[3] << sqr_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[4] << sqr_wave[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[5] << sqr_wave[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[6] << sqr_wave[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[7] << sqr_wave[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[8] << sqr_wave[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[9] << sqr_wave[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[10] << sqr_wave[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[11] << sqr_wave[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[12] << sqr_wave[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqr_wave[13] << sqr_wave[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[0] << ramp_wave[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[1] << ramp_wave[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[2] << ramp_wave[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[3] << ramp_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[4] << ramp_wave[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[5] << ramp_wave[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[6] << ramp_wave[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[7] << ramp_wave[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[8] << ramp_wave[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[9] << ramp_wave[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[10] << ramp_wave[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[11] << ramp_wave[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[12] << ramp_wave[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ramp_wave[13] << ramp_wave[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[0] << sin_wave[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[1] << sin_wave[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[2] << sin_wave[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[3] << sin_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[4] << sin_wave[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[5] << sin_wave[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[6] << sin_wave[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[7] << sin_wave[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[8] << sin_wave[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[9] << sin_wave[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[10] << sin_wave[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[11] << sin_wave[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[12] << sin_wave[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sin_wave[13] << sin_wave[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val_out << val_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DDS_test_wrap|DDS_test:DDS1
 P[0] => P[0].IN1
 P[1] => P[1].IN1
 P[2] => P[2].IN1
@@ -75,7 +152,7 @@ sin_wave[13] <= sin_wave[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 val_out <= val_pipe4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DDS_test|accumulator:phase_accumulator
+|DDS_test_wrap|DDS_test:DDS1|accumulator:phase_accumulator
 iCLK => oQ[0]~reg0.CLK
 iCLK => oQ[1]~reg0.CLK
 iCLK => oQ[2]~reg0.CLK
@@ -240,7 +317,7 @@ oQ[25] <= oQ[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oQ[26] <= oQ[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DDS_test|preprocesado:pre_pro
+|DDS_test_wrap|DDS_test:DDS1|preprocesado:pre_pro
 trunc_phase[0] => ADDR_ROM.DATAA
 trunc_phase[0] => ADDR_ROM.DATAB
 trunc_phase[1] => ADDR_ROM.DATAA
@@ -296,7 +373,7 @@ ADDR_ROM[11] <= ADDR_ROM.DB_MAX_OUTPUT_PORT_TYPE
 ADDR_ROM[12] <= ADDR_ROM.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DDS_test|rom_mem:rom_sin
+|DDS_test_wrap|DDS_test:DDS1|rom_mem:rom_sin
 addr[0] => rom.RADDR
 addr[1] => rom.RADDR1
 addr[2] => rom.RADDR2
@@ -340,7 +417,7 @@ q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DDS_test|postprocesado:post_pro
+|DDS_test_wrap|DDS_test:DDS1|postprocesado:post_pro
 L_MSB => sin_wave.OUTPUTSELECT
 L_MSB => sin_wave.OUTPUTSELECT
 L_MSB => sin_wave.OUTPUTSELECT

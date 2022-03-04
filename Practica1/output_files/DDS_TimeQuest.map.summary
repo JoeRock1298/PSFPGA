@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Mar 01 12:20:57 2022
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Thu Mar 03 23:16:43 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : DDS_TimeQuest
-Top-level Entity Name : DDS_test
+Top-level Entity Name : DDS_test_wrap
 Family : Cyclone IV E
-Total logic elements : 133
+Total logic elements : 192
     Total combinational functions : 86
-    Dedicated logic registers : 113
-Total registers : 113
+    Dedicated logic registers : 172
+Total registers : 172
 Total pins : 74
 Total virtual pins : 0
 Total memory bits : 114,688

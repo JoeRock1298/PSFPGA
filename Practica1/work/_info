@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/17.1
 vaccumulator
-Z0 !s110 1646068384
+Z0 !s110 1646345137
 !i10b 1
 !s100 PYFe7[3O3SOj?=2XAYPXl2
 Ie<6g^2Z1T832SmX4ASGQE1
@@ -23,36 +23,36 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1646068383.000000
+Z4 !s108 1646345137.000000
 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/accumulator.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vDDS_test
-Z7 !s110 1646068383
+R0
 !i10b 1
-!s100 BFo?IzGUDK:A^mI?>9bMC3
-IhGmhbmT=0RTIaX3^BGaV62
+!s100 moFh;9>fPh1l6iXP@B4;N3
+IC_5?1Nz7ELa1bWgJalmdL3
 R1
 R2
-Z8 w1645904694
-Z9 8C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
-Z10 FC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
+Z7 w1646321227
+Z8 8C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
+Z9 FC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-Z11 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
-Z12 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
+Z10 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/DDS_test.v|
 !i113 1
 R5
 R6
 n@d@d@s_test
 vpostprocesado
-R0
+Z12 !s110 1646345138
 !i10b 1
 !s100 0=[oDW5m4<F_=J5P76EH70
 IfVIAn3_NAa9:A`>PILamB2
@@ -66,14 +66,14 @@ R3
 r1
 !s85 0
 31
-Z13 !s108 1646068384.000000
+Z13 !s108 1646345138.000000
 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/postprocesado.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/postprocesado.v|
 !i113 1
 R5
 R6
 vpreprocesado
-R0
+R12
 !i10b 1
 !s100 oOSo`1M>T3BE`Eb88:[LU2
 Ii`fkZ=PW`E`PIB`UQ9nZc0
@@ -87,35 +87,35 @@ R3
 r1
 !s85 0
 31
-R13
+R4
 !s107 C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/preprocesado.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Practica1/preprocesado.v|
 !i113 1
 R5
 R6
 vrom_mem
-R7
+R0
 !i10b 1
 !s100 eaB?TE5JOP@PcG>j45z[H3
 I4<8dhY42fUTR6W^nJ@8MB1
 R1
 R2
+R7
 R8
 R9
-R10
 L0 85
 R3
 r1
 !s85 0
 31
 R4
+R10
 R11
-R12
 !i113 1
 R5
 R6
 vTB_DDS_test
-R0
+R12
 !i10b 1
 !s100 PTKOcMbE1g<>zZ<VX<:J_3
 IT7T6nG_;TWZ:mF[Y7U;n:2

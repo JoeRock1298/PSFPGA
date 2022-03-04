@@ -18,10 +18,10 @@ L = 15 % bits
 W = 14 % bits
 
 % DDS clock frequency : Sampling frequency (kHz)
-fclk = 100; % MHz
+fclk = 100; %MHz in modelsim
 
 % DDS generated frequency (kHz)
-fo = 1; % MHz
+fo = 50; %MHz in modelsim
 
 % Accumulator step Pe
 Pe = fo/fclk;
