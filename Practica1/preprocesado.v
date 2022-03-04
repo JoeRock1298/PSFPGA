@@ -12,7 +12,6 @@
 // Sus funcionalidades son:
 //      - trunc_phase, fase truncada del acumulador.
 //              -ADDR_ROM, direccionaiento de la memoria ROM.
-//      - ena_ac, clock enable del acumulador (activo a nivel bajo).
 //
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 25/02/2022
