@@ -1,3 +1,33 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: DDS_test.v
+//
+// Descripción: Este código Verilog implementa el proceso de Síntesis Digital Directa (DDS) de forma parametrizable generando 
+// 		3 señales: rampa, cuadrada y sinusoidal. La sinusoidal se  genera direccionando una ROM que almacena un cuarto
+//		de onda de la señal sinusoidal.
+// Sus funcionalidades son:
+//      - clk, entrada de reloj.
+//      - rst_ac, reset síncrono del acumulador (activo a nivel bajo).
+//      - ena_ac, clock enable del acumulador (activo a nivel bajo).
+//	- val_in, Entrada de validación del paso del acumulador.
+//	- P, paso del acumulador.
+//		- sin_wave, señal sinusoidal de frecuencia fo=P*fclk/2^M.
+//		- sqr_wave, señal cuadrada de frecuencia fo=P*fclk/2^M.
+//		- ramp_wave, señalrampa de frecuencia fo=P*fclk/2^M.
+//		- val_out, señal de validación de la muestra de salida.
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 03/03/2022
+//
+//      Autor: Jose Luis Rocabado Rocha
+//	Autor: Gianmarco Sangoi Da Roza
+//
+// ------------------------------------------------------------------------------------------------------------------------
 module DDS_test
 #(parameter M=27,
   parameter L=15,
