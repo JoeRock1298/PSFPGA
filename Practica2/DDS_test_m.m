@@ -58,8 +58,9 @@ if file_test_gen == 1
     q_out = quantizer([W W-1],'saturate','floor');
     f=sprintf([file_dir 'out_waves.txt']);
     pack_f=fopen(f,'w');
-    for i=1:length(sin_wave)
+    for i=1:length(sin_wave)-1
        fprintf(pack_f,[num2bin(q_out,sin_wave(i)) '\n']);
     end
+    fprintf(pack_f,[num2bin(q_out,sin_wave(i+1))]);
     fclose(pack_f);
 end

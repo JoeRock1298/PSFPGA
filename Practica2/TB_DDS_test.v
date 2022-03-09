@@ -72,7 +72,7 @@ always@(posedge clk)
 					scan_data_out = $fscanf(data_out_file, "%b", dout_waves);						
 					sin_wave_F <= #(PER/10) dout_waves; //Salida del fichero
 					sin_wave_M <= #(PER/10) sin_wave; //Salida del modulo
-					scan_data_out = $fscanf(data_out_file, "%b", dout_waves);				
+				//	scan_data_out = $fscanf(data_out_file, "%b", dout_waves);				
 				//	scan_data_out = $fscanf(data_out_file, "%b\n", dout_waves);
 				
 					end
