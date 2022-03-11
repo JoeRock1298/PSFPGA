@@ -1,18 +1,25 @@
 `timescale 1ns / 1ps
 
-module mult_add_tb;
+module TB_DP_MOD;
 // CLOCK PERIOD
 parameter PER=10; 
 
 // Estimulos
-reg signed [7:0] a,b,c;
 reg clk;
+reg rst;
 reg val_in;
+reg val_out;
+reg c_fm_am;
+reg signed [15:0] o_data;
+reg signed [15:0] i_data;
+reg unsigned [23:0] frec_por;
+reg unsigned [15:0] im_am;
+reg unsigned [15:0] im_fm;
 
 // Monitorizacion
-wire signed [15:0] s;
-reg signed [15:0] s_M, s_F;
-wire rdy_out;
+wire signed [15:0] o_data_wire;
+reg signed [15:0] o_data_M, o_data_F;
+wire val_out_wire;
 
 // contadores y control
 integer error_cnt; // contador de errores
@@ -21,10 +28,9 @@ reg load_data;  // Inicio de lectura de datos
 reg end_sim; // Indicación de simulación on/off
 
 // Gestion I/O texto
-integer data_in_file,data_out_file;
+integer data_in_file, data_out_file;
 integer scan_data_in, scan_data_out;
-integer din_file_a,din_file_b,din_file_c, dout_file;
-
+integer din_file_a, din_file_b, din_file_c, dout_file;
 
 // clock
  always #(PER/2) clk = !clk&end_sim;
