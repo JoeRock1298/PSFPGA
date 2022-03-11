@@ -1,3 +1,32 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: DDS_test.v
+//
+// Descripción: Este código Verilog implementa el proceso de Síntesis Digital Directa (DDS) de forma parametrizable generando 
+// 		una señal sinusoidal. La sinusoidal se  genera direccionando una ROM que almacena un cuarto de onda de 
+//		la señal sinusoidal.
+// Sus funcionalidades son:
+//      - clk, entrada de reloj.
+//      - rst_ac, reset síncrono del acumulador (activo a nivel bajo).
+//      - ena_ac, clock enable del acumulador (activo a nivel bajo).
+//	- val_in, Entrada de validación del paso del acumulador.
+//	- P, paso del acumulador.
+//		- sin_wave, señal sinusoidal de frecuencia fo=P*fclk/2^M.
+//		- val_out, señal de validación de la muestra de salida.
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 03/04/2022
+//
+//      Autor: Jose Luis Rocabado Rocha
+//	Autor: Gianmarco Sangoi Da Roza
+//
+// ------------------------------------------------------------------------------------------------------------------------
+
 module DP_MOD
 	(
 	input signed [15:0] i_data,
@@ -23,7 +52,12 @@ module DP_MOD
 	reg signed [15:0] im_am_x_i_data_pipe_3; //Register 11
 	reg signed [16:0] uno_sum; //Register 12
 
+	// Auxiliar wires
+	signed [16:0] im_am_aux;
+	signed [15:0] DDS_out;
+
 	// Defining AM/FM selector
+	// 4, 7 registers
 	always @(posedge clk ) 
 		if(c_fm_am)
 			begin
@@ -37,15 +71,53 @@ module DP_MOD
 			end
 
 	// Defining FM path
+	//  1 register
 	always @(posedge clk ) 
 		begin
-			im_fm_mux_x_i_data <= im_fm_mux * i_data ;
+			im_fm_mux_x_i_data <= (im_fm_mux * i_data) >>> 7;
 		end
 
- 	DDS #(.M(24),.L(15),.W(16)) D1 (.P( ),
-									.rst_AC(  ), 
-									.en_AC( ),
-									.clk( ),
-									.sin_wave());
+	// 2 register
+	always @(posedge clk ) 
+		begin
+			frec_por_sum_res <= frec_por + im_fm_mux_x_i_data ;
+		end
+
+	// Defining AM path
+	// 8,9,10 registers
+	always @(posedge clk ) 
+		begin
+			i_data_pipe1 <= i_data;
+			i_data_pipe2 <= i_data_pipe1;
+			i_data_pipe3 <= i_data_pipe2;
+		end
+
+	//  11 register
+	assign im_am_aux = $signed({1'b0, im_am});
+
+	always @(posedge clk ) 
+		begin
+			im_am_x_i_data_pipe_3 <= (i_data_pipe3 * im_am_aux) ;
+		end
+
+	//  12 register
+	always @(posedge clk ) 
+		begin
+			uno_sum <= (im_am_x_i_data_pipe_3 + (2'b01 << 15));
+		end
+
+	// Defining Output 
+	//  3 register
+	always @(posedge clk ) 
+		begin
+			o_data_aux <= (DDS_out * am_mux) >>> 16;
+		end
+
+	// DDS
+ 	DDS #(.M(24),.L(15),.W(16)) D1 (.P(frec_por_sum_res),
+									.rst_AC(rst_pipe2), 
+									.en_AC(1),
+									.clk(clk),
+									.sin_wave(DDS_out);
 
 endmodule 
