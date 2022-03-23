@@ -1,6 +1,6 @@
 %%
 % Genearción de ficheros para TB_DP_MOD
-%% 
+%%
 graficas_si = 1; % 1 -> si; 0 -> no
 ficheros_si = 1; % 1 -> si; 0 -> no
 %% MOD AM/FM CONFIGURATION
@@ -23,7 +23,7 @@ Kfm=5000; % kHz
 % Modulating frequency (kHz)
 fmod= 150; % kHz
 
-% Number of period to display 
+% Number of period to display
 n_periods_to_display = 1;
 
 
@@ -36,7 +36,7 @@ sim('mod_fmam_pf');
 
 %% Verilog simulation values
 % Frecuencia portadora: U[24,24]
-frec_por = round(fc/fsc*2^24);            
+frec_por = round(fc/fsc*2^24);           
 % Índice de modulacion de AM: U[16,15]
 im_am =  round(m_am*2^15);
 % Índice de modulacion de FM: U[16,16]
@@ -78,11 +78,63 @@ if graficas_si ==1
         axis([0 L_s_in -1 1])
     end
 end
-%% Generacion de ficheros de datos 
-if ficheros_si == 1
-    
+
+%% Fichero de configuración 
+am_data = quantizer([16 15],'saturate','floor');
+fm_data = quantizer([16 16],'saturate','floor');
+freq_por_data = quantizer([24 24],'saturate','floor');
+
+%%im_am = quantize(am_data,im_am);
+%%im_fm = quantize(fm_data,im_fm);
+%%freq_por = quantize(freq_por_data,freq_por);
  
-    
+f=sprintf([file_dir 'configuration.txt']);
+pack_f=fopen(f,'w');
+
+for i=1:length(s_in) 
+    fprintf(pack_f,[num2str(control_fm_am) ' ' num2bin(freq_por_data,freq_por(i)) ' ' num2bin(am_data,im_am(i)) ' ' num2bin(fm_data,im_fm(i))'\n']);
 end
+fclose(pack_f);
 
+%% Fichero de entrada
+i_data = quantizer([16 15],'saturate','floor');
 
+%%sine_wave = quantize(o_data,im_fm);
+   
+f=sprintf([file dir 'i_data.txt']);  
+pack_f=fopen(f,'w');
+
+for i=1:length(sine_wave) 
+fprintf(pack_f,[num2bin(i_data, sine_wave(i)) '\n']);
+end
+fclose(pack_f);
+ 
+%% Ficheros de salida
+if ficheros_si == 1
+    if control_fm_am == 0 % AM
+        o_data = quantizer([16 15],'saturate','floor'); 
+
+        %%im_am = quantize(o_data,im_am);
+       
+        f=sprintf([file dir 'o_data.txt']);
+        pack_f=fopen(f,'w');
+
+        for i=1:length(s_am) 
+            fprintf(pack_f,[num2bin(o_data, s_am(i)) '\n']);
+        end
+        fclose(pack_f);
+
+    else % Graficas FM
+        o_data = quantizer([16 16],'saturate','floor');
+
+        %%im_fm = quantize(o_data,im_fm);
+       
+        f=sprintf([file dir 'o_data.txt']);
+        pack_f=fopen(f,'w');
+
+        for i=1:length(s_fm) 
+            fprintf(pack_f,[num2bin(o_data, s_fm(i)) '\n']);
+        end
+        fclose(pack_f);
+    end
+end
