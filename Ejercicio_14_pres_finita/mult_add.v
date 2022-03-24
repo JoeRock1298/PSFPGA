@@ -3,7 +3,7 @@ module mult_add(
 input signed [7:0] a,b,c,
 input clk,
 input val_in,
-output signed [15:0] s,
+output signed [7:0] s,
 output reg rdy_out
 );
 
@@ -14,7 +14,7 @@ output reg rdy_out
 	reg signed [7:0] c_pipe;
 	reg signed [9:0] result;
 	
-	assign mult_s_trunc = mult_s[15:15-9];
+	assign mult_s_trunc = mult_s[15:15-8];
 
 	always@(posedge clk)
 	begin
@@ -24,6 +24,6 @@ output reg rdy_out
 		result <= (c_pipe + mult_s_trunc);
 	end
 	
-	assign s = result[8:1];	
+	assign s = result[8:8-7];	
 
 endmodule 

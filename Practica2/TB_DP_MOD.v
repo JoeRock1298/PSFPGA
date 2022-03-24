@@ -8,9 +8,8 @@ parameter PER=10;
 reg clk;
 reg rst;
 reg val_in;
-reg val_out;
 reg c_fm_am;
-reg signed [15:0] o_data;
+//reg signed [15:0] o_data;
 reg signed [15:0] i_data;
 reg unsigned [23:0] frec_por;
 reg unsigned [15:0] im_am;
@@ -19,7 +18,7 @@ reg unsigned [15:0] im_fm;
 // Monitorizacion
 wire signed [15:0] o_data_wire;
 reg signed [15:0] o_data_M, o_data_F;
-wire val_out_wire;
+wire val_out;
 
 // contadores y control
 integer error_cnt; // contador de errores
@@ -28,29 +27,44 @@ reg load_data;  // Inicio de lectura de datos
 reg end_sim; // Indicación de simulación on/off
 
 // Gestion I/O texto
-integer data_in_file, data_out_file;
-integer scan_data_in, scan_data_out;
-integer din_file_a, din_file_b, din_file_c, dout_file;
+integer data_in_file, data_out_file, data_conf_file; //File handlers
+integer scan_data_in, scan_data_out, scan_data_conf; //fscanf error status
+integer i_data_wave, o_data_wave, data_conf; //Variables to save read data 
 
 // clock
  always #(PER/2) clk = !clk&end_sim;
  
-// Instancia a uut
-	mult_add uut 
+// Instancia la uut
+	DP_MOD uut 
 		(
-		.a(a), 
-		.b(b), 
-		.c(c),
+		.i_data(i_data),
+		.rst(rst),
 		.clk(clk),
 		.val_in(val_in),
-		.s(s),
-		.rdy_out(rdy_out)
+		.c_fm_am(c_fm_am), // Control modo fm/am
+		.frec_por(frec_por),
+		.im_am(im_am),
+		.im_fm(im_fm),
+		.o_data(o_data_wire),
+		.val_out(val_out)
 		);
 
 // Proceso initial
+// Proceso de configuración del sistema
 initial begin
     data_in_file = $fopen("datos_in.txt", "r");
     data_out_file = $fopen("datos_out.txt", "r");
+	data_conf_file = $fopen("datos_config.txt", "r");
+	//Configuring the model
+	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	c_fm_am = data_conf;
+	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	frec_por = data_conf;
+	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	im_am = data_conf;
+	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	im_fm = data_conf;
+	//Initiating the model
 	clk = 1'b1;
 	val_in = 1'b0;
 	sample_cnt = 0;
@@ -65,10 +79,8 @@ initial begin
 always@(posedge clk)
      if (load_data)
          begin
-             scan_data_in = $fscanf(data_in_file, "%b %b %b\n", din_file_a, din_file_b, din_file_c);
-             a <= #(PER/10)  din_file_a;
-             b <= #(PER/10)  din_file_b;
-             c <= #(PER/10)  din_file_c;
+             scan_data_in = $fscanf(data_in_file, "%b\n", i_data_wave);
+             i_data <= i_data_wave;
              val_in <= #(PER/10)  1'b1;
              if ($feof(data_in_file))
 				begin
@@ -81,21 +93,21 @@ always@(posedge clk)
 		 
 // Proceso de lectura de salida 
 always@(posedge clk)
-       if (rdy_out)
+       if (val_out)
 			begin
 				sample_cnt = sample_cnt +1;
 				if (!$feof(data_out_file))
 					begin
-						scan_data_out = $fscanf(data_out_file, "%b\n", dout_file);
-						s_F <= #(PER/10) dout_file;
-						s_M <= #(PER/10) s;
+						scan_data_out = $fscanf(data_out_file, "%b\n", o_data_wave);
+						o_data_F <= #(PER/10) o_data_wave;
+						o_data_M <= #(PER/10) o_data_wire;
 					end
 			end
 			
 // Contador de errores y muestras
-always@(s_F,s_M)
+always@(o_data_F, o_data_M)
     begin
-	   if (s_F != s_M)
+	   if (o_data_F != o_data_M)
 			begin
 				error_cnt = error_cnt + 1;
 				$display("Error in sample number ","%d", sample_cnt);

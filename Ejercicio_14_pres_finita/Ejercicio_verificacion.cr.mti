@@ -1,11 +1,4 @@
-./mult_add_tb.v {1 {vlog -work work -stats=none C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/PSFPGA/Ejercicio_14_pres_finita/mult_add_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module mult_add_tb
-
-Top level modules:
-	mult_add_tb
-
-} {} {}} ./mult_add.v {1 {vlog -work work -stats=none {C:\Users\jose_\OneDrive\Documentos\UPV\2021-2022\PSFPGA\Ejercicio_14_pres_finita\mult_add.v}
+./mult_add.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Ejercicio_14_pres_finita/mult_add.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module mult_add
 
