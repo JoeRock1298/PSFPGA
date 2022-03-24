@@ -12,7 +12,7 @@ module DP_MOD_wrap
 	output reg val_out
 	);
 
-reg [15:0] i_data_reg;
+reg signed [15:0] i_data_reg;
 reg val_in_reg;
 reg rst_reg; reg c_fm_am_reg;
 reg unsigned [16:0] im_am_reg;
