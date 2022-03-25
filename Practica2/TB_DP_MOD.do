@@ -15,7 +15,7 @@ add wave -noupdate /TB_DP_MOD/load_data
 add wave -noupdate /TB_DP_MOD/end_sim
 add wave -noupdate -divider {Comparación _M con _F}
 add wave -noupdate -format Analog-Step -height 74 -max 32767.0 -min -32767.0 /TB_DP_MOD/i_data
-add wave -noupdate -format Analog-Step -height 74 -min -1.0 /TB_DP_MOD/o_data_M
+add wave -noupdate -format Analog-Step -height 74 -max 32766.999999999993 -min -32766.0 /TB_DP_MOD/o_data_M
 add wave -noupdate -format Analog-Step -height 74 -max 32690.000000000004 -min -32602.0 /TB_DP_MOD/o_data_F
 add wave -noupdate -divider {Error control}
 add wave -noupdate /TB_DP_MOD/error_cnt
@@ -37,4 +37,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {6916383 ps}
+WaveRestoreZoom {0 ps} {44189 ps}

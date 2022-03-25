@@ -1,0 +1,71 @@
+# Compile of DP_MOD.v was successful.
+# Compile of DDS.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of TB_DDS_test.v was successful.
+# Compile of TB_DP_MOD.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_MOD
+# vsim -gui work.TB_DP_MOD 
+# Start time: 19:37:38 on Mar 25,2022
+# Loading work.TB_DP_MOD
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+do C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gsandar  Hostname: LABPRO07  ProcessID: 6136
+#           Attempting to use alternate WLF file "./wlftdrg84q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdrg84q
+run -all
+# Number of checked samples         663
+# Number of errors           0
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v(93)
+#    Time: 6850 ns  Iteration: 0  Instance: /TB_DP_MOD
+# Break in Module TB_DP_MOD at C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v line 93
+restart
+# Load canceled
+# Compile of DP_MOD.v was successful.
+# Compile of DDS.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of TB_DDS_test.v was successful.
+# Compile of TB_DP_MOD.v was successful.
+# 7 compiles, 0 failed with no errors.
+run -all
+# Number of checked samples         663
+# Number of errors           0
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v(93)
+#    Time: 6850 ns  Iteration: 0  Instance: /TB_DP_MOD
+# Break in Module TB_DP_MOD at C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v line 93
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.do
+# Compile of DP_MOD.v was successful.
+# Compile of DDS.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of TB_DDS_test.v was successful.
+# Compile of TB_DP_MOD.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_MOD
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+run -all
+# Number of checked samples         663
+# Number of errors           0
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v(93)
+#    Time: 6850 ns  Iteration: 0  Instance: /TB_DP_MOD
+# Break in Module TB_DP_MOD at C:/Users/gsandar/Documents/Github/PSFPGA/Practica2/TB_DP_MOD.v line 93
+# End time: 20:10:12 on Mar 25,2022, Elapsed time: 0:32:34
+# Errors: 1, Warnings: 2

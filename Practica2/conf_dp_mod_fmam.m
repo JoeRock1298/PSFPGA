@@ -7,7 +7,7 @@ file_dir = './';
 %% MOD AM/FM CONFIGURATION
 
 % Control FM --> 1, AM --> 0
-control_fm_am=1;
+control_fm_am=0;
 
 % Sampling frequency (MHz)
 fsc=100; % MHz
