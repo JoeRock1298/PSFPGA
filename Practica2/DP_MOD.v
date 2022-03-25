@@ -52,9 +52,13 @@ module DP_MOD
 	reg signed [15:0] im_am_x_i_data_pipe_3; //Register 11
 	reg signed [16:0] uno_sum; //Register 12
 
+	//Val_in shifit register variables
+	reg [0:6] val_in_pipeline;
+	integer i;
+
 	// Auxiliar wires
-	signed [16:0] im_am_aux;
-	signed [15:0] DDS_out;
+	wire signed [16:0] im_am_aux;
+	wire signed [15:0] DDS_out;
 
 	// Defining AM/FM selector
 	// 4, 7 registers
@@ -112,12 +116,36 @@ module DP_MOD
 		begin
 			o_data_aux <= (DDS_out * am_mux) >>> 16;
 		end
+	
+	assign o_data = o_data_aux;
+
+	//Defining DDS reset shiftregister
+	// 5, 6 registers
+	always @(posedge clk)
+	begin
+		rst_pipe1 <= rst;
+		rst_pipe2 <= rst_pipe1;
+	end
 
 	// DDS
  	DDS #(.M(24),.L(15),.W(16)) D1 (.P(frec_por_sum_res),
-									.rst_AC(rst_pipe2), 
-									.en_AC(1),
+	 								.val_in(),
+									.rst_ac(rst_pipe2), 
+									.ena_ac(1'b1),
 									.clk(clk),
-									.sin_wave(DDS_out);
+									.sin_wave(DDS_out),
+									.val_out());
+
+	//Val_out_sinc
+	always @(posedge clk)
+	begin
+		val_in_pipeline [0] <= val_in;
+		for (i = 0; i < 6; i = i + 1)
+		begin
+		  val_in_pipeline[i + 1] <= val_in_pipeline[i];
+		end
+	end
+
+	assign val_out = val_in_pipeline[6];
 
 endmodule 

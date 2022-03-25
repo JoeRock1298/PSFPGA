@@ -67,7 +67,7 @@ if file_test_gen == 1
     
     % output files
     q_out = quantizer([W W-1],'saturate','floor');
-    f=sprintf([file_dir 'out_waves.txt']);
+    f=sprintf([file_dir 'out_waves.txt'],);
     pack_f=fopen(f,'w');
     for i=1:length(sin_wave)
        fprintf(pack_f,[num2bin(q_out,sin_wave(i)) ' ' num2bin(q_out,ramp_wave(i)) ' ' num2bin(q_out,sqr_wave(i))  '\n']);

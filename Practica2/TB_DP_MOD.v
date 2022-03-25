@@ -11,9 +11,10 @@ reg val_in;
 reg c_fm_am;
 //reg signed [15:0] o_data;
 reg signed [15:0] i_data;
-reg unsigned [23:0] frec_por;
-reg unsigned [15:0] im_am;
-reg unsigned [15:0] im_fm;
+// by default the variables are unsigned
+reg [23:0] frec_por;
+reg [15:0] im_am;
+reg [15:0] im_fm;
 
 // Monitorizacion
 wire signed [15:0] o_data_wire;
@@ -52,17 +53,17 @@ integer i_data_wave, o_data_wave, data_conf; //Variables to save read data
 // Proceso initial
 // Proceso de configuración del sistema
 initial begin
-    data_in_file = $fopen("datos_in.txt", "r");
-    data_out_file = $fopen("datos_out.txt", "r");
-	data_conf_file = $fopen("datos_config.txt", "r");
+    data_in_file = $fopen("i_data.txt", "r");
+    data_out_file = $fopen("o_data.txt", "r");
+	data_conf_file = $fopen("configuration.txt", "r");
 	//Configuring the model
-	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	scan_data_conf = $fscanf(data_conf_file, "%b\n", data_conf);
 	c_fm_am = data_conf;
-	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	scan_data_conf = $fscanf(data_conf_file, "%b\n", data_conf);
 	frec_por = data_conf;
-	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	scan_data_conf = $fscanf(data_conf_file, "%b\n", data_conf);
 	im_am = data_conf;
-	scan_data_conf = $fscanf(data_conf_file, "%d\n", data_conf);
+	scan_data_conf = $fscanf(data_conf_file, "%b", data_conf);
 	im_fm = data_conf;
 	//Initiating the model
 	clk = 1'b1;
@@ -70,8 +71,9 @@ initial begin
 	sample_cnt = 0;
     error_cnt = 0;
 	load_data = 0;
+	rst = 1'b1;
 	end_sim = 1'b1;
-	#(5*PER);
+	#(10*PER);
 	load_data = 1;
    end      
    
@@ -82,6 +84,7 @@ always@(posedge clk)
              scan_data_in = $fscanf(data_in_file, "%b\n", i_data_wave);
              i_data <= i_data_wave;
              val_in <= #(PER/10)  1'b1;
+			 rst <= #(PER/10) 1'b0;
              if ($feof(data_in_file))
 				begin
 					val_in <= #(PER+PER/10)  1'b0;

@@ -1,5 +1,5 @@
 %%
-% GenearciÛn de ficheros para TB_DP_MOD
+% Genearci√≥n de ficheros para TB_DP_MOD
 %%
 graficas_si = 1; % 1 -> si; 0 -> no
 ficheros_si = 1; % 1 -> si; 0 -> no
@@ -7,7 +7,7 @@ file_dir = './';
 %% MOD AM/FM CONFIGURATION
 
 % Control FM --> 1, AM --> 0
-control_fm_am=0;
+control_fm_am=1;
 
 % Sampling frequency (MHz)
 fsc=100; % MHz
@@ -38,10 +38,10 @@ sim('mod_fmam_pf');
 %% Verilog simulation values
 % Frecuencia portadora: U[24,24]
 frec_por = round(fc/fsc*2^24);           
-% Õndice de modulacion de AM: U[16,15]
+% √çndice de modulacion de AM: U[16,15]
 im_am =  round(m_am*2^15);
-% Õndice de modulacion de FM: U[16,16]
-im_fm =  floor(Kfm*1e-3/fsc*2^16);
+% √çndice de modulacion de FM: U[16,16]
+im_fm =  round(Kfm*1e-3/fsc*2^16);
 
 % Display por consola
 disp(' ')
@@ -80,21 +80,17 @@ if graficas_si ==1
     end
 end
 
-%% Fichero de configuraciÛn 
+%% Fichero de configuraci√≥n 
 
 if ficheros_si == 1
-    %Creando los cuantificadores para guardar los datos de configuraciÛn
+    %Creando los cuantificadores para guardar los datos de configuraci√≥n
     am_data = quantizer([16 15],'saturate','floor','ufixed');
     fm_data = quantizer([16 16],'saturate','floor','ufixed');
     freq_por_data = quantizer([24 24],'saturate','floor','ufixed');
     %File handling
     f=sprintf([file_dir 'configuration.txt']);
     pack_f=fopen(f,'w');
-    %Writing data to output file
-    fprintf(pack_f,[num2str(control_fm_am) '\n' ... %c_fm_am
-        num2bin(freq_por_data,fc/fsc) '\n' ... %frec_por
-        num2bin(am_data,m_am) '\n' ... %im_am
-        num2bin(fm_data,Kfm*1e-3/fsc)]); %im_fm
+    fprintf(pack_f,[num2str(control_fm_am) ' ' num2bin(freq_por_data,frec_por) ' ' num2bin(am_data,im_am) ' ' num2bin(fm_data,im_fm)]);
     fclose(pack_f);
 end
 
