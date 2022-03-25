@@ -41,7 +41,7 @@ frec_por = round(fc/fsc*2^24);
 % Índice de modulacion de AM: U[16,15]
 im_am =  round(m_am*2^15);
 % Índice de modulacion de FM: U[16,16]
-im_fm =  floor(Kfm*1e-3/fsc*2^16);
+im_fm =  round(Kfm*1e-3/fsc*2^16);
 
 % Display por consola
 disp(' ')
@@ -84,9 +84,9 @@ end
 
 if ficheros_si == 1
     %Creando los cuantificadores para guardar los datos de configuración
-    am_data = quantizer([16 15],'saturate','floor','ufixed');
-    fm_data = quantizer([16 16],'saturate','floor','ufixed');
-    freq_por_data = quantizer([24 24],'saturate','floor','ufixed');
+    am_data = quantizer([16 15],'saturate','round','ufixed');
+    fm_data = quantizer([16 16],'saturate','round','ufixed');
+    freq_por_data = quantizer([24 24],'saturate','round','ufixed');
     %File handling
     f=sprintf([file_dir 'configuration.txt']);
     pack_f=fopen(f,'w');

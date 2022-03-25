@@ -58,7 +58,10 @@ module DP_MOD
 
 	// Auxiliar wires
 	wire signed [16:0] im_am_aux;
+	wire signed [32:0] fm_mult;
+	wire signed [32:0] am_mult;
 	wire signed [15:0] DDS_out;
+	wire signed [32:0] mult_out;
 
 	// Defining AM/FM selector
 	// 4, 7 registers
@@ -76,9 +79,11 @@ module DP_MOD
 
 	// Defining FM path
 	//  1 register
+	assign fm_mult = im_fm_mux * i_data;
+
 	always @(posedge clk ) 
 		begin
-			im_fm_mux_x_i_data <= (im_fm_mux * i_data) >>> 7;
+			im_fm_mux_x_i_data <= fm_mult >>> 7;
 		end
 
 	// 2 register
@@ -98,10 +103,11 @@ module DP_MOD
 
 	//  11 register
 	assign im_am_aux = $signed({1'b0, im_am});
+	assign am_mult = i_data_pipe3 * im_am_aux;
 
 	always @(posedge clk ) 
 		begin
-			im_am_x_i_data_pipe_3 <= (i_data_pipe3 * im_am_aux) ;
+			im_am_x_i_data_pipe_3 <= am_mult >>> 15 ;
 		end
 
 	//  12 register
@@ -112,9 +118,11 @@ module DP_MOD
 
 	// Defining Output 
 	//  3 register
+	assign mult_out = DDS_out * am_mux;
+
 	always @(posedge clk ) 
 		begin
-			o_data_aux <= (DDS_out * am_mux) >>> 16;
+			o_data_aux <= mult_out >>> 15;
 		end
 	
 	assign o_data = o_data_aux;

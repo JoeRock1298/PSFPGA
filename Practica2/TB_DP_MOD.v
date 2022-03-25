@@ -75,6 +75,7 @@ initial begin
 	end_sim = 1'b1;
 	#(10*PER);
 	load_data = 1;
+	rst = #(PER/10) 1'b0;
    end      
    
 // Proceso de lectura de datos de entrada
@@ -84,7 +85,6 @@ always@(posedge clk)
              scan_data_in = $fscanf(data_in_file, "%b\n", i_data_wave);
              i_data <= i_data_wave;
              val_in <= #(PER/10)  1'b1;
-			 rst <= #(PER/10) 1'b0;
              if ($feof(data_in_file))
 				begin
 					val_in <= #(PER+PER/10)  1'b0;
