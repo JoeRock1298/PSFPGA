@@ -69,12 +69,12 @@ module DP_MOD
 		if(c_fm_am)
 			begin
 				im_fm_mux <= im_fm; // ajustar a la 
-				am_mux <= 2'b01 << 15;
+				am_mux <= $signed({1'b0, (1 <<< 15)});
 			end
 		else
 			begin
 				im_fm_mux <= 1'b0;
-				am_mux <= uno_sum >> 1; //escalado -> división por 2
+				am_mux <= uno_sum >>> 1; //escalado -> división por 2
 			end
 
 	// Defining FM path
@@ -113,7 +113,7 @@ module DP_MOD
 	//  12 register
 	always @(posedge clk ) 
 		begin
-			uno_sum <= (im_am_x_i_data_pipe_3 + (2'b01 << 15));
+			uno_sum <= im_am_x_i_data_pipe_3 + $signed({1'b0, (1 <<< 15)});
 		end
 
 	// Defining Output 

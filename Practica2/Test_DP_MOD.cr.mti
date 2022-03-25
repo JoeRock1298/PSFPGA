@@ -1,9 +1,23 @@
-./DP_MOD.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DP_MOD.v
+./DP_MOD.v {1 {vlog -work work -stats=none {C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica2\DP_MOD.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module DP_MOD
 
 Top level modules:
 	DP_MOD
+
+} {} {}} ./TB_DDS_test.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DDS_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_DDS_test
+
+Top level modules:
+	TB_DDS_test
+
+} {} {}} ./preprocesado.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/preprocesado.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module preprocesado
+
+Top level modules:
+	preprocesado
 
 } {} {}} ./DDS.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DDS.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -13,19 +27,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	DDS
 
-} {} {}} ./preprocesado.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/preprocesado.v
+} {} {}} ./accumulator.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/accumulator.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module preprocesado
+-- Compiling module accumulator
 
 Top level modules:
-	preprocesado
-
-} {} {}} ./TB_DDS_test.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DDS_test.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_DDS_test
-
-Top level modules:
-	TB_DDS_test
+	accumulator
 
 } {} {}} ./TB_DP_MOD.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DP_MOD.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -33,13 +40,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	TB_DP_MOD
-
-} {} {}} ./accumulator.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/accumulator.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module accumulator
-
-Top level modules:
-	accumulator
 
 } {} {}} ./postprocesado.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/postprocesado.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

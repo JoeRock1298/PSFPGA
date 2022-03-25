@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/17.1
 vaccumulator
-Z0 !s110 1648211710
+Z0 !s110 1648228360
 !i10b 1
 !s100 PYFe7[3O3SOj?=2XAYPXl2
 I>P_7T;o8CCKoVK7HckI5J1
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1648211710.000000
+Z5 !s108 1648228360.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/accumulator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/accumulator.v|
 !i113 1
@@ -54,21 +54,21 @@ n@d@d@s
 vDP_MOD
 R0
 !i10b 1
-!s100 U]WeLhF;4Wh>17BIW45Xz2
-IVMP>XM6h_Fh7[>Q4?<1MZ1
+!s100 ?z;VE?0GJi`mJF=_WF7<b2
+Io24FMOdAZ]@6QjUSH[a@Y0
 R1
 R2
-w1648211703
-8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DP_MOD.v
-FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DP_MOD.v
+w1648228345
+8C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica2\DP_MOD.v
+FC:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica2\DP_MOD.v
 L0 30
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DP_MOD.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/DP_MOD.v|
+!s107 C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica2\DP_MOD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica2\DP_MOD.v|
 !i113 1
 R6
 R7
@@ -137,7 +137,7 @@ R11
 R6
 R7
 vTB_DDS_test
-Z12 !s110 1648211711
+R0
 !i10b 1
 !s100 _o=no?_`K@ifN<aKe6^882
 ITgh[G@^9GR^GV]GQ6ZKlR1
@@ -151,7 +151,7 @@ R4
 r1
 !s85 0
 31
-Z13 !s108 1648211711.000000
+R5
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DDS_test.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DDS_test.v|
 !i113 1
@@ -159,7 +159,7 @@ R6
 R7
 n@t@b_@d@d@s_test
 vTB_DP_MOD
-R12
+!s110 1648228361
 !i10b 1
 !s100 1]1=;P]k:=c5?0FLU7m4^2
 IN@nE@XMC6I_hg8DVk@FJ^2
@@ -173,7 +173,7 @@ R4
 r1
 !s85 0
 31
-R13
+!s108 1648228361.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DP_MOD.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica2/TB_DP_MOD.v|
 !i113 1
