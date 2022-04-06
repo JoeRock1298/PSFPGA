@@ -1,7 +1,7 @@
 
 module INT 
 #(parameter Win=16,					// Input
-	parameter Wg= 22	) 					// Crecimiento del dato
+	parameter Wg= 22) 					// Crecimiento del dato
   (input signed [Wg+Win-1:0] data_in, 	// Input data
    input clk,
    input rst,
@@ -11,10 +11,12 @@ module INT
 
 	//// Insertar la descripción del modulo
   //// Modulo INT: La salida es la suma de la entrada con la misma salida retrasda
+
+  signed reg [Wg+Win-1:0] data_out_reg;
 	
   always@(posedge clk)
     begin
-    signed reg [Wg+Win-1:0] data_out_reg;
+    data_out_reg <= data_out;
     if (rst)
       begin
        data_out <= {Wg+Win{1'b0}}; 

@@ -5,14 +5,16 @@ module COMB
    input rst,
    input val_in,  					    // Validation input
    output reg val_out,					// Validation output
-   output reg signed  [Win-1:0] data_out);
+   output reg signed  [Win:0] data_out);
 	
 	//// Insertar la descripción del modulo
   //// Modulo COMB: La salida es la resta de la entrada con la misma entrada retrasada
 
+signed reg [Win-1:0] data_in_reg;
+
 always @(posedge clk)
   begin
-    signed reg [Win-1:0] data_in_reg;
+    data_in_reg <= data_in;
     if (rst)
       begin
        data_out <= {Win{1'b0}}; 
