@@ -1,7 +1,6 @@
 module CIC_pc
 #(parameter Win=16, // Input length
-  parameter Wg=22, // Guard bits
-  parameter N= 3)  // Número de bloques a implementar  (cuenta el 0)
+  parameter Wg=22) // Guard bits
 
   (input signed [Win-1:0] i_data,  		// Data input
    input clk,
