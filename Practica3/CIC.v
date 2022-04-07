@@ -1,4 +1,4 @@
-module CIC_pc
+module CIC
 #(parameter Win=16, // Input length
   parameter Wg=22) // Guard bits
 
