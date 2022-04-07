@@ -24,7 +24,7 @@ fsL=50; % kHz
 R = 2000; %% Interpolator Factor
 M=1;
 % Wordlengths
-Wg = 24;  %% Calculate Filter Growth
+Wg = 22;  %% Calculate Filter Growth
 Win = 16;  %% W input
 Fin = 15;  %% frac
 Wout = Win+Wg; %% Output full precision
@@ -91,7 +91,7 @@ if ficheros_si == 1
     % s_out
     fB=sprintf(['s_CIC_out.txt']);
     packB=fopen(fB,'w');
-
+    
     
     %% Cuantificamos a Wout.Wout-1
     q = quantizer([Wout Wout-1],'fixed','wrap','floor')
