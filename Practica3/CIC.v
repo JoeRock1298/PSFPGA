@@ -60,7 +60,7 @@ endgenerate
 assign 	val_wire[0] = val_in ;
 assign 	val_out = val_wire[7];
 assign	data_comb_wire [0] = i_data;
-assign 	o_data = data_int_wire [3];
+assign 	o_data = data_int_wire [3] [37:22];
 
 endmodule 
 
