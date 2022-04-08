@@ -11,27 +11,24 @@ module INT
 
 	//// Insertar la descripción del modulo
   //// Modulo INT: La salida es la suma de la entrada con la misma salida retrasda
-
-reg signed [Wg+Win-1:0] data_out_reg;
 	
   always@(posedge clk)
     begin
-    data_out_reg <= data_out;
     if (rst)
       begin
-       data_out <= {Wg+Win{1'b0}}; 
-       val_out <= 1'b0;
+       data_out <= 0; 
+       val_out <= 0;
        end
     else	
       if (val_in)
         begin
-          data_out <= data_in + data_out_reg;
-          val_out <= 1'b1; 
+          data_out <= data_in + data_out;
+          val_out <= val_in; 
         end   
       else
         begin
           data_out <= data_out;
-          val_out <= val_out;
+          val_out <= val_in;
         end 
   end
 

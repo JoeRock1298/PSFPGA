@@ -1,4 +1,4 @@
-module CIC_pc
+﻿module CIC_pc
 	#(parameter Win = 16, // Input length
   	parameter Wg = 22, // Guard bits
   	parameter N = 3) // numero de etapas (Se resta 1))
@@ -23,7 +23,7 @@ generate
 	for(c=0; c < 3; c= c+1)
 		begin : CIC
 			//COMB
- 			COMB #(.Win(Win + N)) COMB0 (.data_in(data_comb_wire[c]),
+ 			COMB #(.Win(Win + c)) COMB0 (.data_in(data_comb_wire[c]),
 										.clk(clk),
                							.rst(rst),
 										.val_in(val_wire[c]),
@@ -41,7 +41,7 @@ generate
 endgenerate
 
 // R_INT
-R_INT #(.Win(Win + N), .Wg(Wg))  R_INT0 (.data_in(data_comb_wire[3]),
+R_INT #(.Win(Win+3))  R_INT0 (.data_in(data_comb_wire[3]),
 							.clk(clk),
 							.rst(rst),
 							.val_in(val_wire[3]),

@@ -1,0 +1,29 @@
+./R_INT.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module R_INT
+
+Top level modules:
+	R_INT
+
+} {} {}} ./COMB.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module COMB
+
+Top level modules:
+	COMB
+
+} {} {}} ./CIC_pc.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CIC_pc
+
+Top level modules:
+	CIC_pc
+
+} {} {}} ./TB_CIC_pc.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_CIC_pc
+
+Top level modules:
+	TB_CIC_pc
+
+} {} {}}
