@@ -10,7 +10,7 @@ add wave -noupdate /TB_CIC_pc/load_data
 add wave -noupdate /TB_CIC_pc/end_sim
 add wave -noupdate -divider {_M and _F comparison}
 add wave -noupdate -format Analog-Step -height 74 -max 31163.000000000004 -min -31164.0 /TB_CIC_pc/i_data
-add wave -noupdate -format Analog-Step -height 74 -max 107424689924.0 -min -107428537296.0 /TB_CIC_pc/o_data_M
+add wave -noupdate -format Analog-Step -height 74 -max 107425000000.0 -min -107429000000.0 /TB_CIC_pc/o_data_M
 add wave -noupdate -format Analog-Step -height 74 -max 107425000000.0 -min -107429000000.0 /TB_CIC_pc/o_data_F
 add wave -noupdate -divider {Error control}
 add wave -noupdate /TB_CIC_pc/error_cnt
@@ -56,8 +56,8 @@ add wave -noupdate {/TB_CIC_pc/uut/genblk1/CIC[2]/INT0/val_in}
 add wave -noupdate {/TB_CIC_pc/uut/genblk1/CIC[2]/INT0/val_out}
 add wave -noupdate {/TB_CIC_pc/uut/genblk1/CIC[2]/INT0/data_out}
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {40042854 ps} 0}
-quietly wave cursor active 1
+WaveRestoreCursors {{Cursor 1} {60001000 ps} 0} {{Cursor 3} {80001000 ps} 0}
+quietly wave cursor active 2
 configure wave -namecolwidth 329
 configure wave -valuecolwidth 86
 configure wave -justifyvalue left
@@ -70,6 +70,6 @@ configure wave -gridoffset 0
 configure wave -gridperiod 1
 configure wave -griddelta 40
 configure wave -timeline 0
-configure wave -timelineunits ps
+configure wave -timelineunits ns
 update
 WaveRestoreZoom {0 ps} {1092084 ns}

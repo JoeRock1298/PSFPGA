@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/17.1
 vCIC_pc
-Z0 !s110 1649384145
+Z0 !s110 1649403935
 !i10b 1
 !s100 M2:Oc1`@R:KalhO=Dz`GT2
 IXfJ_`:69f^m?8<<loNO?C2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1649384145.000000
+Z4 !s108 1649403935.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v|
 !i113 1
@@ -31,7 +31,7 @@ Z5 o-work work
 Z6 tCvgOpt 0
 n@c@i@c_pc
 vCOMB
-Z7 !s110 1649384144
+Z7 !s110 1649403934
 !i10b 1
 !s100 XEjfa4>UXJB_KIRUS7^oK2
 Inid5b?Nm2;a42lEPz7EGM0
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1649384144.000000
+Z8 !s108 1649403934.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v|
 !i113 1
@@ -55,11 +55,11 @@ n@c@o@m@b
 vINT
 R0
 !i10b 1
-!s100 lDNJFkAXMC]eiZ^:Co:cK0
-IHD@W:JjiiZXSP3DD05S[]3
+!s100 2g;=R[@MTK9Bf7U?@]nOL2
+I?^[`o?YOOkJnjYN7<ceXO3
 R1
 R2
-w1649384131
+w1649403320
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v
 L0 2
@@ -119,23 +119,23 @@ R5
 R6
 n@t@b_@c@i@c_pc
 vTB_COMB
-Z12 !s110 1649266300
+Z12 !s110 1649403330
 !i10b 1
 !s100 hmRXlzCT?MF2^54jghz<N2
-I:<VH8k0>nU7<Ni6]X2DMW2
+ISogQ=z5G]A<HUIPR@ZHNm2
 R1
 R2
 w1649263766
-8C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica3\TB_COMB.v
-FC:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica3\TB_COMB.v
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v
 L0 3
 R3
 r1
 !s85 0
 31
-Z13 !s108 1649266300.000000
-!s107 C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica3\TB_COMB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica3\TB_COMB.v|
+Z13 !s108 1649403330.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v|
 !i113 1
 R5
 R6
@@ -187,11 +187,11 @@ n@t@b_@d@p_@m@o@d
 vTB_INT
 R12
 !i10b 1
-!s100 V=mzKIQQVH5KkT8F[]aX>1
-Ihg6Vm`EO^<KLfXnN?P<Sf3
+!s100 0[_NdVFh1=FU_dQX<clmU3
+IBiQJ_km@c]Q6dW_eUYiie2
 R1
 R2
-w1649266267
+w1649402087
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v
 L0 3

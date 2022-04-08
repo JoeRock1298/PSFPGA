@@ -11,7 +11,7 @@ parameter PER=10; // CLOCK PERIOD
 reg rst;
 reg clk;
 reg val_in;
-reg signed [Win-1 : 0] data_in;
+reg signed [(Win + Wg - 1):0] data_in; // already considering growth for generete compatibility
 wire val_out;
 wire signed [(Win + Wg - 1):0] data_out;
 
