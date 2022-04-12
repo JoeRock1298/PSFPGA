@@ -9,7 +9,10 @@ graficas_si = 1; % 1 -> si; 0 -> no
 ficheros_si = 1; % 1 -> si; 0 -> no
 
 % Señal de entrada
-sel = 0; %% 0 -> Sin; 1-> Chirp; 2 -> Square;
+sel = 1; %% 0 -> Sin; 1-> Chirp; 2 -> Square;
+
+% Señal de salida
+sel_o = 0; %% 0 -> GM_Full_Press; 1 -> GM_trunc;
 
 % Input Frequency (kHz)
 fo= 10; % kHz
@@ -28,10 +31,10 @@ Wg = 22;  %% Calculate Filter Growth
 Win = 16;  %% W input
 Fin = 15;  %% frac
 Wout = Win+Wg; %% Output full precision
+Wout_trunc = 16;
 %Wout = Win; %% Output Win bits
 
 % ------------------Configuration END--------------------------------------
-
 
 % Señales de control entrada
 switch(sel)
@@ -46,11 +49,6 @@ switch(sel)
     otherwise
         sel_b = [0 0];
 end
-
-
-
-
-
 
 %% Simulink
 sim('CIC.slx');
@@ -74,10 +72,10 @@ end
 %% Generacion de ficheros de datos
 if ficheros_si == 1
     % s_in 
-    fB=sprintf(['s_CIC_in.txt']);
+    fB=sprintf('s_CIC_in.txt');
     packB=fopen(fB,'w');
     
-    Dout_e=s_in*2^(Win-1);
+    Dout_e=s_in*2^(Win-1); % Sames as Fin
     
 
     for i=1:length(Dout_e)
@@ -85,23 +83,23 @@ if ficheros_si == 1
         fprintf(packB,'\n');
     end
     fclose(packB);
-
-
-    
+   
     % s_out
-    fB=sprintf(['s_CIC_out.txt']);
+    fB=sprintf('s_CIC_out.txt');
     packB=fopen(fB,'w');
-    
-    
-    %% Cuantificamos a Wout.Wout-1
-    q = quantizer([Wout Wout-1],'fixed','wrap','floor')
+  
+    % sel_o 0 -> GM_Full_Press; 1 -> GM_trunc;
+    if sel_o == 0
+        %Cuantificamos a Wout.Wout-1
+        q = quantizer([Wout Fin],'fixed','wrap','floor'); % out -> S[Wout,Fin] = S[38,15]
+        Dout_q = quantize(q, s_out); %% Cuantificamos
+    else
+        q = quantizer([Wout_trunc Wout_trunc-1],'fixed','wrap','floor'); % out -> S[Wout_trunc,Fin] = S[16,15]
+        Dout_q = quantize(q, s_out*2^-Wg); %% Cuantificamos
+    end
 
-    Dout_q = quantize(q, s_out*2^-Wg); %% Cuantificamos
-    Dout_bin = num2bin(q,Dout_q); %% Convertimos a binario
-    [m,n] = size(Dout_bin);
-    for i=1:m
-       fprintf(packB,Dout_bin(i,1:(Wout)));
-       fprintf(packB,'\n');
+    for i=1:length(Dout_q)
+       fprintf(packB,[num2bin(q, Dout_q(i)) '\n']);
     end
 
     fclose(packB);
