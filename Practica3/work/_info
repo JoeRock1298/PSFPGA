@@ -8,137 +8,181 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/17.1
+vCIC
+Z0 !s110 1649777942
+!i10b 1
+!s100 d9b@0LLEkJf_]me]ZH]JC0
+IBdZNLjk]zAj^O3cG:gf8a1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3
+w1649777867
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1649777942.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c@i@c
 vCIC_pc
-Z0 !s110 1649756594
+Z7 !s110 1649779269
 !i10b 1
 !s100 M2:Oc1`@R:KalhO=Dz`GT2
-IbO3Ekck2a0:K2YUZQ9iL]3
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/jororoc/Documents/PSFPGA/Practica3
-Z3 w1649753857
-8C:/Users/jororoc/Documents/PSFPGA/Practica3/CIC_pc.v
-FC:/Users/jororoc/Documents/PSFPGA/Practica3/CIC_pc.v
+IXfJ_`:69f^m?8<<loNO?C2
+R1
+R2
+w1649381179
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v
 L0 1
-Z4 OV;L;10.5b;63
+R3
 r1
 !s85 0
 31
-Z5 !s108 1649756593.000000
-!s107 C:/Users/jororoc/Documents/PSFPGA/Practica3/CIC_pc.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/PSFPGA/Practica3/CIC_pc.v|
+Z8 !s108 1649779269.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC_pc.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+R5
+R6
 n@c@i@c_pc
 vCOMB
-Z8 !s110 1649756593
+R7
 !i10b 1
 !s100 XEjfa4>UXJB_KIRUS7^oK2
-I0WKn79fSSVeemV;VH>?:W2
+Inid5b?Nm2;a42lEPz7EGM0
 R1
 R2
-R3
-8C:/Users/jororoc/Documents/PSFPGA/Practica3/COMB.v
-FC:/Users/jororoc/Documents/PSFPGA/Practica3/COMB.v
+w1649383368
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jororoc/Documents/PSFPGA/Practica3/COMB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/PSFPGA/Practica3/COMB.v|
+R8
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/COMB.v|
 !i113 1
+R5
 R6
-R7
 n@c@o@m@b
 vINT
-R8
+R7
 !i10b 1
 !s100 2g;=R[@MTK9Bf7U?@]nOL2
-II>UKC=0Ilzc:cFz]dngF71
+I?^[`o?YOOkJnjYN7<ceXO3
 R1
 R2
-R3
-8C:/Users/jororoc/Documents/PSFPGA/Practica3/INT.v
-FC:/Users/jororoc/Documents/PSFPGA/Practica3/INT.v
+w1649403320
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jororoc/Documents/PSFPGA/Practica3/INT.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/PSFPGA/Practica3/INT.v|
+R8
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/INT.v|
 !i113 1
+R5
 R6
-R7
 n@i@n@t
 vR_INT
-R8
+R7
 !i10b 1
 !s100 7[K5]3gMB:U7zS5A3CJhg2
-Ib9Q6_R`kUOC6REmn2UB9d2
+Ilf^_BZ04NBIDzf@_=k><k3
 R1
 R2
-R3
-8C:/Users/jororoc/Documents/PSFPGA/Practica3/R_INT.v
-FC:/Users/jororoc/Documents/PSFPGA/Practica3/R_INT.v
+w1649378845
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jororoc/Documents/PSFPGA/Practica3/R_INT.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/PSFPGA/Practica3/R_INT.v|
+R8
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v|
 !i113 1
+R5
 R6
-R7
 n@r_@i@n@t
-vTB_CIC_pc
+vTB_CIC
 R0
 !i10b 1
-!s100 bQW?:fd>i>XW^CRAZ=gLg3
-IUDUNjUFJ436aQ7HkG>_]B0
+!s100 lM?:B[n]Rh2oZ=j?_<S;d3
+In6>6>[6Ikb=ELR_D6E[c:1
 R1
 R2
-R3
-8C:/Users/jororoc/Documents/PSFPGA/Practica3/TB_CIC_pc.v
-FC:/Users/jororoc/Documents/PSFPGA/Practica3/TB_CIC_pc.v
+w1649777937
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-!s108 1649756594.000000
-!s107 C:/Users/jororoc/Documents/PSFPGA/Practica3/TB_CIC_pc.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/PSFPGA/Practica3/TB_CIC_pc.v|
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v|
 !i113 1
+R5
 R6
-R7
+n@t@b_@c@i@c
+vTB_CIC_pc
+!s110 1649779270
+!i10b 1
+!s100 bQW?:fd>i>XW^CRAZ=gLg3
+IjME_CKZKo2=>I<Q9Z[aX[2
+R1
+R2
+w1649376611
+Z9 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v
+Z10 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
+!i113 1
+R5
+R6
 n@t@b_@c@i@c_pc
 vTB_COMB
-Z9 !s110 1649403330
+Z12 !s110 1649403330
 !i10b 1
 !s100 hmRXlzCT?MF2^54jghz<N2
 ISogQ=z5G]A<HUIPR@ZHNm2
 R1
-Z10 dC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3
+R2
 w1649263766
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-Z11 !s108 1649403330.000000
+Z13 !s108 1649403330.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_COMB.v|
 !i113 1
+R5
 R6
-R7
 n@t@b_@c@o@m@b
 vTB_DDS_test
 !s110 1649368641
@@ -146,21 +190,21 @@ vTB_DDS_test
 !s100 _o=no?_`K@ifN<aKe6^882
 I?hzBAR<7B@HjmPQTFT6ag1
 R1
-R10
+R2
 w1649368412
-Z12 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v
-Z13 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v
+R9
+R10
 L0 3
-R4
+R3
 r1
 !s85 0
 31
 !s108 1649368641.000000
-Z14 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
-Z15 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
+R11
 !i113 1
+R5
 R6
-R7
 n@t@b_@d@d@s_test
 vTB_DP_MOD
 !s110 1649370967
@@ -168,63 +212,63 @@ vTB_DP_MOD
 !s100 b2JIk^ml4LMST@=0]WPb60
 I4L52nnVUJIlDfd20M?@FX1
 R1
-R10
+R2
 w1649369836
-R12
-R13
+R9
+R10
 L0 3
-R4
+R3
 r1
 !s85 0
 31
 !s108 1649370966.000000
-R14
-R15
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC_pc.v|
+R11
 !i113 1
+R5
 R6
-R7
 n@t@b_@d@p_@m@o@d
 vTB_INT
-R9
+R12
 !i10b 1
 !s100 0[_NdVFh1=FU_dQX<clmU3
 IBiQJ_km@c]Q6dW_eUYiie2
 R1
-R10
+R2
 w1649402087
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_INT.v|
 !i113 1
+R5
 R6
-R7
 n@t@b_@i@n@t
 vTB_R_INT
-R9
+R12
 !i10b 1
 !s100 JEGz1b@?hBG]INI;6ZB^Z3
 InVi?UcnE5CIJXgBz17LMP3
 R1
-R10
+R2
 w1649265887
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_R_INT.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_R_INT.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_R_INT.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_R_INT.v|
 !i113 1
+R5
 R6
-R7
 n@t@b_@r_@i@n@t

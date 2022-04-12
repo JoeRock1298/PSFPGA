@@ -12,7 +12,7 @@ ficheros_si = 1; % 1 -> si; 0 -> no
 sel = 1; %% 0 -> Sin; 1-> Chirp; 2 -> Square;
 
 % Señal de salida
-sel_o = 0; %% 0 -> GM_Full_Press; 1 -> GM_trunc;
+sel_o = 1; %% 0 -> GM_Full_Press; 1 -> GM_trunc;
 
 % Input Frequency (kHz)
 fo= 10; % kHz

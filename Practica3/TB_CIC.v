@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module TB_CIC_pc;
+module TB_CIC;
 // CLOCK PERIOD
 parameter PER = 10; 
 parameter R_val = 2000;
@@ -8,6 +8,7 @@ parameter R_val = 2000;
 //Configuring parameters
 parameter Win = 16;
 parameter Wg = 22;
+parameter Wout = 16;
 parameter N = 3; // COMB/INT #stages
 
 // Estimulos
@@ -17,8 +18,8 @@ reg val_in;
 reg signed [(Win + N - 1):0] i_data; // we use 19 bits to have compatibility with generate command
 
 // Monitorizacion
-wire signed [(Win + Wg - 1):0] o_data_wire;
-reg signed [(Win + Wg - 1):0] o_data_M, o_data_F;
+wire signed [Wout-1:0] o_data_wire;
+reg signed [Wout-1:0] o_data_M, o_data_F;
 wire val_out;
 
 // contadores y control
@@ -31,13 +32,13 @@ reg end_sim; // Indicación de simulación on/off
 integer data_in_file, data_out_file; //File handlers
 integer scan_data_in, scan_data_out; //fscanf error status
 integer i_data_wave; //Variables to save read data 
-reg signed [(Win + Wg - 1):0] o_data_wave; //Variables to save read data 
+reg signed [Wout-1:0] o_data_wave; //Variables to save read data 
 
 // clock
  always #(PER/2) clk = !clk&end_sim;
  
 // Instancia la uut
-	CIC_pc #(.Win(Win), .Wg(Wg), .N(N)) uut 
+	CIC #(.Win(Win), .Wg(Wg), .N(N), .Wout(Wout)) uut 
 		(
 		.i_data(i_data),
 		.clk(clk),

@@ -1,7 +1,7 @@
 module CIC
 #(parameter Win=16, // Input length
   parameter Wg=22,// Guard bits
-  parameter N = 3) // numero de etapas (Se resta 1))
+  parameter N = 3, // numero de etapas (Se resta 1))
   parameter Wout = 16) // Output length
   (input signed [Win-1:0] i_data,  		// Data input
    input clk,
