@@ -6,17 +6,17 @@
 
 %% ------------------Configuracion-----------------------------------------
 graficas_si = 1; % 1 -> si; 0 -> no
-ficheros_si = 1; % 1 -> si; 0 -> no
+ficheros_si = 0; % 1 -> si; 0 -> no
 
 % Señal de entrada
-sel = 1; %% 0 -> Sin; 1-> Chirp; 2 -> Square;
+sel = 0; %% 0 -> Sin; 1-> Chirp; 2 -> Square;
 
 % Señal de salida
-sel_o = 1; %% 0 -> GM_Full_Press; 1 -> GM_trunc;
+sel_o = 0; %% 0 -> GM_Full_Press; 1 -> GM_trunc;
 
 % Input Frequency (kHz)
-fo= 10; % kHz
-n_ciclos = 10; %% Num ciclos
+fo= 15; % kHz
+n_ciclos = 8; %% Num ciclos
 
 Tsim = n_ciclos*1e-3/(fo); %% Simulation time
 
