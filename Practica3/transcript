@@ -1,0 +1,23 @@
+vsim -gui work.TB_CIC
+# vsim -gui work.TB_CIC 
+# Start time: 18:52:47 on Apr 12,2022
+# Loading work.TB_CIC
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.COMB
+# Loading work.INT
+# ** Warning: (vsim-3015) C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v(41): [PCDPC] - Port size (16) does not match connection size (19) for port 'i_data'. The port definition is at: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CIC/uut File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v
+# ** Warning: (vsim-3015) C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/CIC.v(45): [PCDPC] - Port size (41) does not match connection size (38) for port 'data_out'. The port definition is at: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CIC/uut/R_INT0 File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/R_INT.v
+do C:/Users/gsandar/Documents/Github/PSFPGA/Practica3/TB_CIC.do
+run -all
+# Number of checked samples      101996
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v(83)
+#    Time: 1040080 ns  Iteration: 0  Instance: /TB_CIC
+# Break in Module TB_CIC at C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v line 83
+# Error opening C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v
+# Path name 'C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica3/TB_CIC.v' doesn't exist.
+# End time: 20:15:15 on Apr 12,2022, Elapsed time: 1:22:28
+# Errors: 1, Warnings: 2
