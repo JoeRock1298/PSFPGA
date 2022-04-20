@@ -10,7 +10,21 @@ module REG_MUX
    input ce,
    output reg signed [Win-1:0] dout); // salida 
 
+  //register implementation. We use a M9k memory to reduce the implementation area.
+  reg [Win - 1 : 0] SR_9k [Num_coef - 1 : 0] = 0; // Maybe we need a reset input as well.
+  integer i;
 
+  always @(posedge clk ) 
+  begin
+    if (ce) 
+    begin
+      for (i = Num_coef - 1; i > 0; i = i - 1) begin
+        SR_9k[i] <= SR_9k[i-1];
+      end
+      SR_9k[0] <= din; 
+    end
+    dout <= SR_9k[sel];
+  end
 
  function integer log2;
    input integer value;
@@ -20,6 +34,7 @@ module REG_MUX
        value = value>>1;
    end
  endfunction
+
 endmodule
 			
 
