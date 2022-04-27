@@ -9,7 +9,16 @@ module MULT_ACC
    input ce,				// habiliatacion del acumulador
    output signed [Win+Wc-1:0] dout); // salida Win+Wc
 
+  //Auxiliar variables
+  wire signed [Win+Wc-1:0]mult_res;
 
+  //Definiendo la MAC sin segmentación, es posible que se necesite posteriormente
+  //Realizando la multiplicación
+  assign mult_res = din * coef;
+
+  always @(posedge clk ) begin
+    
+  end
 		
 endmodule
 			
