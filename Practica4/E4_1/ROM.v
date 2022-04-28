@@ -6,6 +6,17 @@ module ROM
   output reg  signed [Wc-1:0] data); // salida 
 
 
+  // Defining variables
+  reg [Wc-1:0] ROM [log2(Num_coef)-1:0];
+
+  // Adding values to the ROM
+  initial
+	  $readmemh("coef.txt", ROM);
+
+  // Adressing ROM
+  always @ (posedge clk)
+		data <= ROM[addr];
+
  function integer log2;
    input integer value;
    begin
