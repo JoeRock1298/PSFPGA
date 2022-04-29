@@ -17,21 +17,25 @@ module SEC_FILTER
 	wire coef_wire;
 	wire din_wire;
 	wire [log2(Num_coef)-1:0] addr_wire;
+	
+	//Register
+	reg signed [Win+Wc-1:0] out_reg;
+	
 	//Modules
 	MULT_ACC #(.Win(Win), .Wc(Wc)) MULT_ACC0(.din(din_wire),
 					        .coef(coef_wire),
 					        .clk(clk),
 					        .rst(rst_ACC_wire),
 					        .ce(ce_ACC_wire),
-					        .dout());
+						.dout(out_reg));
 		
 	REG_MUX #(.Win(Win), .Num_coef(Num_coef)) REG_MUX0(.din(din),
-					     		   .sel(),
+					     		   .sel(addr_wire),
 							   .clk(clk),
 							   .ce(val_in),
 							   .dout(din_wire));
 				   
-	ROM #(.Num_coef(Num_coef), .Wc(WC)) ROM0(.addr(),
+	ROM #(.Num_coef(Num_coef), .Wc(WC)) ROM0(.addr(addr_wire),
 						 .clk(clk),
 						 .data(coef_wire));
 						 
@@ -39,7 +43,7 @@ module SEC_FILTER
 						.val_out(val_out),
 						.clk(clk),
 						.rst(rst),
-					        .addr())
+						.addr(addr_wire))
 						.ce_Reg(ce_ACC_wire),
 		  				.rst_ACC(rst_ACC_wire),
 		   				.ce_ACC());
