@@ -4,6 +4,7 @@ module CONTROL
  input clk,
  input rst,
  output [log2(Num_coef)-1:0] addr,
+ output val_out,
  output reg ce_Reg,
  output reg rst_Acc,
  output reg ce_Acc
