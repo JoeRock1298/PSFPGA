@@ -47,5 +47,12 @@ module SEC_FILTER
 						.ce_Reg(ce_ACC_wire),
 		  				.rst_ACC(rst_ACC_wire),
 		   				.ce_ACC());
+	//Register Output Control
+	 always @(posedge clk ) begin
+		 if (ce_ACC == 1)
+			 dout <= out_reg;
+		 else if(ce_ACC == 0)
+			 dout <= 0;
+ 	 end
 
 endmodule
