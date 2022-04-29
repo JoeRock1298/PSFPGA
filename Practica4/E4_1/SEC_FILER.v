@@ -10,34 +10,38 @@ module SEC_FILTER
    output reg signed [Win+Wc-1:0] dout); // salida precision completa
    //output reg signed [Win+2:0] dout); // salida truncada a 19 bits
 	
-  //Wires
-
+  	//Wires
+	wire ce_Reg_wire;
+	wire ce_ACC_wire;
+	wire rst_ACC_wire;
+	wire coef_wire;
+	wire din_wire;
+	wire [log2(Num_coef)-1:0] addr_wire;
 	//Modules
-	MULT_ACC #(.Win(Win), .Wc(Wc)) MULT_ACC0(.din(),
-					        .coef(),
+	MULT_ACC #(.Win(Win), .Wc(Wc)) MULT_ACC0(.din(din_wire),
+					        .coef(coef_wire),
 					        .clk(clk),
-					        .rst(),
-					        .ce(),
+					        .rst(rst_ACC_wire),
+					        .ce(ce_ACC_wire),
 					        .dout());
 		
-	REG_MUX #(.Win(Win), .Num_coef(Num_coef)) REG_MUX0(.din(),
+	REG_MUX #(.Win(Win), .Num_coef(Num_coef)) REG_MUX0(.din(din),
 					     		   .sel(),
-					       		   .clk(),
-					      		   .ce(),
-					       		   .dout());
+							   .clk(clk),
+							   .ce(val_in),
+							   .dout(din_wire));
 				   
-	ROM #(.Win(Win), .Wc(WC)) ROM0(.addr(),
-				       .clk(),
-				       .data());
+	ROM #(.Num_coef(Num_coef), .Wc(WC)) ROM0(.addr(),
+						 .clk(clk),
+						 .data(coef_wire));
 						 
-	CONTROL #(.Num_coef(Num_coef)) CONTROL0(.val_in(),
-					        .val_out(),
-					        .clk(),
-					        .rst(),
-					        .ce(),
+	CONTROL #(.Num_coef(Num_coef)) CONTROL0(.val_in(val_in),
+						.val_out(val_out),
+						.clk(clk),
+						.rst(rst),
 					        .addr())
-						.ce_Reg(),
-		  				.rst_ACC(),
+						.ce_Reg(ce_ACC_wire),
+		  				.rst_ACC(rst_ACC_wire),
 		   				.ce_ACC());
 
 endmodule
