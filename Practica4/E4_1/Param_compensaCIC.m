@@ -10,7 +10,7 @@ sel = 0; %% 0 -> Sin; 1-> Chirp; 2 -> Impulse;
 
 %% Parameters
 fs = 50000; %% Frecuencia de muestreo
-fo = 15000; %% Frecuencia de la señal
+fo = 1000; %% Frecuencia de la señal
 
 Win = 16; %% Cuantificación de los datos de entrada
 Win_f = 15; %% Parte fraccional de los datos de entrada
@@ -120,7 +120,7 @@ if ficheros_si == 1
     fC=sprintf(['s_FC_CIC_out1.txt']);
     packC=fopen(fC,'w');
 
-%    Dout_s=s_out*2^((Wc+Win-3)); %No ha e falta escalado porque se mantiene todo en el mismo rango.
+%    Dout_s=s_out*2^((Wc+Win-3)); %No ha el falta escalado porque se mantiene todo en el mismo rango.
 %     
 %    %% Cuantificamos con precision completa 
      %Wout = Win+Wc;
@@ -130,7 +130,7 @@ if ficheros_si == 1
      Wout = 19;
      Wout_f = 16;
      qout=quantizer([Wout Wout_f ],'fixed','wrap','floor');
-     Dout_q = quantize(qout, s_out); %% Cuantificamos
+     Dout_q = quantize(qout, s_out1); %% Cuantificamos
      Dout_bin = num2bin(qout,Dout_q); %% Convertimos a binario
      [m,n] = size(Dout_bin);
     for i=1:length(s_in)

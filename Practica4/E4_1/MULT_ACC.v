@@ -16,13 +16,14 @@ module MULT_ACC
   //Definiendo la MAC sin segmentación, es posible que se necesite posteriormente
   //Realizando la multiplicación
   assign mult_res = din * coef;
-  assign dout = (ce)? mult_res + acc_res : 0;
+  assign dout = (ce)? acc_res + mult_res : dout;
   //acumulador
   always @(posedge clk ) begin
     if (rst) 
       acc_res <= 0;
     else if(ce)
       acc_res <= dout;
+    
   end
 		
 endmodule

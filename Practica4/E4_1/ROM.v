@@ -7,11 +7,11 @@ module ROM
 
 
   // Defining variables
-  reg [Wc-1:0] ROM [log2(Num_coef)-1:0];
+  reg [Wc-1:0] ROM [Num_coef - 1:0];
 
   // Adding values to the ROM
   initial
-	  $readmemh("coef.txt", ROM);
+	  $readmemb("coef.txt", ROM);
 
   // Adressing ROM
   always @ (posedge clk)
