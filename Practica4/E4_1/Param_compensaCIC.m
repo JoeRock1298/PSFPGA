@@ -73,7 +73,8 @@ M=1;
 
 
 %% Simulink
-sim('Filtro_compensa_CIC.slx');
+%sim('Filtro_compensa_CIC.slx');
+sim('Filtro_compensa_CIC_2018.slx');
 1-2^-(Win-1);
 
 %% Graficas INPUT / OUTPUT

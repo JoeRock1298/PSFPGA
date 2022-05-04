@@ -7,11 +7,13 @@ module ROM
 
 
   // Defining variables
-  reg [Wc-1:0] ROM [Num_coef - 1:0];
+  (* ramstyle = "M9K" *) reg [Wc-1:0] ROM [Num_coef - 1:0];
 
   // Adding values to the ROM
   initial
+  begin
 	  $readmemb("coef.txt", ROM);
+  end
 
   // Adressing ROM
   always @ (posedge clk)
