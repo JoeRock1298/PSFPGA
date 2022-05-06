@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed May 04 02:30:21 2022
+Analysis & Synthesis Status : Successful - Fri May 06 19:49:26 2022
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : Quartus_Simulations
-Top-level Entity Name : ROM
+Top-level Entity Name : SEC_FILTER
 Family : Cyclone IV E
-Total logic elements : 22
-    Total combinational functions : 20
-    Dedicated logic registers : 18
-Total registers : 18
-Total pins : 24
+Total logic elements : 565
+    Total combinational functions : 290
+    Dedicated logic registers : 352
+Total registers : 352
+Total pins : 39
 Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Total memory bits : 306
+Embedded Multiplier 9-bit elements : 2
 Total PLLs : 0

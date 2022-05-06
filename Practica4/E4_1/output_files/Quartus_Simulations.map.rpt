@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Quartus_Simulations
-Wed May 04 02:30:21 2022
+Fri May 06 19:49:26 2022
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -13,11 +13,28 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |ROM
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. State Machine - |SEC_FILTER|CONTROL:CONTROL0|state
+ 11. User-Specified and Inferred Latches
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Registers Packed Into Inferred Megafunctions
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for ROM:ROM0|altsyncram:ROM_rtl_0|altsyncram_5n91:auto_generated
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |SEC_FILTER
+ 18. Parameter Settings for User Entity Instance: MULT_ACC:MULT_ACC0
+ 19. Parameter Settings for User Entity Instance: REG_MUX:REG_MUX0
+ 20. Parameter Settings for User Entity Instance: ROM:ROM0
+ 21. Parameter Settings for User Entity Instance: CONTROL:CONTROL0
+ 22. Parameter Settings for Inferred Entity Instance: ROM:ROM0|altsyncram:ROM_rtl_0
+ 23. Parameter Settings for Inferred Entity Instance: MULT_ACC:MULT_ACC0|lpm_mult:Mult0
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. lpm_mult Parameter Settings by Entity Instance
+ 26. Port Connectivity Checks: "MULT_ACC:MULT_ACC0"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -43,19 +60,19 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                  ;
 +------------------------------------+----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 04 02:30:21 2022                    ;
+; Analysis & Synthesis Status        ; Successful - Fri May 06 19:49:26 2022                    ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
 ; Revision Name                      ; Quartus_Simulations                                      ;
-; Top-level Entity Name              ; ROM                                                      ;
+; Top-level Entity Name              ; SEC_FILTER                                               ;
 ; Family                             ; Cyclone IV E                                             ;
-; Total logic elements               ; 22                                                       ;
-;     Total combinational functions  ; 20                                                       ;
-;     Dedicated logic registers      ; 18                                                       ;
-; Total registers                    ; 18                                                       ;
-; Total pins                         ; 24                                                       ;
+; Total logic elements               ; 565                                                      ;
+;     Total combinational functions  ; 290                                                      ;
+;     Dedicated logic registers      ; 352                                                      ;
+; Total registers                    ; 352                                                      ;
+; Total pins                         ; 39                                                       ;
 ; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 0                                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                                        ;
+; Total memory bits                  ; 306                                                      ;
+; Embedded Multiplier 9-bit elements ; 2                                                        ;
 ; Total PLLs                         ; 0                                                        ;
 +------------------------------------+----------------------------------------------------------+
 
@@ -66,7 +83,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value       ;
 +----------------------------------------------------------------------------+--------------------+---------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                     ;
-; Top-level entity name                                                      ; ROM                ; Quartus_Simulations ;
+; Top-level entity name                                                      ; SEC_FILTER         ; Quartus_Simulations ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V           ;
 ; Use smart compilation                                                      ; Off                ; Off                 ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                  ;
@@ -151,25 +168,48 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
-+----------------------------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                           ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v ; yes             ; User Verilog HDL File  ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v    ;         ;
-; coef.txt                                                                   ; yes             ; Auto-Found File        ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/coef.txt ;         ;
-+----------------------------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                           ;
++-----------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                  ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                             ; Library ;
++-----------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v ; yes             ; User Verilog HDL File                                 ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v                        ;         ;
+; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v        ; yes             ; User Verilog HDL File                                 ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v                               ;         ;
+; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v    ; yes             ; User Verilog HDL File                                 ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v                           ;         ;
+; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v   ; yes             ; User Verilog HDL File                                 ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v                          ;         ;
+; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v    ; yes             ; User Verilog HDL File                                 ; //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v                           ;         ;
+; coef.txt                                                                          ; yes             ; Auto-Found File                                       ; C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/coef.txt                                         ;         ;
+; altsyncram.tdf                                                                    ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;         ;
+; stratix_ram_block.inc                                                             ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;         ;
+; lpm_mux.inc                                                                       ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;         ;
+; lpm_decode.inc                                                                    ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                         ;         ;
+; aglobal171.inc                                                                    ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/aglobal171.inc                                         ;         ;
+; a_rdenreg.inc                                                                     ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                          ;         ;
+; altrom.inc                                                                        ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altrom.inc                                             ;         ;
+; altram.inc                                                                        ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altram.inc                                             ;         ;
+; altdpram.inc                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altdpram.inc                                           ;         ;
+; db/altsyncram_5n91.tdf                                                            ; yes             ; Auto-Generated Megafunction                           ; C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/db/altsyncram_5n91.tdf                           ;         ;
+; db/quartus_simulations.ram0_rom_8a37aa91.hdl.mif                                  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/db/quartus_simulations.ram0_rom_8a37aa91.hdl.mif ;         ;
+; lpm_mult.tdf                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/lpm_mult.tdf                                           ;         ;
+; lpm_add_sub.inc                                                                   ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                        ;         ;
+; multcore.inc                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/multcore.inc                                           ;         ;
+; bypassff.inc                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/bypassff.inc                                           ;         ;
+; altshift.inc                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altshift.inc                                           ;         ;
+; db/mult_86t.tdf                                                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/db/mult_86t.tdf                                  ;         ;
++-----------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -177,41 +217,143 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 22        ;
+; Estimated Total logic elements              ; 565       ;
 ;                                             ;           ;
-; Total combinational functions               ; 20        ;
+; Total combinational functions               ; 290       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 17        ;
-;     -- 3 input functions                    ; 2         ;
-;     -- <=2 input functions                  ; 1         ;
+;     -- 4 input functions                    ; 164       ;
+;     -- 3 input functions                    ; 84        ;
+;     -- <=2 input functions                  ; 42        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 20        ;
-;     -- arithmetic mode                      ; 0         ;
+;     -- normal mode                          ; 253       ;
+;     -- arithmetic mode                      ; 37        ;
 ;                                             ;           ;
-; Total registers                             ; 18        ;
-;     -- Dedicated logic registers            ; 18        ;
+; Total registers                             ; 352       ;
+;     -- Dedicated logic registers            ; 352       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 24        ;
+; I/O pins                                    ; 39        ;
+; Total memory bits                           ; 306       ;
 ;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
+; Embedded Multiplier 9-bit elements          ; 2         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 18        ;
-; Total fan-out                               ; 167       ;
-; Average fan-out                             ; 1.94      ;
+; Maximum fan-out                             ; 370       ;
+; Total fan-out                               ; 2227      ;
+; Average fan-out                             ; 3.01      ;
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ROM                       ; 20 (20)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |ROM                ;             ;              ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
+; |SEC_FILTER                               ; 290 (0)             ; 352 (20)                  ; 306         ; 2            ; 0       ; 1         ; 39   ; 0            ; |SEC_FILTER                                                              ; SEC_FILTER      ; work         ;
+;    |CONTROL:CONTROL0|                     ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEC_FILTER|CONTROL:CONTROL0                                             ; CONTROL         ; work         ;
+;    |MULT_ACC:MULT_ACC0|                   ; 103 (103)           ; 34 (34)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |SEC_FILTER|MULT_ACC:MULT_ACC0                                           ; MULT_ACC        ; work         ;
+;       |lpm_mult:Mult0|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |SEC_FILTER|MULT_ACC:MULT_ACC0|lpm_mult:Mult0                            ; lpm_mult        ; work         ;
+;          |mult_86t:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |SEC_FILTER|MULT_ACC:MULT_ACC0|lpm_mult:Mult0|mult_86t:auto_generated    ; mult_86t        ; work         ;
+;    |REG_MUX:REG_MUX0|                     ; 176 (176)           ; 288 (288)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEC_FILTER|REG_MUX:REG_MUX0                                             ; REG_MUX         ; work         ;
+;    |ROM:ROM0|                             ; 0 (0)               ; 0 (0)                     ; 306         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEC_FILTER|ROM:ROM0                                                     ; ROM             ; work         ;
+;       |altsyncram:ROM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 306         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEC_FILTER|ROM:ROM0|altsyncram:ROM_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_5n91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 306         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEC_FILTER|ROM:ROM0|altsyncram:ROM_rtl_0|altsyncram_5n91:auto_generated ; altsyncram_5n91 ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                            ;
++-------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------------+
+; Name                                                                    ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                              ;
++-------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------------+
+; ROM:ROM0|altsyncram:ROM_rtl_0|altsyncram_5n91:auto_generated|ALTSYNCRAM ; M9K  ; ROM  ; 17           ; 18           ; --           ; --           ; 306  ; db/Quartus_Simulations.ram0_ROM_8a37aa91.hdl.mif ;
++-------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 0           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |SEC_FILTER|CONTROL:CONTROL0|state                            ;
++--------------------+------------------+------------------+--------------------+
+; Name               ; state.ini_filter ; state.end_filter ; state.start_filter ;
++--------------------+------------------+------------------+--------------------+
+; state.ini_filter   ; 0                ; 0                ; 0                  ;
+; state.start_filter ; 1                ; 0                ; 1                  ;
+; state.end_filter   ; 1                ; 1                ; 0                  ;
++--------------------+------------------+------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                    ;
++-----------------------------------------------------+-------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal     ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------+------------------------+
+; MULT_ACC:MULT_ACC0|dout[15]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[16]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[17]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[18]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[19]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[20]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[21]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[22]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[23]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[24]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[25]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[26]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[27]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[28]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[29]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[30]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[31]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[32]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[33]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[14]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[13]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[12]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[11]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[10]                         ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[9]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[8]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[7]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[6]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[5]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[4]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[3]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[2]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[1]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; MULT_ACC:MULT_ACC0|dout[0]                          ; CONTROL:CONTROL0|ce_Acc ; yes                    ;
+; Number of user-specified and inferred latches = 34  ;                         ;                        ;
++-----------------------------------------------------+-------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                          ;
++---------------------------------------+-------------------------------------+
+; Register name                         ; Reason for Removal                  ;
++---------------------------------------+-------------------------------------+
+; CONTROL:CONTROL0|val_out              ; Merged with CONTROL:CONTROL0|ce_Reg ;
+; Total Number of Removed Registers = 1 ;                                     ;
++---------------------------------------+-------------------------------------+
 
 
 +------------------------------------------------------+
@@ -219,25 +361,243 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 18    ;
-; Number of registers using Synchronous Clear  ; 13    ;
+; Total registers                              ; 352   ;
+; Number of registers using Synchronous Clear  ; 5     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 325   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ROM ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; Wc             ; 18    ; Signed Integer                             ;
-; Num_coef       ; 17    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++--------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions     ;
++----------------------+--------------------+------+
+; Register Name        ; Megafunction       ; Type ;
++----------------------+--------------------+------+
+; ROM:ROM0|data[0..17] ; ROM:ROM0|ROM_rtl_0 ; RAM  ;
++----------------------+--------------------+------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |SEC_FILTER|CONTROL:CONTROL0|timer[0]      ;
+; 3:1                ; 34 bits   ; 68 LEs        ; 34 LEs               ; 34 LEs                 ; Yes        ; |SEC_FILTER|MULT_ACC:MULT_ACC0|acc_res[17] ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 176 LEs              ; 0 LEs                  ; Yes        ; |SEC_FILTER|REG_MUX:REG_MUX0|dout[15]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Source assignments for ROM:ROM0|altsyncram:ROM_rtl_0|altsyncram_5n91:auto_generated ;
++---------------------------------+--------------------+------+-----------------------+
+; Assignment                      ; Value              ; From ; To                    ;
++---------------------------------+--------------------+------+-----------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                     ;
++---------------------------------+--------------------+------+-----------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |SEC_FILTER ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; Win            ; 16    ; Signed Integer                                    ;
+; Wc             ; 18    ; Signed Integer                                    ;
+; Num_coef       ; 17    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULT_ACC:MULT_ACC0 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; Win            ; 16    ; Signed Integer                         ;
+; Wc             ; 18    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REG_MUX:REG_MUX0 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; Win            ; 16    ; Signed Integer                       ;
+; Num_coef       ; 17    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:ROM0 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; Wc             ; 18    ; Signed Integer               ;
+; Num_coef       ; 17    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL0 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; Num_coef       ; 17    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ROM:ROM0|altsyncram:ROM_rtl_0                         ;
++------------------------------------+--------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                            ; Type           ;
++------------------------------------+--------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                               ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                              ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                               ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                              ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                              ; Untyped        ;
+; WIDTH_A                            ; 18                                               ; Untyped        ;
+; WIDTHAD_A                          ; 5                                                ; Untyped        ;
+; NUMWORDS_A                         ; 17                                               ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                     ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                             ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                             ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                             ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                             ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                             ; Untyped        ;
+; WIDTH_B                            ; 1                                                ; Untyped        ;
+; WIDTHAD_B                          ; 1                                                ; Untyped        ;
+; NUMWORDS_B                         ; 1                                                ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                           ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                           ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                           ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                           ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                     ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                           ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                             ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                             ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                             ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                             ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                             ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                             ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                                ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; M9K                                              ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                             ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                             ; Untyped        ;
+; INIT_FILE                          ; db/Quartus_Simulations.ram0_ROM_8a37aa91.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                           ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                           ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                           ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                           ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                  ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                  ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                            ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                            ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone IV E                                     ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_5n91                                  ; Untyped        ;
++------------------------------------+--------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: MULT_ACC:MULT_ACC0|lpm_mult:Mult0  ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16           ; Untyped             ;
+; LPM_WIDTHB                                     ; 18           ; Untyped             ;
+; LPM_WIDTHP                                     ; 34           ; Untyped             ;
+; LPM_WIDTHR                                     ; 34           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_86t     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                          ;
++-------------------------------------------+-------------------------------+
+; Name                                      ; Value                         ;
++-------------------------------------------+-------------------------------+
+; Number of entity instances                ; 1                             ;
+; Entity Instance                           ; ROM:ROM0|altsyncram:ROM_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                           ;
+;     -- WIDTH_A                            ; 18                            ;
+;     -- NUMWORDS_A                         ; 17                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                  ;
+;     -- WIDTH_B                            ; 1                             ;
+;     -- NUMWORDS_B                         ; 1                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                  ;
+;     -- RAM_BLOCK_TYPE                     ; M9K                           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                     ;
++-------------------------------------------+-------------------------------+
+
+
++---------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                            ;
++---------------------------------------+-----------------------------------+
+; Name                                  ; Value                             ;
++---------------------------------------+-----------------------------------+
+; Number of entity instances            ; 1                                 ;
+; Entity Instance                       ; MULT_ACC:MULT_ACC0|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                ;
+;     -- LPM_WIDTHB                     ; 18                                ;
+;     -- LPM_WIDTHP                     ; 34                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                ;
+;     -- USE_EAB                        ; OFF                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                ;
++---------------------------------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MULT_ACC:MULT_ACC0"                                                                        ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; dout[14..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -245,18 +605,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 24                          ;
-; cycloneiii_ff         ; 18                          ;
-;     SCLR              ; 13                          ;
-;     plain             ; 5                           ;
-; cycloneiii_lcell_comb ; 20                          ;
-;     normal            ; 20                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 17                          ;
+; boundary_port         ; 39                          ;
+; cycloneiii_ff         ; 352                         ;
+;     ENA               ; 325                         ;
+;     SCLR              ; 5                           ;
+;     plain             ; 22                          ;
+; cycloneiii_lcell_comb ; 290                         ;
+;     arith             ; 37                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 33                          ;
+;     normal            ; 253                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 37                          ;
+;         3 data inputs ; 51                          ;
+;         4 data inputs ; 164                         ;
+; cycloneiii_mac_mult   ; 1                           ;
+; cycloneiii_mac_out    ; 1                           ;
+; cycloneiii_ram_block  ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.82                        ;
+; Max LUT depth         ; 5.30                        ;
+; Average LUT depth     ; 3.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -275,41 +643,123 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Wed May 04 02:29:48 2022
+    Info: Processing started: Fri May 06 19:49:15 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Quartus_Simulations -c Quartus_Simulations
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file sec_filter_wrap.v
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/sec_filter_wrap.v
     Info (12023): Found entity 1: SEC_FILTER_WRAP File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER_WRAP.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file sec_filter.v
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/sec_filter.v
     Info (12023): Found entity 1: SEC_FILTER File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rom.v
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/rom.v
     Info (12023): Found entity 1: ROM File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file reg_mux.v
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/reg_mux.v
     Info (12023): Found entity 1: REG_MUX File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mult_acc.v
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/mult_acc.v
     Info (12023): Found entity 1: MULT_ACC File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file control.v
+Info (12021): Found 1 design units, including 1 entities, in source file //corentine/vdi/alumno/gsandar/documentos/github/fpga/practica4/e4_1/control.v
     Info (12023): Found entity 1: CONTROL File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v Line: 1
 Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(17): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v Line: 17
-Info (12127): Elaborating entity "ROM" for the top level hierarchy
+Info (12127): Elaborating entity "SEC_FILTER" for the top level hierarchy
+Info (12128): Elaborating entity "MULT_ACC" for hierarchy "MULT_ACC:MULT_ACC0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v Line: 29
+Info (10041): Inferred latch for "dout[0]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[1]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[2]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[3]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[4]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[5]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[6]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[7]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[8]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[9]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[10]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[11]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[12]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[13]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[14]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[15]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[16]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[17]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[18]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[19]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[20]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[21]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[22]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[23]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[24]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[25]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[26]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[27]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[28]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[29]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[30]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[31]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[32]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (10041): Inferred latch for "dout[33]" at MULT_ACC.v(19) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 19
+Info (12128): Elaborating entity "REG_MUX" for hierarchy "REG_MUX:REG_MUX0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v Line: 35
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v Line: 39
 Warning (10030): Net "ROM.data_a" at ROM.v(10) has no driver or initial value, using a default initial value '0' File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v Line: 10
 Warning (10030): Net "ROM.waddr_a" at ROM.v(10) has no driver or initial value, using a default initial value '0' File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v Line: 10
 Warning (10030): Net "ROM.we_a" at ROM.v(10) has no driver or initial value, using a default initial value '0' File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v Line: 10
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "ROM" is uninferred due to inappropriate RAM size File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v Line: 10
-Critical Warning (127005): Memory depth (32) in the design file differs from memory depth (17) in the Memory Initialization File "//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/db/Quartus_Simulations.ram0_ROM_16bd8.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:CONTROL0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v Line: 48
+Warning (10230): Verilog HDL assignment warning at CONTROL.v(29): truncated value with size 32 to match size of target (5) File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v Line: 29
+Warning (10235): Verilog HDL Always Construct warning at CONTROL.v(53): variable "timeout_reg" is read inside the Always Construct but isn't in the Always Construct's Event Control File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v Line: 53
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "ROM:ROM0|ROM_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 18
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 17
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter RAM_BLOCK_TYPE set to M9K
+        Info (286033): Parameter INIT_FILE set to db/Quartus_Simulations.ram0_ROM_8a37aa91.hdl.mif
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "MULT_ACC:MULT_ACC0|Mult0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 18
+Info (12130): Elaborated megafunction instantiation "ROM:ROM0|altsyncram:ROM_rtl_0"
+Info (12133): Instantiated megafunction "ROM:ROM0|altsyncram:ROM_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "18"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "17"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "M9K"
+    Info (12134): Parameter "INIT_FILE" = "db/Quartus_Simulations.ram0_ROM_8a37aa91.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5n91.tdf
+    Info (12023): Found entity 1: altsyncram_5n91 File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/db/altsyncram_5n91.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "MULT_ACC:MULT_ACC0|lpm_mult:Mult0" File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 18
+Info (12133): Instantiated megafunction "MULT_ACC:MULT_ACC0|lpm_mult:Mult0" with the following parameter: File: //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v Line: 18
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "18"
+    Info (12134): Parameter "LPM_WIDTHP" = "34"
+    Info (12134): Parameter "LPM_WIDTHR" = "34"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_86t.tdf
+    Info (12023): Found entity 1: mult_86t File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/db/mult_86t.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 23 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Wed May 04 02:30:21 2022
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:34
+Info (21057): Implemented 643 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 584 logic cells
+    Info (21064): Implemented 18 RAM segments
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Fri May 06 19:49:26 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

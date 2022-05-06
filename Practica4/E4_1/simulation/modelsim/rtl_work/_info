@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/simulation/modelsim
+vCONTROL
+Z1 !s110 1651858043
+!i10b 1
+!s100 0;<WS@YAZN4`JJZ8_Qd0k2
+ITdFRnRz5k[P_AVZ5zLdVz2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1651680076
+8//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v
+F//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1651858042.000000
+!s107 //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1|//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/CONTROL.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1
+Z8 tCvgOpt 0
+n@c@o@n@t@r@o@l
+vMULT_ACC
+Z9 !s110 1651858042
+!i10b 1
+!s100 aal3?bMflDD8FR<`M<Xc;1
+IY[AXoA1Mgc2Vk^F<X45CD2
+R2
+R0
+R3
+8//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v
+F//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1|//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/MULT_ACC.v|
+!i113 1
+R6
+R7
+R8
+n@m@u@l@t_@a@c@c
+vREG_MUX
+R9
+!i10b 1
+!s100 n`J9jUXkUEc0FXH@NJgiE1
+I9Vz>JGHGe>==RXa]Kn4[S3
+R2
+R0
+R3
+8//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v
+F//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1|//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/REG_MUX.v|
+!i113 1
+R6
+R7
+R8
+n@r@e@g_@m@u@x
+vROM
+R1
+!i10b 1
+!s100 BjRbd@=iJUJJX`g3INzjd1
+IdVR`0OL<=KP_OD^7e:@691
+R2
+R0
+w1651680162
+8//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v
+F//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1651858043.000000
+!s107 //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1|//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/ROM.v|
+!i113 1
+R6
+R7
+R8
+n@r@o@m
+vSEC_FILTER
+R9
+!i10b 1
+!s100 O8mY1TnW=SzWbIT]o9DT51
+Io2>Wd]Llg5BHhU8^T<Azb2
+R2
+R0
+R3
+8//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v
+F//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1|//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/SEC_FILTER.v|
+!i113 1
+R6
+R7
+R8
+n@s@e@c_@f@i@l@t@e@r
+vTB_SEC_FILTER
+R1
+!i10b 1
+!s100 U8<jI33>27;BLzeWbz?6z1
+IdPQ]EjZdM[1eKk6zdYgSI3
+R2
+R0
+w1651858026
+8C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+FC:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1|C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1
+R8
+n@t@b_@s@e@c_@f@i@l@t@e@r
