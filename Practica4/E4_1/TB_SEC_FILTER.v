@@ -44,7 +44,7 @@ reg signed [Win+2:0] dout_wave;
  always #(PER/2) clk = !clk&end_sim;
  
 // Instancia la uut
-	SEC_FILTER #(.Win(Win), .Wc(Wc), .Num_coef(Num_coef)) uut 
+	SEC_FILTER /*#(.Win(Win), .Wc(Wc), .Num_coef(Num_coef))*/ uut 
 		(
 		.din(din),
 		.clk(clk),
@@ -57,8 +57,8 @@ reg signed [Win+2:0] dout_wave;
 // Proceso initial
 // Proceso de configuración del sistema
 initial begin
-    data_in_file = $fopen("s_FC_CIC_in.txt", "r");
-    data_out_file = $fopen("s_FC_CIC_out1.txt", "r");
+    data_in_file = $fopen("C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/s_FC_CIC_in.txt", "r");
+    data_out_file = $fopen("C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/s_FC_CIC_out1.txt", "r");
 	//Initiating the model
 	clk = 1'b1;
 	val_in = 1'b0;
@@ -80,6 +80,7 @@ always@(posedge clk)
              din <= din_wave;
              val_in <= #(PER/10)  1'b1;
 			 val_in <= #(PER+PER/10)  1'b0;
+			 #(250*PER)
 			 repeat(20) @(posedge clk);
              if ($feof(data_in_file))
 				begin

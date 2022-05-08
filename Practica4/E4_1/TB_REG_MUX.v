@@ -27,7 +27,7 @@ always #(PER/2) clk = !clk;
 
 always #(PER) i = i + 1 ;
 
-REG_MUX #(.Win(Win), .Num_coef(Num_coef)) UUT 
+REG_MUX /*#(.Win(Win), .Num_coef(Num_coef)) */UUT 
 			(.din(din),
 			.sel(sel),
 			.clk(clk),

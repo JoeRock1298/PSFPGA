@@ -23,7 +23,7 @@ always #(PER/2) clk = !clk;
 
 always #(PER) i = i + 1 ;
 
-CONTROL #(.Num_coef(Num_coef)) UUT 
+CONTROL /*#(.Num_coef(Num_coef))*/ UUT 
 			(.val_in(val_in),
 			.clk(clk),
 			.rst(rst),

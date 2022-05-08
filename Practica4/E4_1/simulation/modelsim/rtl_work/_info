@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/simulation/modelsim
+vCONTROL
+Z1 !s110 1651942961
+!i10b 1
+!s100 R0>@0h3o76Y<iGiZocc6`3
+IcQm=h>@nDeKcPiLl42FB31
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651936968
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/CONTROL.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/CONTROL.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1651942961.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/CONTROL.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1
+Z7 tCvgOpt 0
+n@c@o@n@t@r@o@l
+vMULT_ACC
+R1
+!i10b 1
+!s100 aal3?bMflDD8FR<`M<Xc;1
+IT3ZelCLX5^?nmfZZHV6_g2
+R2
+R0
+w1651442668
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/MULT_ACC.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/MULT_ACC.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/MULT_ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/MULT_ACC.v|
+!i113 1
+R5
+R6
+R7
+n@m@u@l@t_@a@c@c
+vREG_MUX
+R1
+!i10b 1
+!s100 n`J9jUXkUEc0FXH@NJgiE1
+IVW8CkF55_:AM5okIKcSmc2
+R2
+R0
+w1651690350
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v|
+!i113 1
+R5
+R6
+R7
+n@r@e@g_@m@u@x
+vROM
+R1
+!i10b 1
+!s100 BjRbd@=iJUJJX`g3INzjd1
+I`Ohk<gkI0HWVoi8@GeM>N2
+R2
+R0
+w1651918779
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@m
+vSEC_FILTER
+R1
+!i10b 1
+!s100 O8mY1TnW=SzWbIT]o9DT51
+IaU46ibRjhG9;TmGbUiX2n1
+R2
+R0
+w1651439320
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v|
+!i113 1
+R5
+R6
+R7
+n@s@e@c_@f@i@l@t@e@r
+vTB_SEC_FILTER
+!s110 1651942962
+!i10b 1
+!s100 NPd2m57@QcgI3h<ZGRmUh2
+I2PEBf[CS<bO_n;_ZgRf4E2
+R2
+R0
+w1651936020
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1651942962.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v|
+!i113 1
+R5
+R6
+R7
+n@t@b_@s@e@c_@f@i@l@t@e@r

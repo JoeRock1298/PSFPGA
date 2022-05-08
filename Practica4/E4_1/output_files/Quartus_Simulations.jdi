@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="7e22f72227ee3a6f0ffc"/>
+    <hash md5_digest_80b="4e629320b53653622820"/>
   </project>
   <file_info>
-    <file device="EP4CE115F29C7" path="//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/FPGA/Practica4/E4_1/output_files/Quartus_Simulations.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP4CE115F29C7" path="Quartus_Simulations.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

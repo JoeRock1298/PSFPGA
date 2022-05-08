@@ -21,12 +21,11 @@ module CONTROL
 
  // Registering the outputs since the addressed values requires and aditional clock cycle
  // except of rst_Acc since we can clear the adder in the last state
- reg ce_Acc_aux, ce_Reg_aux, val_out_aux;
+ reg ce_Acc_aux, ce_Reg_aux, val_out_aux, rst_Acc_aux;
 
  // Defining counter for a timed FSM
 	reg [log2(Num_coef)-1:0] timer = 0;
-	localparam timeout = Num_coef - 2;
-	reg [log2(Num_coef)-1:0] timeout_reg = timeout;
+	localparam timeout = Num_coef - 1;
 	
 	always @(posedge clk) 
 	begin
@@ -50,7 +49,7 @@ module CONTROL
 				else
 					next_state <= ini_filter;
 			start_filter:
-				if (timer < timeout_reg) // waiting for the 16 coeficients 
+				if (timer < timeout) // waiting for the 16 coeficients 
 					next_state <= start_filter;
 				else // when last coeficient iteration
 					next_state <= end_filter;
@@ -77,28 +76,28 @@ module CONTROL
 			ini_filter:
 			begin
 				ce_Reg_aux = 0;
- 				rst_Acc = 1;
+ 				rst_Acc_aux = 1;
 				ce_Acc_aux = 0;
 				val_out_aux = 0;
 			end
 			start_filter:
 			begin
 				ce_Reg_aux = 0;
- 				rst_Acc = 0;
+ 				rst_Acc_aux = 0;
 				ce_Acc_aux = 1;
 				val_out_aux = 0;
 			end
 			end_filter:
 			begin
 				ce_Reg_aux = 1;
- 				rst_Acc = 0;
+ 				rst_Acc_aux = 0;
 				ce_Acc_aux = 1;
 				val_out_aux = 1;
 			end	 
 			default:
 			begin
 				ce_Reg = 0;
- 				rst_Acc = 1;
+ 				rst_Acc_aux = 1;
 				ce_Acc_aux = 0;
 				val_out_aux = 0;
 			end 
@@ -112,6 +111,7 @@ module CONTROL
 		ce_Acc <= ce_Acc_aux;
 		ce_Reg <= ce_Reg_aux;
 		val_out <= val_out_aux;
+		rst_Acc <= rst_Acc_aux;
 	end
 
  //Defining log2 function

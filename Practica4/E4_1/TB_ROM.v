@@ -10,10 +10,11 @@ parameter PER=10; // CLOCK PERIOD
 
 // Variables de entrada
 reg [log2(Num_coef)-1:0] addr;
-reg clk;
+reg clk, val_out;
 
 // Variables de salida
-wire signed [Wc-1:0] data;
+wire signed [Wc-1:0] dout_wire;
+reg signed [Wc-1:0] dout_M, dout_F;
 
 // contadores y control
 integer error_cnt; // contador de errores
@@ -25,7 +26,6 @@ reg end_sim; // Indicación de simulación on/off
 integer parameters_file; //File handlers
 integer scan_parameters; //fscanf error status
 integer parameters_wave; //Variables to save read data 
-reg signed [Wc-1:0] read_perameters; //Variables to save read data 
 
 // contadores de ciclos
 integer i = 0;
@@ -37,19 +37,21 @@ always #(PER/2) clk = !clk&end_sim;
 
 always #(PER) i = i + 1 ;
 
-ROM #(.Wc(Wc), .Num_coef(Num_coef)) UUT 
+ROM /*#(.Wc(Wc), .Num_coef(Num_coef))*/ UUT 
 			(.addr(addr),
 			.clk(clk),
-			.data(data));
+			.data(dout_wire));
 
 initial	
 	begin
-		parameters_file = $fopen("coef.txt", "r");
+		parameters_file = $fopen("C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/coef.txt", "r");
 		clk = 1'b1;
 		sample_cnt = 0;
     	error_cnt = 0;
 		selector = 0;
+		addr = 0;
 		load_data = 0;
+		val_out = 1'b0;
 		end_sim = 1'b1;
 		#(2*PER);
 		$display("Simulation started");
@@ -60,23 +62,31 @@ initial
 always@(posedge clk)
      if (load_data)
          begin
-			 sample_cnt = sample_cnt +1;
-             scan_parameters = $fscanf(parameters_file, "%b\n", parameters_wave);
-             read_perameters <= #(PER) parameters_wave;
-			 addr <= selector;
+			 addr <= #(PER/2)selector;
 			 selector <= selector + 1;
-             if ($feof(parameters_file))
+			 val_out <= #(1*PER) 1'b1;
+         end
+
+// Proceso de lectura de salida 
+always@(posedge clk)
+       if (val_out)
+			begin
+				sample_cnt = sample_cnt +1;
+				scan_parameters = $fscanf(parameters_file, "%b\n", parameters_wave);
+				dout_F <= #(PER/10) parameters_wave;
+				dout_M <= #(PER/10) dout_wire;
+				if ($feof(parameters_file))
 				begin
 					load_data <= #(PER/10) 1'b0;
 					end_sim = #(5*PER) 1'b0;
 					#(4*PER) $stop;
 				end
-         end
-		 			
+			end
+
 // Contador de errores y muestras
-always@(read_perameters, data)
+always@(dout_F, dout_M)
     begin
-	   if (read_perameters != data)
+	   if (dout_F != dout_M)
 			begin
 				error_cnt = error_cnt + 1;
 				$display("Error in sample number ","%d", sample_cnt);

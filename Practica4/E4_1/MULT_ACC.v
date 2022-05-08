@@ -10,19 +10,26 @@ module MULT_ACC
    output signed [Win+Wc-1:0] dout); // salida Win+Wc
 
   //Auxiliar variables
-  wire signed [Win+Wc-1:0]mult_res;
-  reg signed [Win+Wc-1:0]acc_res; // acumulator register
+  wire signed [Win+Wc-1:0] mult_res;
+  reg signed [Win+Wc-1:0] mult_res_reg; // register for segmentation, adds aditional delay to the operation
+  reg signed [Win+Wc-1:0] acc_res; // acumulator register
 
   //Definiendo la MAC sin segmentación, es posible que se necesite posteriormente
   //Realizando la multiplicación
   assign mult_res = din * coef;
-  assign dout = (ce)? acc_res + mult_res : dout;
+  assign dout = (ce)? acc_res + mult_res_reg : dout;
   //acumulador
   always @(posedge clk ) begin
     if (rst) 
+    begin
       acc_res <= 0;
+      mult_res_reg <= 0;
+    end
     else if(ce)
+    begin
       acc_res <= dout;
+      mult_res_reg <= mult_res;
+    end
     
   end
 		

@@ -1,0 +1,198 @@
+# Reading C:/intelFPGA/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Quartus_Simulations_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {Quartus_Simulations_7_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:24:41 on May 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." Quartus_Simulations_7_1200mv_85c_slow.vo 
+# -- Compiling module SEC_FILTER
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	SEC_FILTER
+# End time: 13:24:42 on May 08,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1 {C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:24:42 on May 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1" C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v 
+# -- Compiling module TB_SEC_FILTER
+# 
+# Top level modules:
+# 	TB_SEC_FILTER
+# End time: 13:24:42 on May 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  TB_SEC_FILTER
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" TB_SEC_FILTER 
+# Start time: 13:24:42 on May 08,2022
+# Loading work.TB_SEC_FILTER
+# Loading work.SEC_FILTER
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading cycloneive_ver.cycloneive_mac_mult
+# Loading cycloneive_ver.cycloneive_mac_data_reg
+# Loading cycloneive_ver.cycloneive_mac_sign_reg
+# Loading cycloneive_ver.cycloneive_mac_mult_internal
+# Loading cycloneive_ver.cycloneive_mac_out
+# Loading instances from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SEC_FILTER File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[23] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[22] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[21] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[17] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[0] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[1] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[2] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[3] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[4] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[5] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[6] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[7] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[8] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[10] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[13] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[15] 
+# Number of checked samples         401
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v(90)
+#    Time: 1082880 ns  Iteration: 0  Instance: /TB_SEC_FILTER
+# Break in Module TB_SEC_FILTER at C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v line 90
+restart
+# Loading instances from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# Loading timing data from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SEC_FILTER File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+run -all
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[23] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[22] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[21] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[17] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[0] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[1] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[2] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[3] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[4] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[5] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[6] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[7] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[8] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[10] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[13] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[15] 
+# Number of checked samples         401
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v(90)
+#    Time: 1082880 ns  Iteration: 0  Instance: /TB_SEC_FILTER
+# Break in Module TB_SEC_FILTER at C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v line 90
+restart
+# Loading instances from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# Loading timing data from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SEC_FILTER File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+restart
+# Loading instances from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# Loading timing data from Quartus_Simulations_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SEC_FILTER File: C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+run -all
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[23] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[22] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[21] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[17] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[0] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[1] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[2] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[3] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[4] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[5] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[6] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[7] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[8] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[10] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[13] 
+# ** Error: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_primitives.v(291): $hold( posedge clk &&& reset:2732 ps, sclr:2776 ps, 186 ps );
+#    Time: 2776 ps  Iteration: 0  Instance: /TB_SEC_FILTER/uut/\MULT_ACC0|mult_res_reg[15] 
+# Number of checked samples         401
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v(90)
+#    Time: 1082880 ns  Iteration: 0  Instance: /TB_SEC_FILTER
+# Break in Module TB_SEC_FILTER at C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v line 90
+# End time: 18:10:57 on May 08,2022, Elapsed time: 4:46:15
+# Errors: 48, Warnings: 0
