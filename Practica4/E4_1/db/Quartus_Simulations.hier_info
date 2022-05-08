@@ -1,23 +1,23 @@
-|SEC_FILTER_WRAP
-din[0] => din_reg[0].DATAIN
-din[1] => din_reg[1].DATAIN
-din[2] => din_reg[2].DATAIN
-din[3] => din_reg[3].DATAIN
-din[4] => din_reg[4].DATAIN
-din[5] => din_reg[5].DATAIN
-din[6] => din_reg[6].DATAIN
-din[7] => din_reg[7].DATAIN
-din[8] => din_reg[8].DATAIN
-din[9] => din_reg[9].DATAIN
-din[10] => din_reg[10].DATAIN
-din[11] => din_reg[11].DATAIN
-din[12] => din_reg[12].DATAIN
-din[13] => din_reg[13].DATAIN
-din[14] => din_reg[14].DATAIN
-din[15] => din_reg[15].DATAIN
-clk => clk.IN1
-val_in => val_in_reg.DATAIN
-rst => rst_reg.DATAIN
+|SEC_FILTER
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+din[8] => din[8].IN1
+din[9] => din[9].IN1
+din[10] => din[10].IN1
+din[11] => din[11].IN1
+din[12] => din[12].IN1
+din[13] => din[13].IN1
+din[14] => din[14].IN1
+din[15] => din[15].IN1
+clk => clk.IN4
+val_in => val_in.IN2
+rst => rst.IN1
 val_out << val_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dout[0] << dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dout[1] << dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -40,49 +40,7 @@ dout[17] << dout[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dout[18] << dout[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1
-din[0] => din[0].IN1
-din[1] => din[1].IN1
-din[2] => din[2].IN1
-din[3] => din[3].IN1
-din[4] => din[4].IN1
-din[5] => din[5].IN1
-din[6] => din[6].IN1
-din[7] => din[7].IN1
-din[8] => din[8].IN1
-din[9] => din[9].IN1
-din[10] => din[10].IN1
-din[11] => din[11].IN1
-din[12] => din[12].IN1
-din[13] => din[13].IN1
-din[14] => din[14].IN1
-din[15] => din[15].IN1
-clk => clk.IN4
-val_in => val_in.IN2
-rst => rst.IN1
-val_out <= val_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[4] <= dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[5] <= dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[6] <= dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[7] <= dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[8] <= dout[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[9] <= dout[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[10] <= dout[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[11] <= dout[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[12] <= dout[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[13] <= dout[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[14] <= dout[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[15] <= dout[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[16] <= dout[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[17] <= dout[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-dout[18] <= dout[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1|MULT_ACC:MULT_ACC0
+|SEC_FILTER|MULT_ACC:MULT_ACC0
 din[0] => Mult0.IN15
 din[1] => Mult0.IN14
 din[2] => Mult0.IN13
@@ -391,7 +349,7 @@ dout[32] <= dout[32]$latch.DB_MAX_OUTPUT_PORT_TYPE
 dout[33] <= dout[33]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1|REG_MUX:REG_MUX0
+|SEC_FILTER|REG_MUX:REG_MUX0
 din[0] => SR_9k[0][0].DATAIN
 din[1] => SR_9k[0][1].DATAIN
 din[2] => SR_9k[0][2].DATAIN
@@ -1066,7 +1024,7 @@ dout[14] <= dout[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dout[15] <= dout[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1|ROM:ROM0
+|SEC_FILTER|ROM:ROM0
 addr[0] => ROM.RADDR
 addr[1] => ROM.RADDR1
 addr[2] => ROM.RADDR2
@@ -1110,7 +1068,7 @@ data[16] <= data[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[17] <= data[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1|CONTROL:CONTROL0
+|SEC_FILTER|CONTROL:CONTROL0
 val_in => Selector1.IN2
 val_in => Selector0.IN2
 clk => rst_Acc~reg0.CLK

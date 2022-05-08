@@ -1,5 +1,5 @@
 
-State Machine - |SEC_FILTER_WRAP|SEC_FILTER:SEC_FILTER1|CONTROL:CONTROL0|state
+State Machine - |SEC_FILTER|CONTROL:CONTROL0|state
 Name state.ini_filter state.end_filter state.start_filter 
 state.ini_filter 0 0 0 
 state.start_filter 1 0 1 
