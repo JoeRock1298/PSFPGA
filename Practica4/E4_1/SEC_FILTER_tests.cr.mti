@@ -1,23 +1,23 @@
-./REG_MUX.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module REG_MUX
-
-Top level modules:
-	REG_MUX
-
-} {} {}} ./TB_ROM.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_ROM.v
+./TB_ROM.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_ROM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_ROM
 
 Top level modules:
 	TB_ROM
 
-} {} {}} ./TB_REG_MUX.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_REG_MUX.v
+} {} {}} ./REG_MUX.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/REG_MUX.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_REG_MUX
+-- Compiling module REG_MUX
 
 Top level modules:
-	TB_REG_MUX
+	REG_MUX
+
+} {} {}} ./SEC_FILTER.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SEC_FILTER
+
+Top level modules:
+	SEC_FILTER
 
 } {} {}} ./MULT_ACC.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/MULT_ACC.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -26,12 +26,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	MULT_ACC
 
-} {} {}} ./SEC_FILTER.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/SEC_FILTER.v
+} {} {}} ./TB_REG_MUX.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_REG_MUX.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module SEC_FILTER
+-- Compiling module TB_REG_MUX
 
 Top level modules:
-	SEC_FILTER
+	TB_REG_MUX
+
+} {} {}} ./TB_SEC_FILTER.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_SEC_FILTER
+
+Top level modules:
+	TB_SEC_FILTER
 
 } {} {}} ./CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -47,12 +54,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	TB_MULT_ACC
 
-} {} {}} ./TB_SEC_FILTER.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_SEC_FILTER.v
+} {} {}} ./ROM.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_SEC_FILTER
+-- Compiling module ROM
 
 Top level modules:
-	TB_SEC_FILTER
+	ROM
 
 } {} {}} ./TB_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/TB_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -60,12 +67,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	TB_CONTROL
-
-} {} {}} ./ROM.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/ROM.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ROM
-
-Top level modules:
-	ROM
 
 } {} {}}

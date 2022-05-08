@@ -7,7 +7,7 @@ module ROM
 
 
   // Defining variables
-  (* ramstyle = "M9K" *) reg [Wc-1:0] ROM [Num_coef - 1:0];
+  /*(* ramstyle = "M9K" *)*/ reg [Wc-1:0] ROM [Num_coef - 1:0];
 
   // Adding values to the ROM
   initial

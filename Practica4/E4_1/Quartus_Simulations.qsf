@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY ROM
+set_global_assignment -name TOP_LEVEL_ENTITY SEC_FILTER_WRAP
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:14:56  MAY 04, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Lite Edition"
@@ -56,12 +56,6 @@ set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -sectio
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_SEC_FILTER -section_id TB_SEC_FILTER
 set_global_assignment -name EDA_TEST_BENCH_NAME TB_SEC_FILTER -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name SDC_FILE SEC_FILTER.sdc
-set_global_assignment -name VERILOG_FILE SEC_FILTER.v
-set_global_assignment -name VERILOG_FILE ROM.v
-set_global_assignment -name VERILOG_FILE REG_MUX.v
-set_global_assignment -name VERILOG_FILE MULT_ACC.v
-set_global_assignment -name VERILOG_FILE CONTROL.v
 set_global_assignment -name EDA_TEST_BENCH_NAME TB_CONTROL -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME CONTROL -section_id TB_CONTROL
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_CONTROL -section_id TB_CONTROL
@@ -79,7 +73,15 @@ set_global_assignment -name EDA_TEST_BENCH_FILE TB_CONTROL.v -section_id TB_CONT
 set_global_assignment -name EDA_TEST_BENCH_FILE TB_MULT_ACC.v -section_id TB_MULT_ACC
 set_global_assignment -name EDA_TEST_BENCH_FILE TB_ROM.v -section_id TB_ROM
 set_global_assignment -name EDA_TEST_BENCH_FILE TB_REG_MUX.v -section_id TB_REG_MUX
+set_global_assignment -name VERILOG_FILE SEC_FILTER_WRAP.v
+set_global_assignment -name SDC_FILE SEC_FILTER.sdc
+set_global_assignment -name VERILOG_FILE SEC_FILTER.v
+set_global_assignment -name VERILOG_FILE ROM.v
+set_global_assignment -name VERILOG_FILE REG_MUX.v
+set_global_assignment -name VERILOG_FILE MULT_ACC.v
+set_global_assignment -name VERILOG_FILE CONTROL.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
