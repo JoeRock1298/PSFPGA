@@ -1,7 +1,7 @@
 module REGS_CONF
 	(
 	input [7:0] rxdw, 		// rx dw from RS232
-	input	clk, 		// clk 
+	input  clk, 			// clk 
 	input  load_confregs, 	// load configuration registers
 	input  shift_rxregs, 	// shift rx registers
 	input  load_txregs, 	// load conf_regs in tx_regs
@@ -13,6 +13,18 @@ module REGS_CONF
 	output [15:0] r_im_am,
 	output [15:0] r_im_fm
 	);
+
+// Registos 
+reg [77:0] reg_tx, reg_rx, reg_conf;
+
+always @(clk, shift_rxregs) 
+	if (shift_rxregs == 1'b1)
+		begin
+		reg_conf <= rxdw >>> 8;
+		end
+	
+end
+
 
 
 endmodule 
