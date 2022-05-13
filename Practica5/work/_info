@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5
+vMAIN_CONTROL
+Z1 !s110 1652463346
+!i10b 1
+!s100 =N=oeU_3QNG68Hf=5Qj_D2
+IK9>Cln0hkA>S3Yba70VAY3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1652456128
+8C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v
+FC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1652463346.000000
+!s107 C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@m@a@i@n_@c@o@n@t@r@o@l
+vTB_MAIN_CONTROL
+R1
+!i10b 1
+!s100 [D8S6`ez0<eTQYWB1FoIX0
+ImdjVP[cC5SfK6Na2Hb[dX2
+R2
+R0
+w1652459792
+8C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+FC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!i113 1
+R5
+R6
+n@t@b_@m@a@i@n_@c@o@n@t@r@o@l

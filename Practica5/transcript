@@ -1,0 +1,17 @@
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.TB_MAIN_CONTROL
+# vsim -gui work.TB_MAIN_CONTROL 
+# Start time: 19:35:55 on May 13,2022
+# Loading work.TB_MAIN_CONTROL
+# Loading work.MAIN_CONTROL
+do C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL_waves.do
+run -all
+# Simulation started
+# Simulation finished
+# ** Note: $stop    : C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v(64)
+#    Time: 562 ns  Iteration: 0  Instance: /TB_MAIN_CONTROL
+# Break in Module TB_MAIN_CONTROL at C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v line 64
+# End time: 19:40:54 on May 13,2022, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 0
