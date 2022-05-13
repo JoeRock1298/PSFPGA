@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "start_wr",
+					"strict" : false
+				},
+				{
+					"name" : "start_rd",
+					"strict" : false
+				},
+				{
+					"name" : "sleds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sleds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "done_wr",
+					"strict" : false
+				},
+				{
+					"name" : "rxrdy",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rxdw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "done_rd",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

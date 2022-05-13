@@ -6,9 +6,9 @@ module MAIN_CONTROL
 	input done_rd,
 	input rst, 
 	input clk,
-	output reg start_wr, 
-	output reg start_rd,
-	output reg [2:0] sleds 
+	output start_wr, 
+	output start_rd,
+	output [2:0] sleds 
 );
 
  // Changing the state encoding type to user define
@@ -36,23 +36,23 @@ module MAIN_CONTROL
 		case(state)
 			idle:
 				if ((rxrdy == 1'b1) && (rxdw == 8'h0F)) 
-					next_state <= write;
+					next_state = write;
 				else if ((rxrdy == 1'b1) && (rxdw == 8'hF0)) 
-					next_state <= read;
+					next_state = read;
 				else 
-					next_state <= idle;
+					next_state = idle;
 			write:
 				if (done_wr) 
-					next_state <= idle;
+					next_state = idle;
 				else 
-					next_state <= write;
+					next_state = write;
 			read:
 				if (done_rd)
-					next_state <= idle;
+					next_state = idle;
 				else 
-					next_state <= read;
+					next_state = read;
 			default:
-				next_state <= idle;
+				next_state = idle;
 		endcase
 	end
 

@@ -1,0 +1,6 @@
+
+State Machine - |MAIN_CONTROL|state
+Name state.idle state.read state.write 
+state.idle 0 0 0 
+state.write 1 0 1 
+state.read 1 1 0 

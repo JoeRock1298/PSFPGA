@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri May 13 16:13:22 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Revision Name : Conf_Control
+Top-level Entity Name : MAIN_CONTROL
+Family : Cyclone IV E
+Total logic elements : 13
+    Total combinational functions : 13
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

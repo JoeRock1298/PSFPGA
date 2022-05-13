@@ -1,0 +1,34 @@
+|MAIN_CONTROL
+rxrdy => always1.IN1
+rxrdy => always1.IN1
+rxdw[0] => Equal0.IN3
+rxdw[0] => Equal1.IN7
+rxdw[1] => Equal0.IN2
+rxdw[1] => Equal1.IN6
+rxdw[2] => Equal0.IN1
+rxdw[2] => Equal1.IN5
+rxdw[3] => Equal0.IN0
+rxdw[3] => Equal1.IN4
+rxdw[4] => Equal0.IN7
+rxdw[4] => Equal1.IN3
+rxdw[5] => Equal0.IN6
+rxdw[5] => Equal1.IN2
+rxdw[6] => Equal0.IN5
+rxdw[6] => Equal1.IN1
+rxdw[7] => Equal0.IN4
+rxdw[7] => Equal1.IN0
+done_wr => Selector0.IN1
+done_wr => Selector1.IN2
+done_rd => Selector0.IN2
+done_rd => Selector2.IN2
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+clk => state~1.DATAIN
+start_wr <= start_wr.DB_MAX_OUTPUT_PORT_TYPE
+start_rd <= sleds[0].DB_MAX_OUTPUT_PORT_TYPE
+sleds[0] <= sleds[0].DB_MAX_OUTPUT_PORT_TYPE
+sleds[1] <= sleds[1].DB_MAX_OUTPUT_PORT_TYPE
+sleds[2] <= <GND>
+
+
