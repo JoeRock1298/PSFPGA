@@ -4,11 +4,11 @@ module RD_CONTROL
 	input start_rd,
 	input rst, 
 	input clk,
-	output reg txena,
-	output reg load_txregs,
-	output reg shift_txregs,
-	output reg done_rd,
-	output reg [2:0] rd_leds
+	output txena,
+	output load_txregs,
+	output shift_txregs,
+	output done_rd,
+	output [2:0] rd_leds
 	);
 
 // Changing the state encoding type to user define
@@ -53,9 +53,9 @@ module RD_CONTROL
 	begin
 		next_state <= idle_r;
 		case(state)
-			idle_r:
+			idle_w:
 				if ((txbusy == 1'b0) && (start_rd == 1'b1)) 
-					next_state <= busy;
+					next_state <= start;
 				else 
 					next_state <= idle_r;
 			busy:

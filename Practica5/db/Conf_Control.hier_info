@@ -1,34 +1,27 @@
-|MAIN_CONTROL
-rxrdy => always1.IN1
-rxrdy => always1.IN1
-rxdw[0] => Equal0.IN3
-rxdw[0] => Equal1.IN7
-rxdw[1] => Equal0.IN2
-rxdw[1] => Equal1.IN6
-rxdw[2] => Equal0.IN1
-rxdw[2] => Equal1.IN5
-rxdw[3] => Equal0.IN0
-rxdw[3] => Equal1.IN4
-rxdw[4] => Equal0.IN7
-rxdw[4] => Equal1.IN3
-rxdw[5] => Equal0.IN6
-rxdw[5] => Equal1.IN2
-rxdw[6] => Equal0.IN5
-rxdw[6] => Equal1.IN1
-rxdw[7] => Equal0.IN4
-rxdw[7] => Equal1.IN0
-done_wr => Selector0.IN1
-done_wr => Selector1.IN2
-done_rd => Selector0.IN2
-done_rd => Selector2.IN2
+|RD_CONTROL
+txbusy => always2.IN1
+txbusy => always2.IN1
+txbusy => always2.IN0
+start_rd => always2.IN1
 rst => state.OUTPUTSELECT
 rst => state.OUTPUTSELECT
 rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
 clk => state~1.DATAIN
-start_wr <= start_wr.DB_MAX_OUTPUT_PORT_TYPE
-start_rd <= sleds[0].DB_MAX_OUTPUT_PORT_TYPE
-sleds[0] <= sleds[0].DB_MAX_OUTPUT_PORT_TYPE
-sleds[1] <= sleds[1].DB_MAX_OUTPUT_PORT_TYPE
-sleds[2] <= <GND>
+txena <= shift_txregs.DB_MAX_OUTPUT_PORT_TYPE
+load_txregs <= rd_leds[2].DB_MAX_OUTPUT_PORT_TYPE
+shift_txregs <= shift_txregs.DB_MAX_OUTPUT_PORT_TYPE
+done_rd <= rd_leds[2].DB_MAX_OUTPUT_PORT_TYPE
+rd_leds[0] <= rd_leds.DB_MAX_OUTPUT_PORT_TYPE
+rd_leds[1] <= rd_leds.DB_MAX_OUTPUT_PORT_TYPE
+rd_leds[2] <= rd_leds[2].DB_MAX_OUTPUT_PORT_TYPE
 
 

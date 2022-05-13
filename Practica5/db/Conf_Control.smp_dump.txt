@@ -1,6 +1,7 @@
 
-State Machine - |MAIN_CONTROL|state
-Name state.idle state.read state.write 
-state.idle 0 0 0 
-state.write 1 0 1 
-state.read 1 1 0 
+State Machine - |RD_CONTROL|state
+Name state.load state.shift state.busy state.idle_r 
+state.idle_r 0 0 0 0 
+state.busy 0 0 1 1 
+state.shift 0 1 0 1 
+state.load 1 0 0 1 
