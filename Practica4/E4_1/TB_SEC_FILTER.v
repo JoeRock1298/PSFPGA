@@ -33,12 +33,12 @@ reg end_sim; // Indicación de simulación on/off
 // Gestion I/O texto
 integer data_in_file, data_out_file; //File handlers
 integer scan_data_in, scan_data_out; //fscanf error status
-integer din_wave,dout_wave; //Variables to save read data
+integer din_wave; //Variables to save read data
 //Variables to save read data  
 /* salida precision completa */
 //reg signed [Win+Wc-1:0] dout_wave;
 /* salida truncada a 19 bits */
-//reg signed [Win+2:0] dout_wave; 
+reg signed [Win+2:0] dout_wave; 
 
 // clock
  always #(PER/2) clk = !clk&end_sim;
@@ -57,8 +57,8 @@ integer din_wave,dout_wave; //Variables to save read data
 // Proceso initial
 // Proceso de configuración del sistema
 initial begin
-    data_in_file = $fopen("C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/s_FC_CIC_in.txt", "r");
-    data_out_file = $fopen("C:/Users/gsandar/Documents/Github/PSFPGA/Practica4/E4_1/s_FC_CIC_out1.txt", "r");
+    data_in_file = $fopen("C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/s_FC_CIC_in.txt", "r");
+    data_out_file = $fopen("C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica4/E4_1/s_FC_CIC_out1.txt", "r");
 	//Initiating the model
 	clk = 1'b1;
 	val_in = 1'b0;
@@ -80,6 +80,7 @@ always@(posedge clk)
              din <= din_wave;
              val_in <= #(PER/10)  1'b1;
 			 val_in <= #(PER+PER/10)  1'b0;
+			 #(250*PER)
 			 repeat(20) @(posedge clk);
              if ($feof(data_in_file))
 				begin

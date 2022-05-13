@@ -10,7 +10,7 @@ sel = 0; %% 0 -> Sin; 1-> Chirp; 2 -> Impulse;
 
 %% Parameters
 fs = 50000; %% Frecuencia de muestreo
-fo = 1000; %% Frecuencia de la señal
+fo = 10000; %% Frecuencia de la señal
 
 Win = 16; %% Cuantificación de los datos de entrada
 Win_f = 15; %% Parte fraccional de los datos de entrada

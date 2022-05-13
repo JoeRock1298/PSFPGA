@@ -23,7 +23,7 @@ always #(PER/2) clk = !clk;
 
 always #(PER) i = i + 1 ;
 
-MULT_ACC #(.Wc(Wc), .Win(Win)) UUT 
+MULT_ACC /*#(.Wc(Wc), .Win(Win))*/ UUT 
 			(.din(din),
 			.coef(coef),
 			.clk(clk),
