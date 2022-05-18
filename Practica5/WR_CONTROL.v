@@ -53,16 +53,16 @@ module WR_CONTROL
 		next_state <= idle_w;
 		case(state)
 			idle_w:
-				if ((rxrdy == 1'b1) && (start_wr == 1'b1)) 
-					next_state <= shift;
-				else if (count > count_end) 
+				if ((count == count_end) && (rxrdy == 1'b1))
 					next_state <= load;
+				else if  ((rxrdy == 1'b1) && (start_wr == 1'b1)) 
+					next_state <= shift;
 				else 
 					next_state <= idle_w;
 			shift:
 				if (rxrdy == 1'b1)
 					next_state <= shift;
-				else if (count > count_end)
+				else if (count == count_end)
 					next_state <= load;
 				else 
 					next_state <= idle_w;

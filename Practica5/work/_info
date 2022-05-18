@@ -7,48 +7,92 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5
+dC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5
 vMAIN_CONTROL
-Z1 !s110 1652463346
+Z0 !s110 1652915767
 !i10b 1
-!s100 =N=oeU_3QNG68Hf=5Qj_D2
-IK9>Cln0hkA>S3Yba70VAY3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1652456128
-8C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v
-FC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v
+!s100 ?7ga<azFAXlKjM3<SzZEg3
+IeHla1g_D`FT^2=e40@dMT1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5
+w1652911430
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1652463346.000000
-!s107 C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v|
+Z4 !s108 1652915767.000000
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 n@m@a@i@n_@c@o@n@t@r@o@l
 vTB_MAIN_CONTROL
-R1
-!i10b 1
-!s100 [D8S6`ez0<eTQYWB1FoIX0
-ImdjVP[cC5SfK6Na2Hb[dX2
-R2
 R0
-w1652459792
-8C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v
-FC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+!i10b 1
+!s100 JLH@LIz?z?9Hh=ST`;HQR1
+IYloI^hbiXjDNLj4NkPAg?0
+R1
+R2
+w1652913950
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v
 L0 3
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
 !i113 1
 R5
 R6
 n@t@b_@m@a@i@n_@c@o@n@t@r@o@l
+vTB_WR_CONTROL
+R0
+!i10b 1
+!s100 ?<LU<?2GOn;mi2C5dYa2e2
+IPfZZ;k1XD_Bi2Q@YOKYNR2
+R1
+R2
+w1652914446
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v|
+!i113 1
+R5
+R6
+n@t@b_@w@r_@c@o@n@t@r@o@l
+vWR_CONTROL
+R0
+!i10b 1
+!s100 E60ib_LGYLhga@LD2;9Qf2
+I]=GZkz?a1XOBUCa^?:J9J2
+R1
+R2
+w1652915760
+8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v
+FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v|
+!i113 1
+R5
+R6
+n@w@r_@c@o@n@t@r@o@l

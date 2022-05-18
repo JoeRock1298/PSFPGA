@@ -59,6 +59,7 @@ module MAIN_CONTROL
  // Defining output logic
 	always @(state) 
 	begin
+		// Señales de start deben ser un pulso?
 		case (state)
 			idle:
 			begin

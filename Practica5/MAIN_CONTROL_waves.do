@@ -20,11 +20,11 @@ add wave -noupdate /TB_MAIN_CONTROL/rst
 add wave -noupdate -divider Inputs
 add wave -noupdate /TB_MAIN_CONTROL/rxrdy
 add wave -noupdate -radix hexadecimal /TB_MAIN_CONTROL/rxdw
-add wave -noupdate /TB_MAIN_CONTROL/start_wr
-add wave -noupdate /TB_MAIN_CONTROL/start_rd
-add wave -noupdate -divider Outputs
 add wave -noupdate /TB_MAIN_CONTROL/done_wr
 add wave -noupdate /TB_MAIN_CONTROL/done_rd
+add wave -noupdate -divider Outputs
+add wave -noupdate /TB_MAIN_CONTROL/start_wr
+add wave -noupdate /TB_MAIN_CONTROL/start_rd
 add wave -noupdate -radix SLEDS /TB_MAIN_CONTROL/sleds
 add wave -noupdate -divider UUT
 add wave -noupdate -expand -group UUT -divider System
@@ -43,7 +43,7 @@ add wave -noupdate -expand -group UUT -divider States
 add wave -noupdate -expand -group UUT -radix STATES /TB_MAIN_CONTROL/UUT/state
 add wave -noupdate -expand -group UUT -radix STATES /TB_MAIN_CONTROL/UUT/next_state
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {303380 ps} 0}
+WaveRestoreCursors {{Cursor 1} {452000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 249
 configure wave -valuecolwidth 100

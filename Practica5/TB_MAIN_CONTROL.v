@@ -43,23 +43,23 @@ module TB_MAIN_CONTROL();
 			done_wr = 1'b0;
 			rxdw = 0;
 			#(10*PER);
-			rst = 1'b0;
+			rst <= 1'b0;
 			$display("Simulation started");
 			rd_wr_command(1); // sending a read command
-			#(PER);
+			#(3*PER);
 			rd_wr_command(1); // sending a command to see that we don't change the state
-			#(10*PER); // By now, the config data should have been written
-			done_rd  = 1;
+			#(9*PER); // By now, the config data should have been written
+			done_rd <= 1;
 			#(PER);
-			done_rd = 0;
+			done_rd <= 0;
 			#(PER);
 			rd_wr_command(0); // sending a write command
-			#(PER);
+			#(3*PER);
 			rd_wr_command(0); // sending a command to see that we don't change the state
-			#(10*PER); // By now, the config data should have been written
-			done_wr  = 1;
+			#(9*PER); // By now, the config data should have been written
+			done_wr <= 1;
 			#(PER);
-			done_wr = 0;
+			done_wr <= 0;
 			$display("Simulation finished");
 			#(PER*10) $stop;
 		end
@@ -69,21 +69,17 @@ module TB_MAIN_CONTROL();
 			@(posedge clk)
 			begin
 				rxdw <= 8'hF0;
-				#(PER+PER/10);
-				rxrdy <= 1;
-				#(PER+PER/10);
-				rxrdy <= 0;
-				rxdw <= 8'h00;
+				rxrdy <= #(PER+PER/10) 1;
+				rxrdy <= #(2*PER+PER/10) 0;
+				rxdw <= #(2*PER+PER/10) 8'h00;
 			end
 		else if (!wr_rd)
 			@(posedge clk)
 			begin
 				rxdw <= 8'h0F;
-				#(PER+PER/10);
-				rxrdy <= 1;
-				#(PER+PER/10);
-				rxrdy <= 0;
-				rxdw <= 8'h00;
+				rxrdy <= #(PER+PER/10) 1;
+				rxrdy <= #(2*PER+PER/10) 0;
+				rxdw <= #(2*PER+PER/10) 8'h00;
 			end
 	end
 	endtask

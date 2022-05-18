@@ -1,15 +1,29 @@
-./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL.v
+./WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module WR_CONTROL
+
+Top level modules:
+	WR_CONTROL
+
+} {} {}} ./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MAIN_CONTROL
 
 Top level modules:
 	MAIN_CONTROL
 
-} {} {}} ./TB_MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+} {} {}} ./TB_MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_MAIN_CONTROL
 
 Top level modules:
 	TB_MAIN_CONTROL
+
+} {} {}} ./TB_WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_WR_CONTROL
+
+Top level modules:
+	TB_WR_CONTROL
 
 } {} {}}
