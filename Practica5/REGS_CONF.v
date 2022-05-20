@@ -53,11 +53,11 @@ begin
 end 
 
 // Write
-assign r_control = reg_rx[87:80];
-assign r_im_fm = reg_rx[79:64];
-assign r_im_am = reg_rx[63:48];
-assign r_frec_por = reg_rx[47:24];
-assign r_frec_mod = reg_rx[23:0];
+assign r_control = reg_conf[87:80];
+assign r_im_fm = reg_conf[79:64];
+assign r_im_am = reg_conf[63:48];
+assign r_frec_por = reg_conf[47:24];
+assign r_frec_mod = reg_conf[23:0];
 
 
 endmodule 
