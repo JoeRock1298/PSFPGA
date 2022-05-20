@@ -15,10 +15,10 @@ module RD_CONTROL
     (*syn_encoding="user"*)
 
 // Declare states
-	parameter idle_r = 2'b00, busy = 2'b01, shift = 2'b010, load = 2'b11;
+	parameter idle_r = 3'b000, load = 3'b001 write = 3'b010, rest = 3'b011, shift = 3'b100, exit= 3'b101;
 
  // Declare state registers
-	reg [1:0] state, next_state;
+	reg [2:0] state, next_state;
 
  // Defining state trancision
 	always @(posedge clk) 
@@ -41,7 +41,7 @@ module RD_CONTROL
 			begin
 				if (state == shift)
 					count <= count + 1'b1;
-				else if (state == load)
+				else if (state == exit)
 					count <= 4'h0;
 				else 
 					count <= count;
@@ -55,19 +55,24 @@ module RD_CONTROL
 		case(state)
 			idle_r:
 				if ((txbusy == 1'b0) && (start_rd == 1'b1)) 
-					next_state <= busy;
+					next_state <= load;
 				else 
 					next_state <= idle_r;
-			busy:
-				if ((count < count_end) && (txbusy == 1'b0))
-					next_state <= shift;					
-				else if ((count >= count_end) && (txbusy == 1'b0))
-					next_state <= load;		
+			load: 
+				next_state <= write;
+			write:
+				next_state <= rest;	
+			rest:
+				if ((txbusy == 1'b0)) 
+					next_state <= rest;
 				else 
-					next_state <= busy;	
+					next_state <= shift;
 			shift:
-				next_state <= busy;
-			load:
+				if (count == count_end) 
+					next_state <= exit;
+				else 
+					next_state <= write;				
+			exit:
 				next_state <= idle_r;
 			default:
 				next_state <= idle_r;
@@ -86,29 +91,45 @@ module RD_CONTROL
 				done_rd = 1'b0;
 				rd_leds = 3'b001;
 			end
-			busy:
-			begin
-				txena = 1'b0;
-				load_txregs = 1'b0;
- 				shift_txregs = 1'b0;
-				done_rd = 1'b0;
-				rd_leds = 3'b010;
-			end
-			shift:
-			begin
-				txena = 1'b1;
-				load_txregs = 1'b0;
- 				shift_txregs = 1'b1;
-				done_rd = 1'b0;
-				rd_leds = 3'b011;
-			end
 			load:
 			begin
 				txena = 1'b0;
 				load_txregs = 1'b1;
  				shift_txregs = 1'b0;
-				done_rd = 1'b1;
+				done_rd = 1'b0;
+				rd_leds = 3'b010;
+			end			
+			write:
+			begin
+				txena = 1'b1;
+				load_txregs = 1'b0;
+ 				shift_txregs = 1'b0;
+				done_rd = 1'b0;
+				rd_leds = 3'b011;
+			end
+			rest:
+			begin
+				txena = 1'b1;
+				load_txregs = 1'b0;
+ 				shift_txregs = 1'b0;
+				done_rd = 1'b0;
 				rd_leds = 3'b100;
+			end
+			shift:
+			begin
+				txena = 1'b0;
+				load_txregs = 1'b0;
+ 				shift_txregs = 1'b1;
+				done_rd = 1'b0;
+				rd_leds = 3'b101;
+			end	
+			exit:
+			begin
+				txena = 1'b0;
+				load_txregs = 1'b0;
+ 				shift_txregs = 1'b0;
+				done_rd = 1'b1;
+				rd_leds = 3'b110;
 			end	 
 			default:
 			begin

@@ -15,16 +15,46 @@ module REGS_CONF
 	);
 
 // Registos 
-reg [77:0] reg_tx, reg_rx, reg_conf;
+reg [77:0] reg_tx = 0;
+reg [77:0] reg_rx = 0;
+reg [77:0] reg_conf = 0;
+
+// Shift Register RX
+assign reg_rx[77:69] = rxdw;
 
 always @(clk, shift_rxregs) 
+begin
 	if (shift_rxregs == 1'b1)
-		begin
-		reg_conf <= rxdw >>> 8;
-		end
-	
-end
+		reg_rx <= reg_rx >>> 8;
+	else 
+		reg_rx <= reg_rx;
+end 
 
+// Configuration Register
+always @(clk, load_confregs) 
+begin
+	if (load_confregs == 1'b1)
+		reg_conf <= reg_rx;
+	else 
+		reg_conf <= reg_conf;
+end 
+	
+// Shift Register TX
+assign txdw = reg_tx[7:0];
+
+always @(clk, load_confregs, shift_txregs) 
+begin
+	if (load_txregs == 1'b1)
+		reg_tx <= reg_conf;
+	else if (shift_txregs == 1'b1)
+		reg_tx <= reg_tx >>> 8;
+	else 
+		reg_tx <= reg_tx;	
+end 
+
+// Write
+
+assign reg_rx[77:69] = rxdw;
 
 
 endmodule 
