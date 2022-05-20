@@ -1,15 +1,17 @@
 onerror {resume}
-radix define SLEDS {
-    "3'b001" "IDLE",
-    "3'b011" "WRITE",
-    "3'b010" "READ",
-    "3'b111" "ERROR",
-    -default default
-}
 radix define STATES {
     "2'b00" "IDLE",
     "2'b01" "WRITE",
     "2'b10" "READ",
+    "2'b11" "REST",
+    -default default
+}
+radix define SLEDS {
+    "3'b001" "IDLE",
+    "3'b011" "WRITE",
+    "3'b010" "READ",
+    "3'b100" "REST",
+    "3'b111" "ERROR",
     -default default
 }
 quietly WaveActivateNextPane {} 0
@@ -43,7 +45,7 @@ add wave -noupdate -expand -group UUT -divider States
 add wave -noupdate -expand -group UUT -radix STATES /TB_MAIN_CONTROL/UUT/state
 add wave -noupdate -expand -group UUT -radix STATES /TB_MAIN_CONTROL/UUT/next_state
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {452000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {151259 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 249
 configure wave -valuecolwidth 100
@@ -59,4 +61,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {590100 ps}
+WaveRestoreZoom {0 ps} {493500 ps}

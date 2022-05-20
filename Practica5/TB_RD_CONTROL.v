@@ -1,18 +1,18 @@
 `timescale 1ns/1ps
 
-module TB_WR_CONTROL();
+module TB_RD_CONTROL();
 
 	parameter PER=10; // CLOCK PERIOD
 
 	// Variables de entrada
 	reg rst;
 	reg clk;
-	reg rxrdy;
-	reg start_wr;
+	reg txbusy;
+	reg start_rd;
 
 	// Variables de salida
-	wire shift_rxregs, done_wr, load_confregs;
-	wire [2:0] wr_leds;
+	wire txena, done_rd, load_txregs, shift_txregs;
+	wire [2:0] rd_leds;
 
 	// contadores de ciclos
 	integer i = 0;
@@ -23,42 +23,47 @@ module TB_WR_CONTROL();
 
 	always #(PER) i = i + 1 ;
 
-	WR_CONTROL UUT 
-				(.rxrdy(rxrdy),
+	RD_CONTROL UUT 
+				(.txbusy(txbusy),
 				.clk(clk),
 				.rst(rst),
-				.start_wr(start_wr),
-				.done_wr(done_wr),
-				.shift_rxregs(shift_rxregs),
-				.load_confregs(load_confregs),
-				.wr_leds(wr_leds));
+				.start_rd(start_rd),
+				.done_rd(done_rd),
+				.shift_txregs(shift_txregs),
+				.load_txregs(load_txregs),
+				.txena(txena),
+				.rd_leds(rd_leds));
 	// Simulando un ciclo de control entero
 	initial	
 		begin
 			clk = 1'b1;
 			rst = 1'b1;
-			rxrdy = 1'b0;
-			start_wr = 1'b0;
+			txbusy = 1'b0;
+			start_rd = 1'b0;
 			#(10*PER);
 			rst = 1'b0;
 			$display("Simulation started");
-			wr_test();
+			rd_test();
 			$display("Simulation finished");
 			#(PER*10) $stop;
 		end
-	task wr_test (); 
+	task rd_test (); 
 	begin
 		// A write control is received
 		@(posedge clk)
 		begin
-			start_wr <= #(PER/10) 1'b1;
-			start_wr <= #(PER + PER/10) 1'b0;
+			// Start received
+			start_rd <= #(PER/10) 1'b1;
+			start_rd <= #(PER + PER/10) 1'b0;
 			#(PER);
+			//writing loop
 			for (n_bytes = 0; n_bytes <= 11; n_bytes = n_bytes + 1) 
 			begin
+				txena <= #(PER/10) 1'b1;
+				txena <= #(PER + PER/10) 1'b0;
+				txbusy <= 1'b1;
 				#(PER*10);
-				rxrdy <= #(PER/10) 1'b1;
-				rxrdy <= #(PER) 1'b0;
+				txbusy <= 1'b0;
 			end
 		end
 	end

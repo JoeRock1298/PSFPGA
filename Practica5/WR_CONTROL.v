@@ -23,7 +23,7 @@ module WR_CONTROL
 	always @(posedge clk) 
 	begin
 		if (rst)
-			state <= idle_w;	
+			state <= start;	
 		else
 			state <= next_state;	
 	end

@@ -15,7 +15,7 @@ module RD_CONTROL
     (*syn_encoding="user"*)
 
 // Declare states
-	parameter idle_r = 3'b000, load = 3'b001 write = 3'b010, rest = 3'b011, shift = 3'b100, exit= 3'b101;
+	parameter idle_r = 3'b000, load = 3'b001, write = 3'b010, rest = 3'b011, shift = 3'b100, exit= 3'b101;
 
  // Declare state registers
 	reg [2:0] state, next_state;
