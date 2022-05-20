@@ -1,7 +1,9 @@
 
 State Machine - |RD_CONTROL|state
-Name state.load state.shift state.busy state.idle_r 
-state.idle_r 0 0 0 0 
-state.busy 0 0 1 1 
-state.shift 0 1 0 1 
-state.load 1 0 0 1 
+Name state.exit state.shift state.rest state.write state.load state.idle_r 
+state.idle_r 0 0 0 0 0 0 
+state.load 0 0 0 0 1 1 
+state.write 0 0 0 1 0 1 
+state.rest 0 0 1 0 0 1 
+state.shift 0 1 0 0 0 1 
+state.exit 1 0 0 0 0 1 

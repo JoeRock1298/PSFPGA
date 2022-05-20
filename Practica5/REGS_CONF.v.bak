@@ -20,13 +20,12 @@ reg [87:0] reg_rx = 0;
 reg [87:0] reg_conf = 0;
 
 // Shift Register RX
+assign reg_rx[87:79] = rxdw;
+
 always @(clk, shift_rxregs) 
 begin
 	if (shift_rxregs == 1'b1)
-	begin 
-		reg_rx[87:79] <= rxdw;
 		reg_rx <= reg_rx >>> 8;
-	end
 	else 
 		reg_rx <= reg_rx;
 end 
