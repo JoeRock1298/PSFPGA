@@ -1,10 +1,4 @@
-./TB_RD_CONTROL.v {0 {vlog -work work -stats=none {C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica5\TB_RD_CONTROL.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_RD_CONTROL
-** Error: C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica5\TB_RD_CONTROL.v(62): (vlog-2110) Illegal reference to net "txena".
-** Error: C:\Users\jose_\Documents\UPV\MUISE_21_22\PSFPGA\Practica5\TB_RD_CONTROL.v(63): (vlog-2110) Illegal reference to net "txena".
-
-} {4.0 6.0} {}} ./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
+./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MAIN_CONTROL
 

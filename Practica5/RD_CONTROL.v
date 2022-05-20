@@ -59,14 +59,14 @@ module RD_CONTROL
 				else 
 					next_state <= idle_r;
 			load: 
+				next_state <= write;	
+			write:
 				if ((txbusy == 1'b0)) 
 					next_state <= write;
 				else 
 					next_state <= rest;
-			write:
-				next_state <= rest;	
 			rest:
-				if ((txbusy == 1'b0)) 
+				if ((txbusy == 1'b1)) 
 					next_state <= rest;
 				else 
 					next_state <= shift;
@@ -112,7 +112,7 @@ module RD_CONTROL
 			end
 			rest:
 			begin
-				txena = 1'b1;
+				txena = 1'b0;
 				load_txregs = 1'b0;
  				shift_txregs = 1'b0;
 				done_rd = 1'b0;

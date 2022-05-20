@@ -49,7 +49,8 @@ module TB_RD_CONTROL();
 		end
 	task rd_test (); 
 	begin
-		// A write control is received
+		// A read control is received
+		// This could be also implemented with a fork join structure
 		@(posedge clk)
 		begin
 			// Start received
@@ -57,13 +58,13 @@ module TB_RD_CONTROL();
 			start_rd <= #(PER + PER/10) 1'b0;
 			#(PER);
 			//writing loop
-			for (n_bytes = 0; n_bytes <= 11; n_bytes = n_bytes + 1) 
+			for (n_bytes = 0; n_bytes < 10; n_bytes = n_bytes + 1) 
 			begin
-				txena <= #(PER/10) 1'b1;
-				txena <= #(PER + PER/10) 1'b0;
-				txbusy <= 1'b1;
-				#(PER*10);
-				txbusy <= 1'b0;
+				if(!done_rd)
+					@(posedge txena)
+						txbusy <= 1'b1;
+						#(PER*10);
+						txbusy <= 1'b0;
 			end
 		end
 	end
