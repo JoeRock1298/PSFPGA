@@ -59,7 +59,10 @@ module RD_CONTROL
 				else 
 					next_state <= idle_r;
 			load: 
-				next_state <= write;
+				if ((txbusy == 1'b0)) 
+					next_state <= write;
+				else 
+					next_state <= rest;
 			write:
 				next_state <= rest;	
 			rest:
