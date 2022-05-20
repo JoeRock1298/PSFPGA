@@ -58,7 +58,7 @@ module TB_RD_CONTROL();
 			start_rd <= #(PER + PER/10) 1'b0;
 			#(PER);
 			//writing loop
-			for (n_bytes = 0; n_bytes < 10; n_bytes = n_bytes + 1) 
+			for (n_bytes = 0; n_bytes < 11; n_bytes = n_bytes + 1) 
 			begin
 				if(!done_rd)
 					@(posedge txena)

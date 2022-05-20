@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5
 vMAIN_CONTROL
-Z0 !s110 1653062551
+Z0 !s110 1653063937
 !i10b 1
 !s100 SBG=Sokjj7Zo>>:<h:CMI3
 I8k1F:4AKdN]WXC;8KTA1[2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1653062551.000000
+Z4 !s108 1653063937.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v|
 !i113 1
@@ -53,7 +53,7 @@ R5
 R6
 n@r@d_@c@o@n@t@r@o@l
 vTB_MAIN_CONTROL
-Z7 !s110 1653062552
+R0
 !i10b 1
 !s100 JLH@LIz?z?9Hh=ST`;HQR1
 IYloI^hbiXjDNLj4NkPAg?0
@@ -75,13 +75,13 @@ R5
 R6
 n@t@b_@m@a@i@n_@c@o@n@t@r@o@l
 vTB_RD_CONTROL
-R7
+Z7 !s110 1653063938
 !i10b 1
 !s100 RSXR0oJ?M]5>NI64[PmG82
 IfEjT>=COOJdbU8UbmC?R]1
 R1
 R2
-w1653062541
+w1653063934
 8C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_RD_CONTROL.v
 FC:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_RD_CONTROL.v
 L0 3
@@ -89,7 +89,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1653062552.000000
+Z8 !s108 1653063938.000000
 !s107 C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_RD_CONTROL.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_RD_CONTROL.v|
 !i113 1
