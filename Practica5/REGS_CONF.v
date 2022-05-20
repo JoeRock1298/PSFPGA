@@ -15,50 +15,62 @@ module REGS_CONF
 	);
 
 // Registos 
-reg [87:0] reg_tx = 0;
-reg [87:0] reg_rx = 0;
-reg [87:0] reg_conf = 0;
+reg [7:0] reg_tx [10:0];
+reg [7:0] reg_rx [10:0];
+reg [7:0] reg_conf [10:0];
+reg delay;
+
+integer i;
 
 // Shift Register RX
-always @(clk, shift_rxregs) 
+always @(posedge clk) 
 begin
-	if (shift_rxregs == 1'b1)
-	begin 
-		reg_rx[87:79] <= rxdw;
-		reg_rx <= reg_rx >>> 8;
+	reg_rx[0] <= rxdw;
+	if (shift_rxregs)
+	begin
+		for (i = 10; i > 0; i= i-1)
+			reg_rx[i] <= reg_rx[i-1];
 	end
-	else 
-		reg_rx <= reg_rx;
 end 
 
 // Configuration Register
-always @(clk, load_confregs) 
+// ADD latency for proper funtion
+always @(posedge clk)
 begin
-	if (load_confregs == 1'b1)
-		reg_conf <= reg_rx;
-	else 
-		reg_conf <= reg_conf;
-end 
-	
-// Shift Register TX
-assign txdw = reg_tx[7:0];
+	delay = load_confregs;
+end
 
-always @(clk, load_confregs, shift_txregs) 
+always @(posedge clk) 
+begin
+	if (delay)
+	begin 
+		for(i = 0; i < 11; i = i + 1)
+			reg_conf[i] <= reg_rx[i];
+	end 
+end 
+
+// Shift Register TX
+assign txdw = reg_tx[10];
+
+always @(posedge clk) 
 begin
 	if (load_txregs == 1'b1)
-		reg_tx <= reg_conf;
+	begin 
+		for(i = 0; i < 11; i = i + 1)
+			reg_tx[i] <= reg_conf[i];
+	end
 	else if (shift_txregs == 1'b1)
-		reg_tx <= reg_tx >>> 8;
-	else 
-		reg_tx <= reg_tx;	
+	begin 
+		for (i = 10; i > 0; i= i-1)
+			reg_tx[i] <= reg_tx[i-1];
+	end 
 end 
 
 // Write
-assign r_control = reg_conf[87:80];
-assign r_im_fm = reg_conf[79:64];
-assign r_im_am = reg_conf[63:48];
-assign r_frec_por = reg_conf[47:24];
-assign r_frec_mod = reg_conf[23:0];
-
+assign r_control = reg_conf[0];
+assign r_im_fm = {reg_conf[1],reg_conf[2]};
+assign r_im_am = {reg_conf[3],reg_conf[4]};
+assign r_frec_por = {reg_conf[5],reg_conf[6],reg_conf[7]};
+assign r_frec_mod = {reg_conf[8],reg_conf[9],reg_conf[10]};
 
 endmodule 

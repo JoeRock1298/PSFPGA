@@ -1,17 +1,874 @@
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
 # Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
 # Compile of TB_MAIN_CONTROL.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.TB_MAIN_CONTROL
-# vsim -gui work.TB_MAIN_CONTROL 
-# Start time: 19:35:55 on May 13,2022
-# Loading work.TB_MAIN_CONTROL
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.CONF_CONTROL_TB
+# vsim -gui work.CONF_CONTROL_TB 
+# Start time: 18:34:07 on May 20,2022
+# Loading sv_std.std
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# ** Error: (vsim-3033) C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v(27): Instantiation of 'REGS_CONF' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /CONF_CONTROL_TB/DUT File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+#         Searched libraries:
+#             C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/work
+# ** Error: (vsim-3033) C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v(42): Instantiation of 'CONTROL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /CONF_CONTROL_TB/DUT File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+#         Searched libraries:
+#             C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/work
+# Error loading design
+# End time: 18:34:07 on May 20,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 12 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.CONF_CONTROL_TB
+# vsim -gui work.CONF_CONTROL_TB 
+# Start time: 18:36:26 on May 20,2022
+# Loading sv_std.std
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# ** Error: (vsim-3033) C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v(42): Instantiation of 'CONTROL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /CONF_CONTROL_TB/DUT File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+#         Searched libraries:
+#             C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/work
+# Error loading design
+# End time: 18:36:26 on May 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.CONF_CONTROL_TB
+# vsim -gui work.CONF_CONTROL_TB 
+# Start time: 18:37:07 on May 20,2022
+# Loading sv_std.std
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
 # Loading work.MAIN_CONTROL
-do C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/MAIN_CONTROL_waves.do
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+do C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.do
 run -all
-# Simulation started
-# Simulation finished
-# ** Note: $stop    : C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v(64)
-#    Time: 562 ns  Iteration: 0  Instance: /TB_MAIN_CONTROL
-# Break in Module TB_MAIN_CONTROL at C:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5/TB_MAIN_CONTROL.v line 64
-# End time: 19:40:54 on May 13,2022, Elapsed time: 0:04:59
-# Errors: 0, Warnings: 0
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+add wave -position insertpoint  \
+sim:/CONF_CONTROL_TB/DUT/C3/rxdw \
+sim:/CONF_CONTROL_TB/DUT/C3/txena \
+sim:/CONF_CONTROL_TB/DUT/C3/rxrdy \
+sim:/CONF_CONTROL_TB/DUT/C3/txbusy \
+sim:/CONF_CONTROL_TB/DUT/C3/load_confregs \
+sim:/CONF_CONTROL_TB/DUT/C3/shift_rxregs \
+sim:/CONF_CONTROL_TB/DUT/C3/load_txregs \
+sim:/CONF_CONTROL_TB/DUT/C3/shift_txregs
+restart
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+add wave -position insertpoint  \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_tx \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_rx \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_conf
+restart
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+add wave -position insertpoint  \
+sim:/CONF_CONTROL_TB/DUT/C2/rxdw \
+sim:/CONF_CONTROL_TB/DUT/C2/clk \
+sim:/CONF_CONTROL_TB/DUT/C2/load_confregs \
+sim:/CONF_CONTROL_TB/DUT/C2/shift_rxregs \
+sim:/CONF_CONTROL_TB/DUT/C2/load_txregs \
+sim:/CONF_CONTROL_TB/DUT/C2/shift_txregs \
+sim:/CONF_CONTROL_TB/DUT/C2/txdw \
+sim:/CONF_CONTROL_TB/DUT/C2/r_control \
+sim:/CONF_CONTROL_TB/DUT/C2/r_frec_mod \
+sim:/CONF_CONTROL_TB/DUT/C2/r_frec_por \
+sim:/CONF_CONTROL_TB/DUT/C2/r_im_am \
+sim:/CONF_CONTROL_TB/DUT/C2/r_im_fm \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_tx \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_rx \
+sim:/CONF_CONTROL_TB/DUT/C2/reg_conf
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# WARNING: No extended dataflow license exists
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Load canceled
+# Load canceled
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v failed with 4 errors.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 1 failed with 4 errors.
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3555 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  0201xx
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  050403
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0706
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0908
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 70
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+#  Data   1 transmitted OK
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+#  Reg frec_mod configured OK
+#  Reg frec_por configured OK
+#  Reg im_am configured OK
+#  Reg im_fm configured OK
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+#  Data   1 transmitted OK
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+#  Reg frec_mod configured OK
+#  Reg frec_por configured OK
+#  Reg im_am configured OK
+#  Reg im_fm configured OK
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: CONF_CONTROL_TB File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 74
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+#  Data   1 transmitted OK
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3835 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3975 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4115 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4255 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4395 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4535 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4675 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4815 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  11
+#    Time: 4955 ps  Scope: CONF_CONTROL_TB.Assert_tx File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+#  Reg frec_mod configured OK
+#  Reg frec_por configured OK
+#  Reg im_am configured OK
+#  Reg im_fm configured OK
+#  Reg r_control configured OK
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# Compile of CONF_CONTROL_VERIFICA.v was successful.
+# Compile of CONF_CONTROL.v was successful.
+# Compile of comm_rs232.vhd was successful.
+# Compile of RS232COM.v was successful.
+# Compile of REGS_CONF.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of MAIN_CONTROL.v was successful.
+# Compile of WR_CONTROL.v was successful.
+# Compile of RD_CONTROL.v was successful.
+# Compile of TB_MAIN_CONTROL.v was successful.
+# Compile of TB_WR_CONTROL.v was successful.
+# Compile of TB_RD_CONTROL.v was successful.
+# Compile of CONF_CONTROL_TB.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart
+# Loading work.CONF_CONTROL_TB
+# Loading work.CONF_CONTROL_VERIFICA
+# Loading work.REGS_CONF
+# Loading work.CONTROL
+# Loading work.MAIN_CONTROL
+# Loading work.WR_CONTROL
+# Loading work.RD_CONTROL
+run -all
+#  OK: txena is activated properly
+#  Data   1 transmitted OK
+#  OK: txena is activated properly
+#  Data   2 transmitted OK
+#  OK: txena is activated properly
+#  Data   3 transmitted OK
+#  OK: txena is activated properly
+#  Data   4 transmitted OK
+#  OK: txena is activated properly
+#  Data   5 transmitted OK
+#  OK: txena is activated properly
+#  Data   6 transmitted OK
+#  OK: txena is activated properly
+#  Data   7 transmitted OK
+#  OK: txena is activated properly
+#  Data   8 transmitted OK
+#  OK: txena is activated properly
+#  Data   9 transmitted OK
+#  OK: txena is activated properly
+#  Data  10 transmitted OK
+#  OK: txena is activated properly
+#  Data  11 transmitted OK
+#  CHECK CONFIGURATION REGISTER ====================
+#  Reg frec_mod configured OK
+#  Reg frec_por configured OK
+#  Reg im_am configured OK
+#  Reg im_fm configured OK
+#  Reg r_control configured OK
+# ** Note: $stop    : C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /CONF_CONTROL_TB
+# Break in Module CONF_CONTROL_TB at C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv line 75
+# End time: 20:15:59 on May 20,2022, Elapsed time: 1:38:52
+# Errors: 162, Warnings: 1

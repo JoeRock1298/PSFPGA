@@ -1,43 +1,95 @@
-./TB_RD_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_RD_CONTROL.v
+./RS232COM.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RS232COM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_RD_CONTROL
+-- Compiling module RS232COM
 
 Top level modules:
-	TB_RD_CONTROL
+	RS232COM
 
-} {} {}} ./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/MAIN_CONTROL.v
+} {} {}} ./REGS_CONF.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module MAIN_CONTROL
+-- Compiling module REGS_CONF
 
 Top level modules:
-	MAIN_CONTROL
+	REGS_CONF
 
-} {} {}} ./WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/WR_CONTROL.v
+} {} {}} ./CONF_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CONF_CONTROL
+
+Top level modules:
+	CONF_CONTROL
+
+} {} {}} ./TB_WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_WR_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_WR_CONTROL
+
+Top level modules:
+	TB_WR_CONTROL
+
+} {} {}} ./CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CONTROL
+
+Top level modules:
+	CONTROL
+
+} {} {}} ./WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/WR_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module WR_CONTROL
 
 Top level modules:
 	WR_CONTROL
 
-} {} {}} ./RD_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/RD_CONTROL.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module RD_CONTROL
-
-Top level modules:
-	RD_CONTROL
-
-} {} {}} ./TB_MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+} {} {}} ./TB_MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_MAIN_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_MAIN_CONTROL
 
 Top level modules:
 	TB_MAIN_CONTROL
 
-} {} {}} ./TB_WR_CONTROL.v {1 {vlog -work work -stats=none C:/Users/jose_/Documents/UPV/MUISE_21_22/PSFPGA/Practica5/TB_WR_CONTROL.v
+} {} {}} ./comm_rs232.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/comm_rs232.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity comm_rs232
+-- Compiling architecture rtl of comm_rs232
+
+} {} {}} ./TB_RD_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_RD_CONTROL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_WR_CONTROL
+-- Compiling module TB_RD_CONTROL
 
 Top level modules:
-	TB_WR_CONTROL
+	TB_RD_CONTROL
+
+} {} {}} ./MAIN_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/MAIN_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MAIN_CONTROL
+
+Top level modules:
+	MAIN_CONTROL
+
+} {} {}} ./CONF_CONTROL_VERIFICA.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CONF_CONTROL_VERIFICA
+
+Top level modules:
+	CONF_CONTROL_VERIFICA
+
+} {} {}} ./RD_CONTROL.v {1 {vlog -work work -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RD_CONTROL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RD_CONTROL
+
+Top level modules:
+	RD_CONTROL
+
+} {} {}} ./CONF_CONTROL_TB.sv {1 {vlog -work work -sv -stats=none C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CONF_CONTROL_TB
+
+Top level modules:
+	CONF_CONTROL_TB
 
 } {} {}}
