@@ -15,7 +15,7 @@ module MAIN_CONTROL
     (*syn_encoding="user"*)
  
  // Declare states
-	parameter idle = 2'b00, write = 2'b01, read = 2'b10;
+	parameter idle = 2'b00, write = 2'b01, read = 2'b10, rest = 2'b11;
 	
  // Declare state registers
 	reg [1:0] state, next_state;
@@ -42,15 +42,14 @@ module MAIN_CONTROL
 				else 
 					next_state <= idle;
 			write:
-				if (done_wr) 
-					next_state <= idle;
-				else 
-					next_state <= write;
+					next_state <= rest;
 			read:
-				if (done_rd)
+					next_state <= rest;
+			rest:
+				if ((done_rd == 1'b1) || (done_wr == 1'b1))
 					next_state <= idle;
 				else 
-					next_state <= read;
+					next_state <= rest;
 			default:
 				next_state <= idle;
 		endcase
@@ -78,6 +77,12 @@ module MAIN_CONTROL
 				start_wr = 1'b0;
  				start_rd = 1'b1;
 				sleds = 3'b010;
+			end	 
+			rest:
+			begin
+				start_wr = 1'b0;
+ 				start_rd = 1'b0;
+				sleds = 3'b100;
 			end	 
 			default:
 			begin

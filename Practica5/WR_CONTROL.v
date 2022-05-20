@@ -14,7 +14,7 @@ module WR_CONTROL
     (*syn_encoding="user"*)
 
 // Declare states
-	parameter idle_w = 2'b00, shift = 2'b01, load = 2'b10;
+	parameter start = 2'b00, idle_w = 2'b01, shift = 2'b10, load = 2'b11;
 
  // Declare state registers
 	reg [1:0] state, next_state;
@@ -50,26 +50,31 @@ module WR_CONTROL
 // Defining next_state logic
 	always @(state, rxrdy, start_wr, count) 
 	begin
-		next_state <= idle_w;
+		next_state <= start;
 		case(state)
+			start:
+				if (start_wr == 1'b1)
+					next_state <= idle_w;
+				else 
+					next_state <= start;
 			idle_w:
 				if ((count == count_end) && (rxrdy == 1'b1))
 					next_state <= load;
-				else if  ((rxrdy == 1'b1) && (start_wr == 1'b1)) 
+				else if  (rxrdy == 1'b1) 
 					next_state <= shift;
 				else 
 					next_state <= idle_w;
 			shift:
 				if (rxrdy == 1'b1)
 					next_state <= shift;
-				else if (count == count_end)
+				else if ((count == count_end) && (rxrdy == 1'b1))
 					next_state <= load;
 				else 
 					next_state <= idle_w;
 			load:
-					next_state <= idle_w;
+					next_state <= start;
 			default:
-				next_state <= idle_w;
+				next_state <= start;
 		endcase
 	end
 
@@ -77,26 +82,33 @@ module WR_CONTROL
 	always @(state) 
 	begin
 		case (state)
-			idle_w:
+			start:
 			begin
 				shift_rxregs = 1'b0;
  				load_confregs = 1'b0;
 				done_wr = 1'b0;
 				wr_leds = 3'b001;
 			end
+			idle_w:
+			begin
+				shift_rxregs = 1'b0;
+ 				load_confregs = 1'b0;
+				done_wr = 1'b0;
+				wr_leds = 3'b010;
+			end
 			shift:
 			begin
 				shift_rxregs = 1'b1;
  				load_confregs = 1'b0;
 				done_wr = 1'b0;
-				wr_leds = 3'b010;
+				wr_leds = 3'b011;
 			end
 			load:
 			begin
 				shift_rxregs = 1'b0;
  				load_confregs = 1'b1;
 				done_wr = 1'b1;
-				wr_leds = 3'b011;
+				wr_leds = 3'b100;
 			end	 
 			default:
 			begin
