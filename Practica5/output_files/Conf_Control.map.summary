@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri May 13 19:12:40 2022
+Analysis & Synthesis Status : Successful - Fri May 20 17:21:36 2022
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : Conf_Control
-Top-level Entity Name : RD_CONTROL
+Top-level Entity Name : REGS_CONF
 Family : Cyclone IV E
-Total logic elements : 16
-    Total combinational functions : 16
-    Dedicated logic registers : 8
-Total registers : 8
-Total pins : 11
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 109
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

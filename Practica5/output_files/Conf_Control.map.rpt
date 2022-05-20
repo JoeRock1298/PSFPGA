@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Conf_Control
-Fri May 13 19:12:40 2022
+Fri May 20 17:21:36 2022
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -13,14 +13,10 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |RD_CONTROL|state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |RD_CONTROL
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +42,16 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                  ;
 +------------------------------------+----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 13 19:12:40 2022                    ;
+; Analysis & Synthesis Status        ; Successful - Fri May 20 17:21:36 2022                    ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
 ; Revision Name                      ; Conf_Control                                             ;
-; Top-level Entity Name              ; RD_CONTROL                                               ;
+; Top-level Entity Name              ; REGS_CONF                                                ;
 ; Family                             ; Cyclone IV E                                             ;
-; Total logic elements               ; 16                                                       ;
-;     Total combinational functions  ; 16                                                       ;
-;     Dedicated logic registers      ; 8                                                        ;
-; Total registers                    ; 8                                                        ;
-; Total pins                         ; 11                                                       ;
+; Total logic elements               ; 0                                                        ;
+;     Total combinational functions  ; 0                                                        ;
+;     Dedicated logic registers      ; 0                                                        ;
+; Total registers                    ; 0                                                        ;
+; Total pins                         ; 109                                                      ;
 ; Total virtual pins                 ; 0                                                        ;
 ; Total memory bits                  ; 0                                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                                        ;
@@ -69,7 +65,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; RD_CONTROL         ; Conf_Control       ;
+; Top-level entity name                                                      ; REGS_CONF          ; Conf_Control       ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,53 +154,51 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; RD_CONTROL.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; REGS_CONF.v                      ; yes             ; User Verilog HDL File  ; C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 16          ;
-;                                             ;             ;
-; Total combinational functions               ; 16          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 7           ;
-;     -- 3 input functions                    ; 5           ;
-;     -- <=2 input functions                  ; 4           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 16          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 8           ;
-;     -- Dedicated logic registers            ; 8           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 11          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; state.shift ;
-; Maximum fan-out                             ; 9           ;
-; Total fan-out                               ; 89          ;
-; Average fan-out                             ; 1.93        ;
-+---------------------------------------------+-------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+;                                             ;         ;
+; Total combinational functions               ; 0       ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 0       ;
+;     -- 3 input functions                    ; 0       ;
+;     -- <=2 input functions                  ; 0       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 0       ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 109     ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; rxdw[0] ;
+; Maximum fan-out                             ; 1       ;
+; Total fan-out                               ; 109     ;
+; Average fan-out                             ; 0.50    ;
++---------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,33 +206,9 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |RD_CONTROL                ; 16 (16)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |RD_CONTROL         ; RD_CONTROL  ; work         ;
+; |REGS_CONF                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |REGS_CONF          ; REGS_CONF   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------+
-; State Machine - |RD_CONTROL|state                                   ;
-+--------------+------------+-------------+------------+--------------+
-; Name         ; state.load ; state.shift ; state.busy ; state.idle_r ;
-+--------------+------------+-------------+------------+--------------+
-; state.idle_r ; 0          ; 0           ; 0          ; 0            ;
-; state.busy   ; 0          ; 0           ; 1          ; 1            ;
-; state.shift  ; 0          ; 1           ; 0          ; 1            ;
-; state.load   ; 1          ; 0           ; 0          ; 1            ;
-+--------------+------------+-------------+------------+--------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; state~2                               ; Lost fanout        ;
-; state~3                               ; Lost fanout        ;
-; Total Number of Removed Registers = 2 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -246,36 +216,14 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |RD_CONTROL|count[3]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |RD_CONTROL ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; idle_r         ; 00    ; Unsigned Binary                                   ;
-; busy           ; 01    ; Unsigned Binary                                   ;
-; shift          ; 10    ; Unsigned Binary                                   ;
-; load           ; 11    ; Unsigned Binary                                   ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -283,19 +231,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 11                          ;
-; cycloneiii_ff         ; 8                           ;
-;     ENA               ; 4                           ;
-;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 17                          ;
-;     normal            ; 17                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 7                           ;
+; boundary_port         ; 109                         ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.79                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -314,25 +256,409 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Fri May 13 19:12:31 2022
+    Info: Processing started: Fri May 20 17:21:26 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Conf_Control -c Conf_Control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file rd_control.v
-    Info (12023): Found entity 1: RD_CONTROL File: C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v Line: 1
-Info (12127): Elaborating entity "RD_CONTROL" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (12021): Found 1 design units, including 1 entities, in source file regs_conf.v
+    Info (12023): Found entity 1: REGS_CONF File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 1
+Info (12127): Elaborating entity "REGS_CONF" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(27): variable "rxdw" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 27
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(28): variable "reg_rx" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 28
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(31): variable "reg_rx" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at REGS_CONF.v(23): inferring latch(es) for variable "reg_rx", which holds its previous value in one or more paths through the always construct File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(38): variable "reg_rx" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 38
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(40): variable "reg_conf" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at REGS_CONF.v(35): inferring latch(es) for variable "reg_conf", which holds its previous value in one or more paths through the always construct File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(48): variable "load_txregs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 48
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(49): variable "reg_conf" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 49
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(51): variable "reg_tx" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 51
+Warning (10235): Verilog HDL Always Construct warning at REGS_CONF.v(53): variable "reg_tx" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 53
+Warning (10240): Verilog HDL Always Construct warning at REGS_CONF.v(46): inferring latch(es) for variable "reg_tx", which holds its previous value in one or more paths through the always construct File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[0]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[1]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[2]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[3]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[4]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[5]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[6]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[7]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[8]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[9]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[10]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[11]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[12]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[13]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[14]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[15]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[16]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[17]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[18]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[19]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[20]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[21]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[22]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[23]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[24]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[25]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[26]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[27]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[28]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[29]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[30]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[31]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[32]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[33]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[34]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[35]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[36]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[37]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[38]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[39]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[40]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[41]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[42]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[43]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[44]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[45]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[46]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[47]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[48]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[49]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[50]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[51]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[52]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[53]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[54]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[55]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[56]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[57]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[58]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[59]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[60]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[61]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[62]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[63]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[64]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[65]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[66]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[67]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[68]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[69]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[70]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[71]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[72]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[73]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[74]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[75]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[76]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[77]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[78]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[79]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[80]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[81]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[82]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[83]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[84]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[85]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[86]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_tx[87]" at REGS_CONF.v(46) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 46
+Info (10041): Inferred latch for "reg_conf[0]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[1]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[2]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[3]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[4]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[5]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[6]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[7]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[8]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[9]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[10]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[11]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[12]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[13]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[14]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[15]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[16]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[17]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[18]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[19]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[20]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[21]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[22]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[23]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[24]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[25]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[26]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[27]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[28]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[29]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[30]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[31]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[32]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[33]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[34]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[35]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[36]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[37]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[38]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[39]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[40]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[41]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[42]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[43]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[44]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[45]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[46]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[47]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[48]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[49]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[50]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[51]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[52]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[53]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[54]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[55]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[56]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[57]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[58]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[59]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[60]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[61]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[62]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[63]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[64]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[65]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[66]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[67]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[68]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[69]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[70]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[71]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[72]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[73]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[74]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[75]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[76]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[77]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[78]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[79]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[80]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[81]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[82]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[83]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[84]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[85]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[86]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_conf[87]" at REGS_CONF.v(35) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 35
+Info (10041): Inferred latch for "reg_rx[0]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[1]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[2]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[3]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[4]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[5]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[6]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[7]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[8]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[9]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[10]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[11]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[12]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[13]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[14]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[15]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[16]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[17]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[18]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[19]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[20]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[21]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[22]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[23]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[24]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[25]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[26]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[27]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[28]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[29]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[30]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[31]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[32]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[33]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[34]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[35]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[36]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[37]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[38]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[39]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[40]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[41]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[42]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[43]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[44]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[45]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[46]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[47]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[48]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[49]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[50]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[51]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[52]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[53]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[54]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[55]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[56]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[57]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[58]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[59]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[60]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[61]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[62]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[63]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[64]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[65]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[66]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[67]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[68]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[69]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[70]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[71]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[72]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[73]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[74]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[75]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[76]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[77]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[78]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[79]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[80]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[81]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[82]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[83]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[84]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[85]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[86]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Info (10041): Inferred latch for "reg_rx[87]" at REGS_CONF.v(23) File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 23
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "txdw[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "txdw[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 9
+    Warning (13410): Pin "r_control[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_control[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 10
+    Warning (13410): Pin "r_frec_mod[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[8]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[9]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[10]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[11]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[12]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[13]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[14]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[15]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[16]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[17]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[18]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[19]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[20]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[21]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[22]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_mod[23]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 11
+    Warning (13410): Pin "r_frec_por[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[8]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[9]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[10]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[11]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[12]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[13]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[14]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[15]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[16]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[17]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[18]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[19]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[20]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[21]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[22]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_frec_por[23]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 12
+    Warning (13410): Pin "r_im_am[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[8]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[9]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[10]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[11]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[12]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[13]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[14]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_am[15]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 13
+    Warning (13410): Pin "r_im_fm[0]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[1]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[2]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[3]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[4]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[5]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[6]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[7]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[8]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[9]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[10]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[11]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[12]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[13]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[14]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
+    Warning (13410): Pin "r_im_fm[15]" is stuck at GND File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 15
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Fri May 13 19:12:40 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+Warning (21074): Design contains 13 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rxdw[0]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[1]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[2]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[3]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[4]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[5]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[6]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "rxdw[7]" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 3
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 4
+    Warning (15610): No output dependent on input pin "load_confregs" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 5
+    Warning (15610): No output dependent on input pin "shift_rxregs" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 6
+    Warning (15610): No output dependent on input pin "load_txregs" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 7
+    Warning (15610): No output dependent on input pin "shift_txregs" File: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v Line: 8
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 96 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 4738 megabytes
+    Info: Processing ended: Fri May 20 17:21:36 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
