@@ -15,12 +15,12 @@ module REGS_CONF
 	);
 
 // Registos 
-reg [77:0] reg_tx = 0;
-reg [77:0] reg_rx = 0;
-reg [77:0] reg_conf = 0;
+reg [87:0] reg_tx = 0;
+reg [87:0] reg_rx = 0;
+reg [87:0] reg_conf = 0;
 
 // Shift Register RX
-assign reg_rx[77:69] = rxdw;
+assign reg_rx[87:79] = rxdw;
 
 always @(clk, shift_rxregs) 
 begin
@@ -53,8 +53,11 @@ begin
 end 
 
 // Write
-
-assign reg_rx[77:69] = rxdw;
+assign r_control = reg_rx[87:80];
+assign r_im_fm = reg_rx[79:64];
+assign r_im_am = reg_rx[63:48];
+assign r_frec_por = reg_rx[47:24];
+assign r_frec_mod = reg_rx[23:0];
 
 
 endmodule 
