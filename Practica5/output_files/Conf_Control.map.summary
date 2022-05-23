@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon May 23 19:05:52 2022
+Analysis & Synthesis Status : Successful - Mon May 23 20:55:05 2022
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : Conf_Control
-Top-level Entity Name : CONF_CONTROL_WRAP
+Top-level Entity Name : top_DE2115
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 109
+Total logic elements : 1,421
+    Total combinational functions : 914
+    Dedicated logic registers : 1,015
+Total registers : 1015
+Total pins : 33
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 1,245,184
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

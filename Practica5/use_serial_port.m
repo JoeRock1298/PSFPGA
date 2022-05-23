@@ -2,7 +2,7 @@ clear all
 
 %% Configura operacion
 WRITE = 1; % Escritura si -> 1, no ->0
-READ = 0; % Lectura si -> 1, no ->0
+READ = 1; % Lectura si -> 1, no ->0
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Configure and open serial port
