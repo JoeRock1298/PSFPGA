@@ -2,7 +2,7 @@ clear all
 
 %% Configura operacion
 WRITE = 1; % Escritura si -> 1, no ->0
-READ = 1; % Lectura si -> 1, no ->0
+READ = 0; % Lectura si -> 1, no ->0
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Configure and open serial port
@@ -39,7 +39,7 @@ im_am_b1 = 8;
 im_fm_b0 = 9;
 im_fm_b1 = 10;
 % Control register
-c_byte = 11;
+c_byte = 2^5+2^7;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Write registers 

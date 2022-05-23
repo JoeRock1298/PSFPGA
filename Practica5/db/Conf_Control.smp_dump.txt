@@ -1,5 +1,5 @@
 
-State Machine - |top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|RD_CONTROL:C3|state
+State Machine - |CONF_CONTROL_WRAP|CONF_CONTROL:CONF_CONTROL1|CONTROL:C3|RD_CONTROL:C3|state
 Name state.exit state.shift state.rest state.write state.load state.idle_r 
 state.idle_r 0 0 0 0 0 0 
 state.load 0 0 0 0 1 1 
@@ -8,14 +8,14 @@ state.rest 0 0 1 0 0 1
 state.shift 0 1 0 0 0 1 
 state.exit 1 0 0 0 0 1 
 
-State Machine - |top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|WR_CONTROL:C2|state
+State Machine - |CONF_CONTROL_WRAP|CONF_CONTROL:CONF_CONTROL1|CONTROL:C3|WR_CONTROL:C2|state
 Name state.load state.shift state.idle_w state.start 
 state.start 0 0 0 0 
 state.idle_w 0 0 1 1 
 state.shift 0 1 0 1 
 state.load 1 0 0 1 
 
-State Machine - |top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|MAIN_CONTROL:C1|state
+State Machine - |CONF_CONTROL_WRAP|CONF_CONTROL:CONF_CONTROL1|CONTROL:C3|MAIN_CONTROL:C1|state
 Name state.rest state.read state.write state.idle 
 state.idle 0 0 0 0 
 state.write 0 0 1 1 
