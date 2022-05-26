@@ -51,7 +51,7 @@ module SEC_FILTER
 	 begin
 		if (ce_Reg_wire)
 			//dout <= dout_wire;
-			dout <= dout_wire [Win+Wc-1:Win+Wc-19];
+			dout <= dout_wire [Win+Wc-1:Win+Wc-18];
  	 end
 
 	//Valout connection

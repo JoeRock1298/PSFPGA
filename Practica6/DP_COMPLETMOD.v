@@ -32,6 +32,11 @@ module DP_COMPLETMOD
 	wire signed [16 -1 : 0] CIC_dout;
 	wire CIC_val_out;
 
+	// DP_MOD
+	wire signed [16 - 1: 2] DP_MOD_out; // I take 14 bits.
+	wire DP_MOD_reset;
+	wire DP_MOD_val_out;
+
 	/*********** Module instantiation ***********/
 
 	// DDS test -> acc always enabled
@@ -49,16 +54,16 @@ module DP_COMPLETMOD
 				  .val_out(DDS_val_out));
 
 	// Source MUX (check for any needed register)
-	assign i_smux = sin_wave; // 00
-	assign i_smux = ramp_wave; // 01
-	assign i_smux = sqr_wave; // 10
-	assign i_smux = i_data; // 11
+	assign i_smux[0] = sin_wave; // 00
+	assign i_smux[1] = ramp_wave; // 01
+	assign i_smux[2] = sqr_wave; // 10
+	assign i_smux[3] = i_data; // 11
 
 	assign o_smux = i_smux[c_source];
 
 	// COMP CIC 
-	// (Lab guide says its uput is S[18:15] instead of S[19:16]
-	// also, seems that coef cuantification is diferent) CHANGE IT
+	// (Lab guide says its uput is S[18:15] instead of S[19:16]----->I did it, check please. Line 54 SEC_FILTER.V
+	// also, seems that coef cuantification is diferent) CHANGE IT-----> Why u say its different i dont see it, that value give u the profesor, no?
 	SEC_FILTER #( .Win(16),
 				  .Wc(18), 
 				  .Num_coef(17))
@@ -80,10 +85,26 @@ module DP_COMPLETMOD
 				  .val_in(COMP_CIC_val_out),  // Validation input
 				  .val_out(CIC_val_out),	// Validation output
 				  .o_data(CIC_dout));	// Data output
+	
+	// Reset for DP_MOD (or gate)
+	assign DP_MOD_reset = rst | !CIC_val_out; // Check this shitty code jajaja (PD: the reset with an OR i remember its a must)
 
 	// Configurable FM-AM Data-path
-	// The rst input is not clear
-
+	DP_MOD (.idata(CIC_dout),
+			.rst(DP_MOD_reset),
+			.clk(clk),
+			.val_in(CIC_val_out),
+			.c_fm_am(c_fm_am),
+			.frec_por(frec_por),
+			.im_am(im_am),
+			.im_fm(im_fm),
+			.o_data(DP_MOD_out),
+			.val_out(val_out) 
+			);
 	
+	// Output
+	assign o_data = DP_MOD_out; 
+
+
 endmodule
 	
