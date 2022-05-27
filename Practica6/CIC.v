@@ -52,7 +52,8 @@ assign 	val_wire[0] = val_in ;
 assign 	val_out = val_wire[7];
 assign	data_comb_wire [0] = i_data;
 // This way the truncated value is parametrized, independant of the Win
-assign 	o_data = data_int_wire [3] [(Win + Wg - 1) : (Win + Wg) - Wout];
+// input [18,15] -> output [16,15], [win + wg -1 = 39:0] -> [37:22]
+assign 	o_data = data_int_wire [3] [ (Win + Wg - 2 - 1) : (Win + Wg - 2 - Wout)];
 
 endmodule 
 

@@ -25,15 +25,15 @@ module DP_COMPLETMOD
 	wire signed [16 - 1 : 0] o_smux;
 
 	// COMP CIC
-	wire signed [18 -1 : 0] COMP_CIC_dout;
+	wire signed [18 - 1 : 0] COMP_CIC_dout;
 	wire COMP_CIC_val_out;
 
 	// CIC
-	wire signed [16 -1 : 0] CIC_dout;
+	wire signed [16 - 1 : 0] CIC_dout;
 	wire CIC_val_out;
 
 	// DP_MOD
-	wire signed [16 - 1: 2] DP_MOD_out; // I take 14 bits.
+	wire signed [16 - 1: 0] DP_MOD_out; // I take 14 bits.
 	wire DP_MOD_reset;
 	wire DP_MOD_val_out;
 
@@ -64,8 +64,9 @@ module DP_COMPLETMOD
 	// COMP CIC 
 	// (Lab guide says its uput is S[18:15] instead of S[19:16]----->I did it, check please. Line 54 SEC_FILTER.V
 	// also, seems that coef cuantification is diferent) CHANGE IT-----> Why u say its different i dont see it, that value give u the profesor, no?
+	// The matlab code uses a 16 bit cuantification.
 	SEC_FILTER #( .Win(16),
-				  .Wc(18), 
+				  .Wc(16), 
 				  .Num_coef(17))
 		CIC_comp ( .din(o_smux), // entrada
 				   .clk(clk), 
@@ -99,11 +100,10 @@ module DP_COMPLETMOD
 			.im_am(im_am),
 			.im_fm(im_fm),
 			.o_data(DP_MOD_out),
-			.val_out(val_out) 
-			);
+			.val_out(DP_MOD_val_out));
 	
 	// Output
-	assign o_data = DP_MOD_out; 
+	assign o_data = DP_MOD_out[16 - 1 : 16 - 14 ]; //[15 : 2] -> S[14:13]
 
 
 endmodule
