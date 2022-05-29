@@ -1,68 +1,4 @@
-|top_DE2115
-UART_RXD => rxsd.IN1
-CLOCK_50 => CLOCK_50.IN1
-KEY[0] => rst.IN1
-SW[0] => Mux0.IN8
-SW[0] => Mux1.IN8
-SW[0] => Mux2.IN8
-SW[0] => Mux3.IN8
-SW[0] => Mux4.IN8
-SW[0] => Mux5.IN8
-SW[0] => Mux6.IN8
-SW[0] => Mux7.IN8
-SW[1] => Mux0.IN7
-SW[1] => Mux1.IN7
-SW[1] => Mux2.IN7
-SW[1] => Mux3.IN7
-SW[1] => Mux4.IN7
-SW[1] => Mux5.IN7
-SW[1] => Mux6.IN7
-SW[1] => Mux7.IN7
-SW[2] => Mux0.IN6
-SW[2] => Mux1.IN6
-SW[2] => Mux2.IN6
-SW[2] => Mux3.IN6
-SW[2] => Mux4.IN6
-SW[2] => Mux5.IN6
-SW[2] => Mux6.IN6
-SW[2] => Mux7.IN6
-SW[3] => Mux0.IN5
-SW[3] => Mux1.IN5
-SW[3] => Mux2.IN5
-SW[3] => Mux3.IN5
-SW[3] => Mux4.IN5
-SW[3] => Mux5.IN5
-SW[3] => Mux6.IN5
-SW[3] => Mux7.IN5
-UART_TXD <= CONF_CONTROL:INST1.txsd
-LEDG[0] <= CONF_CONTROL:INST1.sleds
-LEDG[1] <= CONF_CONTROL:INST1.sleds
-LEDG[2] <= CONF_CONTROL:INST1.sleds
-LEDG[3] <= CONF_CONTROL:INST1.sleds
-LEDG[4] <= CONF_CONTROL:INST1.sleds
-LEDG[5] <= CONF_CONTROL:INST1.sleds
-LEDG[6] <= CONF_CONTROL:INST1.sleds
-LEDG[7] <= CONF_CONTROL:INST1.sleds
-LEDG[8] <= CONF_CONTROL:INST1.sleds
-LEDR[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[9] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[10] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[11] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[12] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[13] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[14] <= CONF_CONTROL:INST1.view_rxdw
-LEDR[15] <= CONF_CONTROL:INST1.view_rxdw
-
-
-|top_DE2115|CONF_CONTROL:INST1
+|CONF_CONTROL
 rxsd => rxsd.IN1
 rst => rst.IN2
 clk => clk.IN3
@@ -174,7 +110,7 @@ view_rxdw[6] <= rxdw[6].DB_MAX_OUTPUT_PORT_TYPE
 view_rxdw[7] <= rxdw[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_DE2115|CONF_CONTROL:INST1|RS232COM:C1
+|CONF_CONTROL|RS232COM:C1
 rxsd => rxsd.IN1
 txdw[0] => txdw[0].IN1
 txdw[1] => txdw[1].IN1
@@ -200,7 +136,7 @@ txbusy <= comm_rs232:U1.oc_txbsy
 rxrdy <= comm_rs232:U1.oc_rxrdy
 
 
-|top_DE2115|CONF_CONTROL:INST1|RS232COM:C1|comm_rs232:U1
+|CONF_CONTROL|RS232COM:C1|comm_rs232:U1
 id_rxds => b0_rxsyn_r.DATAA
 id_txdw[0] => b1_psrl_r.DATAB
 id_txdw[1] => b1_psrl_r.DATAB
@@ -325,7 +261,7 @@ od_rxdw[7] <= b0_rxdw_r[7].DB_MAX_OUTPUT_PORT_TYPE
 oc_rxrdy <= b0_rxrdy_r.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_DE2115|CONF_CONTROL:INST1|REGS_CONF:C2
+|CONF_CONTROL|REGS_CONF:C2
 rxdw[0] => reg_rx[0][0].DATAIN
 rxdw[1] => reg_rx[0][1].DATAIN
 rxdw[2] => reg_rx[0][2].DATAIN
@@ -946,7 +882,7 @@ r_im_fm[14] <= reg_conf[1][6].DB_MAX_OUTPUT_PORT_TYPE
 r_im_fm[15] <= reg_conf[1][7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_DE2115|CONF_CONTROL:INST1|CONTROL:C3
+|CONF_CONTROL|CONTROL:C3
 rxdw[0] => rxdw[0].IN1
 rxdw[1] => rxdw[1].IN1
 rxdw[2] => rxdw[2].IN1
@@ -975,7 +911,7 @@ sleds[7] <= RD_CONTROL:C3.rd_leds
 sleds[8] <= RD_CONTROL:C3.rd_leds
 
 
-|top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|MAIN_CONTROL:C1
+|CONF_CONTROL|CONTROL:C3|MAIN_CONTROL:C1
 rxrdy => always1.IN1
 rxrdy => always1.IN1
 rxdw[0] => Equal0.IN3
@@ -1008,7 +944,7 @@ sleds[1] <= sleds.DB_MAX_OUTPUT_PORT_TYPE
 sleds[2] <= sleds[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|WR_CONTROL:C2
+|CONF_CONTROL|CONTROL:C3|WR_CONTROL:C2
 rxrdy => always2.IN1
 rxrdy => next_state.OUTPUTSELECT
 rxrdy => next_state.OUTPUTSELECT
@@ -1038,7 +974,7 @@ wr_leds[1] <= wr_leds.DB_MAX_OUTPUT_PORT_TYPE
 wr_leds[2] <= wr_leds[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_DE2115|CONF_CONTROL:INST1|CONTROL:C3|RD_CONTROL:C3
+|CONF_CONTROL|CONTROL:C3|RD_CONTROL:C3
 txbusy => Selector2.IN1
 txbusy => next_state.shift.DATAB
 txbusy => Selector1.IN2
@@ -1066,82 +1002,5 @@ done_rd <= done_rd.DB_MAX_OUTPUT_PORT_TYPE
 rd_leds[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 rd_leds[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
 rd_leds[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_DE2115|PLL_test:PLL_test_inst
-areset => areset.IN1
-inclk0 => sub_wire1[0].IN1
-c0 <= altpll:altpll_component.clk
-
-
-|top_DE2115|PLL_test:PLL_test_inst|altpll:altpll_component
-inclk[0] => PLL_test_altpll:auto_generated.inclk[0]
-inclk[1] => PLL_test_altpll:auto_generated.inclk[1]
-fbin => ~NO_FANOUT~
-pllena => ~NO_FANOUT~
-clkswitch => ~NO_FANOUT~
-areset => PLL_test_altpll:auto_generated.areset
-pfdena => ~NO_FANOUT~
-clkena[0] => ~NO_FANOUT~
-clkena[1] => ~NO_FANOUT~
-clkena[2] => ~NO_FANOUT~
-clkena[3] => ~NO_FANOUT~
-clkena[4] => ~NO_FANOUT~
-clkena[5] => ~NO_FANOUT~
-extclkena[0] => ~NO_FANOUT~
-extclkena[1] => ~NO_FANOUT~
-extclkena[2] => ~NO_FANOUT~
-extclkena[3] => ~NO_FANOUT~
-scanclk => ~NO_FANOUT~
-scanclkena => ~NO_FANOUT~
-scanaclr => ~NO_FANOUT~
-scanread => ~NO_FANOUT~
-scanwrite => ~NO_FANOUT~
-scandata => ~NO_FANOUT~
-phasecounterselect[0] => ~NO_FANOUT~
-phasecounterselect[1] => ~NO_FANOUT~
-phasecounterselect[2] => ~NO_FANOUT~
-phasecounterselect[3] => ~NO_FANOUT~
-phaseupdown => ~NO_FANOUT~
-phasestep => ~NO_FANOUT~
-configupdate => ~NO_FANOUT~
-fbmimicbidir <> <GND>
-clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
-clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
-clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
-clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
-clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
-extclk[0] <= <GND>
-extclk[1] <= <GND>
-extclk[2] <= <GND>
-extclk[3] <= <GND>
-clkbad[0] <= <GND>
-clkbad[1] <= <GND>
-enable1 <= <GND>
-enable0 <= <GND>
-activeclock <= <GND>
-clkloss <= <GND>
-locked <= <GND>
-scandataout <= <GND>
-scandone <= <GND>
-sclkout0 <= <GND>
-sclkout1 <= <GND>
-phasedone <= <GND>
-vcooverrange <= <GND>
-vcounderrange <= <GND>
-fbout <= <GND>
-fref <= <GND>
-icdrclk <= <GND>
-
-
-|top_DE2115|PLL_test:PLL_test_inst|altpll:altpll_component|PLL_test_altpll:auto_generated
-areset => pll1.ARESET
-clk[0] <= pll1.CLK
-clk[1] <= pll1.CLK1
-clk[2] <= pll1.CLK2
-clk[3] <= pll1.CLK3
-clk[4] <= pll1.CLK4
-inclk[0] => pll1.CLK
-inclk[1] => pll1.CLK1
 
 
