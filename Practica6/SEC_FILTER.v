@@ -9,7 +9,7 @@ module SEC_FILTER
    output reg val_out,
    //output reg signed [Win+Wc-1:0] dout); // salida precision completa
    //output reg signed [Win+2:0] dout); // salida truncada a 19 bits
-   // for a S[18:15] output: 
+   // for a S[18,15] output: 
    output reg signed [18 - 1:0] dout);
 	
   	//Wires
@@ -53,7 +53,7 @@ module SEC_FILTER
 	 always @(posedge clk ) 
 	 begin
 		if (ce_Reg_wire)
-			//dout <= dout_wire; [32:0] -> 33 bits ; [32:16]
+			//dout <= dout_wire; [33:0] -> 34bits ; [33:16]
 			dout <= dout_wire [Win + Wc : Win + Wc - 18 + 1];
  	 end
 

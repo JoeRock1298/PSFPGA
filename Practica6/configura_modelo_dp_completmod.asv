@@ -81,18 +81,17 @@ disp('*****************************************')
     %Creando los cuantificadores para guardar los datos de los coeficientes
     input_q = quantizer([16 15],'fixed','wrap','floor');
     %File handling
-    pack_f=fopen('input_signal.txt','w');
+    pack_f=fopen('coef.txt','w');
     %Writing data to output file
-    for i=1:length(out_in_mux)
-        fprintf(pack_f,[num2bin(input_q, out_in_mux(i)) '\n']);
+    for i=1:length(h_comp_cic)
+        fprintf(pack_f,[num2bin(h_comp_cic_q, h_comp_cic(i)) '\n']);
     end
 % Output
     %Creando los cuantificadores para guardar los datos de los coeficientes
-    output_q = quantizer([14 13],'fixed','wrap','floor');
+    h_comp_cic_q = quantizer([17 16],'saturate','round','fixed');
     %File handling
-    pack_f=fopen('output_signal.txt','w');
+    pack_f=fopen('coef.txt','w');
     %Writing data to output file
-    for i=1:length(s_dp_fmam)
-        fprintf(pack_f,[num2bin(output_q, s_dp_fmam(i)) '\n']);
+    for i=1:length(h_comp_cic)
+        fprintf(pack_f,[num2bin(h_comp_cic_q, h_comp_cic(i)) '\n']);
     end
-    

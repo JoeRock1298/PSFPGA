@@ -64,9 +64,9 @@ module DP_COMPLETMOD
 	// COMP CIC 
 	// (Lab guide says its uput is S[18:15] instead of S[19:16]----->I did it, check please. Line 54 SEC_FILTER.V
 	// also, seems that coef cuantification is diferent) CHANGE IT-----> Why u say its different i dont see it, that value give u the profesor, no?
-	// The matlab code uses a 16 bit cuantification.
+	// The matlab code uses a S[17,16] bit cuantification.
 	SEC_FILTER #( .Win(16),
-				  .Wc(16), 
+				  .Wc(17), 
 				  .Num_coef(17))
 		CIC_comp ( .din(o_smux), // entrada
 				   .clk(clk), 
