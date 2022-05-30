@@ -1,5 +1,5 @@
 Assembler report for Conf_Control
-Mon May 23 20:55:27 2022
+Mon May 30 17:01:31 2022
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/output_files/Conf_Control.sof
+  6. Assembler Device Options: C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/output_files/Conf_Control.sof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon May 23 20:55:27 2022 ;
+; Assembler Status      ; Successful - Mon May 30 17:01:31 2022 ;
 ; Revision Name         ; Conf_Control                          ;
 ; Top-level Entity Name ; top_DE2115                            ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,12 +68,12 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; File Name                                                                        ;
 +----------------------------------------------------------------------------------+
-; C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/output_files/Conf_Control.sof ;
+; C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/output_files/Conf_Control.sof ;
 +----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/output_files/Conf_Control.sof ;
+; Assembler Device Options: C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/output_files/Conf_Control.sof ;
 +----------------+-------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                   ;
 +----------------+-------------------------------------------------------------------------------------------+
@@ -88,15 +88,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Mon May 23 20:55:23 2022
+    Info: Processing started: Mon May 30 17:01:28 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Conf_Control -c Conf_Control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4691 megabytes
-    Info: Processing ended: Mon May 23 20:55:27 2022
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Mon May 30 17:01:31 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 

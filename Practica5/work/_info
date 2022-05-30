@@ -9,25 +9,25 @@ z2
 cModel Technology
 dC:/Users/jororoc/Documents/QDesign/PSFPGA/Practica5
 Ecomm_rs232
-Z0 w1652447007
+Z0 w1652455708
 Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dC:/Users/gsandar/Documents/Github/PSFPGA/Practica5
-Z6 8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/comm_rs232.vhd
-Z7 FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/comm_rs232.vhd
+Z5 dC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5
+Z6 8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/comm_rs232.vhd
+Z7 FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/comm_rs232.vhd
 l0
 L15
 VzOMZN4WCDXekP?dHo<CWJ3
 !s100 BCB1T0MF^f@bkGjH8oBGd2
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1653070460
+Z9 !s110 1653918393
 !i10b 1
-Z10 !s108 1653070460.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/comm_rs232.vhd|
-Z12 !s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/comm_rs232.vhd|
+Z10 !s108 1653918393.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/comm_rs232.vhd|
+Z12 !s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/comm_rs232.vhd|
 !i113 1
 Z13 o-work work -2002 -explicit
 Z14 tExplicit 1 CvgOpt 0
@@ -55,45 +55,45 @@ vCONF_CONTROL
 R9
 !i10b 1
 !s100 6:1oLXi1I@:InzKa9en]`3
-IAakBmK:zn`[5_kN_TflUJ1
+In9IfdjjIM1PbS1_`b93a^3
 Z15 VDg1SIo80bB@j0V0VzS_@n1
 R5
 R0
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL.v
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL.v
 L0 1
 Z16 OV;L;10.5b;63
 r1
 !s85 0
 31
 R10
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL.v|
 !i113 1
 Z17 o-work work
 Z18 tCvgOpt 0
 n@c@o@n@f_@c@o@n@t@r@o@l
 vCONF_CONTROL_TB
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z19 !s110 1653070461
+Z19 !s110 1653918394
 !i10b 1
 !s100 :fNWcIOe=@`Ul0F0`BOG?2
-I:>k2k>XBSUYgX3E5ZYX1=0
+ID41A_Ya>JWQFWLMQ=4<hb1
 R15
 !s105 CONF_CONTROL_TB_sv_unit
 S1
 R5
 R0
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_TB.sv
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_TB.sv
 L0 1
 R16
 r1
 !s85 0
 31
-Z20 !s108 1653070461.000000
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_TB.sv|
+Z20 !s108 1653918394.000000
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_TB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_TB.sv|
 !i113 1
 o-work work -sv
 R18
@@ -102,42 +102,42 @@ vCONF_CONTROL_VERIFICA
 R9
 !i10b 1
 !s100 N`GWE]fVmjT33QeP?:GM:0
-IiDaSJU:E;ESjk?;g62cOf0
+IQMTo2Nhbj9l69IFAS0J@;3
 R15
 R5
 R0
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v
 L0 1
 R16
 r1
 !s85 0
 31
 R10
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONF_CONTROL_VERIFICA.v|
 !i113 1
 R17
 R18
 n@c@o@n@f_@c@o@n@t@r@o@l_@v@e@r@i@f@i@c@a
 vCONTROL
-R19
+R9
 !i10b 1
 !s100 zGn3C@oIK`]Z1SSTVZFB@2
-IU<T436hjRMOk7OH]Yz;:R2
+IVaj7^UIkaXzd=^?aXDR>U0
 R15
 R5
 R0
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONTROL.v
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONTROL.v
 L0 1
 R16
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/CONTROL.v|
+R10
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/CONTROL.v|
 !i113 1
 R17
 R18
@@ -146,20 +146,20 @@ vMAIN_CONTROL
 R19
 !i10b 1
 !s100 SBG=Sokjj7Zo>>:<h:CMI3
-IkQ6i?W[K^G7BODdc0R?<^1
+Ila?3ZU8CYV22m_Ko1[5H;0
 R15
 R5
-w1653052954
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/MAIN_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/MAIN_CONTROL.v
+Z21 w1653916199
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/MAIN_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/MAIN_CONTROL.v
 L0 1
 R16
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/MAIN_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/MAIN_CONTROL.v|
+R10
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/MAIN_CONTROL.v|
 !i113 1
 R17
 R18
@@ -168,42 +168,42 @@ vRD_CONTROL
 R19
 !i10b 1
 !s100 07DGC8Y^7;hPck4I5BiJU0
-I_M_lUSA>7XhejM_P`Na0X2
+IleK37^f?R6UI2VE<V<:Mb2
 R15
 R5
-w1653063317
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RD_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RD_CONTROL.v
+R21
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v
 L0 1
 R16
 r1
 !s85 0
 31
 R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RD_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RD_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RD_CONTROL.v|
 !i113 1
 R17
 R18
 n@r@d_@c@o@n@t@r@o@l
 vREGS_CONF
-R19
+R9
 !i10b 1
 !s100 [Fh_9[be34?mYn>UBT8;d0
-Ia8SYNGA7??;j89@=jd`Pe0
+IH3W^S>1=^bjmQd]lgf^mZ1
 R15
 R5
-w1653070457
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v
+R21
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/REGS_CONF.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/REGS_CONF.v
 L0 1
 R16
 r1
 !s85 0
 31
 R10
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/REGS_CONF.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/REGS_CONF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/REGS_CONF.v|
 !i113 1
 R17
 R18
@@ -212,20 +212,20 @@ vRS232COM
 R9
 !i10b 1
 !s100 iR=B[RgzW_nUWVXlaIV133
-I8KOB63JC6MPQ2682hfUjj3
+I5:m0zNAgzkbETNcQ9b];a3
 R15
 R5
 R0
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RS232COM.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RS232COM.v
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RS232COM.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RS232COM.v
 L0 1
 R16
 r1
 !s85 0
 31
 R10
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RS232COM.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/RS232COM.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RS232COM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/RS232COM.v|
 !i113 1
 R17
 R18
@@ -234,20 +234,20 @@ vTB_MAIN_CONTROL
 R19
 !i10b 1
 !s100 JLH@LIz?z?9Hh=ST`;HQR1
-IUK19JH5c4U`P:nJej6ViO3
+I^hN]UlY50]FR:zRR_0:AG0
 R15
 R5
-w1653052127
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_MAIN_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+R21
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_MAIN_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_MAIN_CONTROL.v
 L0 3
 R16
 r1
 !s85 0
 31
 R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_MAIN_CONTROL.v|
 !i113 1
 R17
 R18
@@ -256,20 +256,20 @@ vTB_RD_CONTROL
 R19
 !i10b 1
 !s100 RSXR0oJ?M]5>NI64[PmG82
-IG:`=NI_o]n:@aLWHBU]Z?3
+IQDo`ecMe^LFSdmJabANSF1
 R15
 R5
-w1653064191
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_RD_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_RD_CONTROL.v
+R21
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_RD_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_RD_CONTROL.v
 L0 3
 R16
 r1
 !s85 0
 31
 R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_RD_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_RD_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_RD_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_RD_CONTROL.v|
 !i113 1
 R17
 R18
@@ -278,20 +278,20 @@ vTB_WR_CONTROL
 R19
 !i10b 1
 !s100 Q0QlOLTiCJbCm2@NceVB=2
-I=LUImzbd2B:hM4aiGYoc[3
+I:Fa2Kj470I`9>=SeO0P032
 R15
 R5
-Z21 w1653060693
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_WR_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_WR_CONTROL.v
+R21
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_WR_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_WR_CONTROL.v
 L0 3
 R16
 r1
 !s85 0
 31
 R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_WR_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/TB_WR_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_WR_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/TB_WR_CONTROL.v|
 !i113 1
 R17
 R18
@@ -300,20 +300,20 @@ vWR_CONTROL
 R19
 !i10b 1
 !s100 kRAkJmHZa9hUXT`Bb=7EH2
-IE8YJ1o<HI0YNg73J`Uh^N3
+IaS`>?CRFdg3W61YMe8==F3
 R15
 R5
 R21
-8C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/WR_CONTROL.v
-FC:/Users/gsandar/Documents/Github/PSFPGA/Practica5/WR_CONTROL.v
+8C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/WR_CONTROL.v
+FC:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/WR_CONTROL.v
 L0 1
 R16
 r1
 !s85 0
 31
 R20
-!s107 C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/WR_CONTROL.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/Github/PSFPGA/Practica5/WR_CONTROL.v|
+!s107 C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/WR_CONTROL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/gsandar/Documents/GitHub/PSFPGA/Practica5/WR_CONTROL.v|
 !i113 1
 R17
 R18

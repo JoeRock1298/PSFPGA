@@ -1,4 +1,4 @@
-<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: 10CL120(Y|Z)/EP3C120/.. (0x020F70DD)" sof_file="//CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/Practica5/output_files/Conf_Control.sof">
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: 10CL120(Y|Z)/EP3C120/.. (0x020F70DD)" sof_file="../output_files/Conf_Control.sof">
   <display_tree gui_logging_enabled="1">
     <display_branch instance="auto_signaltap_0" signal_set="signal_set: 2022/05/23 20:52:41  #0" trigger="trigger: 2022/05/23 20:54:34  #0"/>
   </display_tree>
