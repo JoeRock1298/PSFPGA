@@ -7,7 +7,7 @@ sim_time = 2000;
 %% MOD AM/FM CONFIGURATION
 
 % Control FM --> 1, AM --> 0
-control_fm_am=1;
+control_fm_am=0;
 
 % Sampling frequency (MHz)
 fsc=100; % MHz
@@ -51,8 +51,8 @@ disp(['im_fm = ' num2str(im_fm)])
 disp('*****************************************')
 
 %% Verilog obtain configuration, input and output files
-% Configuración
-    %Creando los cuantificadores para guardar los datos de configuración
+% ConfiguraciÃ³n
+    %Creando los cuantificadores para guardar los datos de configuraciÃ³n
     im_am_q = quantizer([16 15],'saturate','round','ufixed');
     im_fm_q = quantizer([16 16],'saturate','round','ufixed');
     freq_mod_q = quantizer([24 24],'saturate','round','ufixed');

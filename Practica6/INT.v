@@ -28,7 +28,7 @@ module INT
       else
         begin
           data_out <= data_out;
-          val_out <= val_in;
+          val_out <= val_out;
         end 
   end
 
