@@ -20,8 +20,7 @@ module SEC_FILTER
 	wire signed [Wc-1:0] coef_wire;
 	wire signed [Win-1:0] din_wire;
 	wire [log2(Num_coef)-1:0] addr_wire;
-	//wire signed [Win+Wc-1:0] dout_wire; // salida precision completa
-	wire signed [Win + Wc : 0] dout_wire; // salida precision completa 
+	wire signed [Win+Wc-1:0] dout_wire; // salida precision completa
 	
 	//Modules
 	MULT_ACC #(.Win(Win), .Wc(Wc)) MULT_ACC0(.din(din_wire),
@@ -54,7 +53,10 @@ module SEC_FILTER
 	 begin
 		if (ce_Reg_wire)
 			//dout <= dout_wire; [33:0] -> 34bits ; [33:16]
-			dout <= dout_wire [Win + Wc : Win + Wc - 18 + 1];
+			dout <= dout_wire [Win + Wc - 1 : Win + Wc - 18];
+			//dout <= dout_wire [Win + Wc : Win + Wc - 18 + 1];
+		else
+			dout <= dout;
  	 end
 
 	//Valout connection

@@ -27,7 +27,7 @@ always@(posedge clk)
       else
         begin
           data_out <= 0;
-          val_out <= val_out;
+          val_out <= val_in;
         end 
   end
 

@@ -42,7 +42,7 @@ generate
 endgenerate
 
 // R_INT
-R_INT #(.Win(Win + N), .Wg(Wg))  R_INT0 (.data_in(data_comb_wire[3]),
+R_INT #(.Win(Win + N), .Wg(Wg - N))  R_INT0 (.data_in(data_comb_wire[3]),
 							.clk(clk),
 							.rst(rst),
 							.val_in(val_wire[3]),

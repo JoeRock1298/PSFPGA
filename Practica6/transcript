@@ -1,0 +1,1902 @@
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:07:31 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# ** Warning: (vsim-3035) Instantiation depth of '/TB_DP_COMPLETMOD/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/TB_DP_COMPLETMOD/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v
+# Error loading design
+# End time: 18:07:31 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:08:23 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(46): Instantiation of 'DDS_test' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(71): Instantiation of 'SEC_FILTER' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(83): Instantiation of 'CIC' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(103): Instantiation of 'DP_MOD' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Error loading design
+# End time: 18:08:23 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:10:09 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v(62): Instantiation of 'accumulator' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/DDS File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v(84): Instantiation of 'preprocesado' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/DDS File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.rom_mem
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v(95): Instantiation of 'postprocesado' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/DDS File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.SEC_FILTER
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(27): Instantiation of 'MULT_ACC' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(34): Instantiation of 'REG_MUX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(40): Instantiation of 'ROM' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(44): Instantiation of 'CONTROL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.CIC
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(45): Instantiation of 'R_INT' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_int File: C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3037) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(103): Missing instance name in instantiation of 'DP_MOD'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+# Error loading design
+# End time: 18:10:09 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# Load canceled
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:12:15 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v(62): Instantiation of 'accumulator' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/DDS File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DDS_test.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(27): Instantiation of 'MULT_ACC' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.REG_MUX
+# Loading work.ROM
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v(44): Instantiation of 'CONTROL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_comp File: C:/Users/jororoc/Documents/PSFPGA/Practica6/SEC_FILTER.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Loading work.CIC
+# Loading work.R_INT
+# ** Error: (vsim-3037) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(103): Missing instance name in instantiation of 'DP_MOD'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v
+# Error loading design
+# End time: 18:12:16 on May 30,2022, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:15:13 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_MOD.v(139): Instantiation of 'DDS' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/data_path File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_MOD.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Error loading design
+# End time: 18:15:13 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:17:04 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(34): Instantiation of 'INT' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Region: /TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0] File: C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(34): Instantiation of 'INT' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Region: /TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1] File: C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# ** Error: (vsim-3033) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(34): Instantiation of 'INT' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Region: /TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2] File: C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v
+#         Searched libraries:
+#             C:/Users/jororoc/Documents/PSFPGA/Practica6/work
+# Error loading design
+# End time: 18:17:04 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Load canceled
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:17:49 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+# ** Warning: (vsim-3015) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(45): [PCDPC] - Port size (43) does not match connection size (40) for port 'data_out'. The port definition is at: C:/Users/jororoc/Documents/PSFPGA/Practica6/R_INT.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_int/R_INT0 File: C:/Users/jororoc/Documents/PSFPGA/Practica6/R_INT.v
+# ** Error: (vsim-3063) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(94): Port 'idata' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/data_path File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_MOD.v
+# Error loading design
+# End time: 18:17:49 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:29:09 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+# ** Warning: (vsim-3015) C:/Users/jororoc/Documents/PSFPGA/Practica6/CIC.v(46): [PCDPC] - Port size (18) does not match connection size (21) for port 'data_in'. The port definition is at: C:/Users/jororoc/Documents/PSFPGA/Practica6/R_INT.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/CIC_int/R_INT0 File: C:/Users/jororoc/Documents/PSFPGA/Practica6/R_INT.v
+# ** Error: (vsim-3063) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(94): Port 'idata' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/data_path File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_MOD.v
+# Error loading design
+# End time: 18:29:09 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:33:16 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+# ** Error: (vsim-3063) C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETMOD.v(94): Port 'idata' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_DP_COMPLETMOD/uut/data_path File: C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_MOD.v
+# Error loading design
+# End time: 18:33:16 on May 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.TB_DP_COMPLETMOD
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:33:52 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/clk \
+sim:/TB_DP_COMPLETMOD/rst \
+sim:/TB_DP_COMPLETMOD/val_in \
+sim:/TB_DP_COMPLETMOD/i_data \
+sim:/TB_DP_COMPLETMOD/c_fm_am \
+sim:/TB_DP_COMPLETMOD/c_source \
+sim:/TB_DP_COMPLETMOD/c_comp_dac \
+sim:/TB_DP_COMPLETMOD/frec_mod \
+sim:/TB_DP_COMPLETMOD/frec_por \
+sim:/TB_DP_COMPLETMOD/im_am \
+sim:/TB_DP_COMPLETMOD/im_fm \
+sim:/TB_DP_COMPLETMOD/val_out \
+sim:/TB_DP_COMPLETMOD/dout_M \
+sim:/TB_DP_COMPLETMOD/dout_F \
+sim:/TB_DP_COMPLETMOD/error_cnt \
+sim:/TB_DP_COMPLETMOD/sample_cnt \
+sim:/TB_DP_COMPLETMOD/load_data \
+sim:/TB_DP_COMPLETMOD/end_sim
+run -all
+# Number of checked samples           0
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/dout_wire
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/DDS/val_in \
+sim:/TB_DP_COMPLETMOD/uut/DDS/sqr_wave \
+sim:/TB_DP_COMPLETMOD/uut/DDS/ramp_wave \
+sim:/TB_DP_COMPLETMOD/uut/DDS/sin_wave \
+sim:/TB_DP_COMPLETMOD/uut/DDS/val_out
+view source
+# .main_pane.source1.interior.cs.body.srcobj
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETO_waves.do
+vsim -gui work.TB_DP_COMPLETMOD
+# End time: 18:48:12 on May 30,2022, Elapsed time: 0:14:20
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_DP_COMPLETMOD 
+# Start time: 18:48:12 on May 30,2022
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+do C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETO_waves.do
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/i_smux \
+sim:/TB_DP_COMPLETMOD/uut/o_smux
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Win \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Wc \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Num_coef \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/din \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/clk \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/val_in \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/rst \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/val_out \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/dout
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Win \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Wc \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/Num_coef \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/din \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/clk \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/val_in \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/rst \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/val_out \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/dout
+do C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETO_waves.do
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/i_smux \
+sim:/TB_DP_COMPLETMOD/uut/o_smux
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETO_waves.do
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/Win \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/Wg \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/N \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/Wout \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/i_data \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/val_in \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/val_out \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/o_data
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/R_INT0/data_in \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/R_INT0/val_in \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/R_INT0/val_out \
+sim:/TB_DP_COMPLETMOD/uut/CIC_int/R_INT0/data_out
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/COMB0/data_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/COMB0/val_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/COMB0/val_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/COMB0/data_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/COMB0/data_in_reg}
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1]/COMB0/data_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1]/COMB0/val_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1]/COMB0/val_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1]/COMB0/data_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[1]/COMB0/data_in_reg}
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2]/COMB0/data_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2]/COMB0/val_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2]/COMB0/val_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2]/COMB0/data_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[2]/COMB0/data_in_reg}
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/INT0/data_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/INT0/val_in} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/INT0/val_out} \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/genblk1/CIC[0]/INT0/data_out}
+restart
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples      201966
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples         101
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples         101
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+{sim:/TB_DP_COMPLETMOD/uut/CIC_int/data_int_wire[3]}
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/MULT_ACC0/din \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/MULT_ACC0/coef \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/MULT_ACC0/dout
+restart
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+restart
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+restart
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+restart
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+add wave -position insertpoint  \
+sim:/TB_DP_COMPLETMOD/uut/CIC_comp/dout_wire
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Number of checked samples         101
+# Number of errors           0
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+# Compile of DP_MOD.v was successful.
+# Compile of SEC_FILTER.v was successful.
+# Compile of CIC.v was successful.
+# Compile of DDS_test.v was successful.
+# Compile of postprocesado.v was successful.
+# Compile of preprocesado.v was successful.
+# Compile of R_INT.v was successful.
+# Compile of REG_MUX.v was successful.
+# Compile of ROM.v was successful.
+# Compile of RS232COM.v was successful.
+# Compile of MULT_ACC.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of COMB.v was successful.
+# Compile of CONTROL.v was successful.
+# Compile of INT.v was successful.
+# Compile of DDS.v was successful.
+# Compile of DP_COMPLETMOD.v was successful.
+# Compile of TB_DP_COMPLETMOD.v was successful.
+# 18 compiles, 0 failed with no errors.
+restart
+# Loading work.TB_DP_COMPLETMOD
+# Loading work.DP_COMPLETMOD
+# Loading work.DDS_test
+# Loading work.accumulator
+# Loading work.preprocesado
+# Loading work.rom_mem
+# Loading work.postprocesado
+# Loading work.SEC_FILTER
+# Loading work.MULT_ACC
+# Loading work.REG_MUX
+# Loading work.ROM
+# Loading work.CONTROL
+# Loading work.CIC
+# Loading work.R_INT
+# Loading work.DP_MOD
+# Loading work.DDS
+# Loading work.COMB
+# Loading work.INT
+run -all
+# Error in sample number           2
+# Error in sample number           3
+# Error in sample number           4
+# Error in sample number           5
+# Error in sample number           6
+# Error in sample number           7
+# Error in sample number           8
+# Error in sample number           9
+# Error in sample number          10
+# Error in sample number          11
+# Error in sample number          12
+# Error in sample number          13
+# Error in sample number          14
+# Error in sample number          15
+# Error in sample number          16
+# Error in sample number          17
+# Error in sample number          18
+# Error in sample number          19
+# Error in sample number          20
+# Error in sample number          21
+# Error in sample number          22
+# Error in sample number          23
+# Error in sample number          24
+# Error in sample number          25
+# Error in sample number          26
+# Error in sample number          27
+# Error in sample number          28
+# Error in sample number          29
+# Error in sample number          30
+# Error in sample number          31
+# Error in sample number          32
+# Error in sample number          33
+# Error in sample number          34
+# Error in sample number          35
+# Error in sample number          36
+# Error in sample number          37
+# Error in sample number          38
+# Error in sample number          39
+# Error in sample number          40
+# Error in sample number          41
+# Error in sample number          42
+# Error in sample number          43
+# Error in sample number          44
+# Error in sample number          45
+# Error in sample number          46
+# Error in sample number          47
+# Error in sample number          48
+# Error in sample number          50
+# Error in sample number          51
+# Error in sample number          52
+# Error in sample number          53
+# Error in sample number          54
+# Error in sample number          55
+# Error in sample number          56
+# Error in sample number          57
+# Error in sample number          58
+# Error in sample number          59
+# Error in sample number          60
+# Error in sample number          61
+# Error in sample number          62
+# Error in sample number          63
+# Error in sample number          64
+# Error in sample number          65
+# Error in sample number          66
+# Error in sample number          67
+# Error in sample number          68
+# Error in sample number          69
+# Error in sample number          70
+# Error in sample number          71
+# Error in sample number          72
+# Error in sample number          73
+# Error in sample number          74
+# Error in sample number          75
+# Error in sample number          76
+# Error in sample number          77
+# Error in sample number          78
+# Error in sample number          79
+# Error in sample number          80
+# Error in sample number          81
+# Error in sample number          82
+# Error in sample number          83
+# Error in sample number          84
+# Error in sample number          85
+# Error in sample number          86
+# Error in sample number          87
+# Error in sample number          88
+# Error in sample number          89
+# Error in sample number          90
+# Error in sample number          91
+# Error in sample number          92
+# Error in sample number          93
+# Error in sample number          94
+# Error in sample number          95
+# Error in sample number          96
+# Error in sample number          97
+# Error in sample number          98
+# Error in sample number          99
+# Error in sample number         100
+# Number of checked samples         101
+# Number of errors          98
+# ** Note: $stop    : C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v(107)
+#    Time: 2020190 ns  Iteration: 0  Instance: /TB_DP_COMPLETMOD
+# Break in Module TB_DP_COMPLETMOD at C:/Users/jororoc/Documents/PSFPGA/Practica6/TB_DP_COMPLETMOD.v line 107
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/jororoc/Documents/PSFPGA/Practica6/DP_COMPLETO_waves.do
+# End time: 20:42:58 on May 30,2022, Elapsed time: 1:54:46
+# Errors: 1, Warnings: 1

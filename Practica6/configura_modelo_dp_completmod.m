@@ -70,7 +70,7 @@ disp('*****************************************')
 
 % h__cic_comp
     %Creando los cuantificadores para guardar los datos de los coeficientes
-    h_comp_cic_q = quantizer([17 16],'saturate','round','fixed');
+    h_comp_cic_q = quantizer([18 16],'saturate','round','fixed');
     %File handling
     pack_f=fopen('coef.txt','w');
     %Writing data to output file

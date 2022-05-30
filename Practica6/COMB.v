@@ -18,18 +18,20 @@ always @(posedge clk)
       begin
        data_out <= 0; 
        val_out <= 1'b0;
+       data_in_reg <= 0;
        end
     else	
     begin
-      data_in_reg <= data_in;
       if (val_in)
         begin
+          data_in_reg <= data_in;
           data_out <= data_in - (data_in_reg);
           val_out <= val_in; 
         end   
       else
         begin
           data_out <= data_out;
+          data_in_reg <= data_in_reg;
           val_out <= val_in;
         end 
     end

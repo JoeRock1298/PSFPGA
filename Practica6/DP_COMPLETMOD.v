@@ -46,7 +46,7 @@ module DP_COMPLETMOD
 			DDS ( .P(frec_mod),
 				  .val_in(val_in),
 				  .rst_ac(rst), 
-				  .ena_ac(1'b1),
+				  .ena_ac(val_in),
 				  .clk(clk),
 				  .sqr_wave(sqr_wave),
 				  .ramp_wave(ramp_wave),
@@ -66,7 +66,7 @@ module DP_COMPLETMOD
 	// also, seems that coef cuantification is diferent) CHANGE IT-----> Why u say its different i dont see it, that value give u the profesor, no?
 	// The matlab code uses a S[17,16] bit cuantification.
 	SEC_FILTER #( .Win(16),
-				  .Wc(17), 
+				  .Wc(18), 
 				  .Num_coef(17))
 		CIC_comp ( .din(o_smux), // entrada
 				   .clk(clk), 
@@ -91,7 +91,7 @@ module DP_COMPLETMOD
 	assign DP_MOD_reset = rst | !CIC_val_out; // Check this shitty code jajaja (PD: the reset with an OR i remember its a must)
 
 	// Configurable FM-AM Data-path
-	DP_MOD (.idata(CIC_dout),
+	DP_MOD data_path(.i_data(CIC_dout),
 			.rst(DP_MOD_reset),
 			.clk(clk),
 			.val_in(CIC_val_out),
@@ -104,6 +104,7 @@ module DP_COMPLETMOD
 	
 	// Output
 	assign o_data = DP_MOD_out[16 - 1 : 16 - 14 ]; //[15 : 2] -> S[14:13]
+	assign val_out = (DP_MOD_val_out);
 
 
 endmodule
