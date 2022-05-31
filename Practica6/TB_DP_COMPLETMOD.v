@@ -3,7 +3,7 @@
 module TB_DP_COMPLETMOD;
 // CLOCK PERIOD
 parameter PER = 10; 
-
+//100MHZ
 // Estimulos
 reg clk;
 reg rst;

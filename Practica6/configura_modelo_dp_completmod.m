@@ -22,10 +22,10 @@ m_am=1*(1-2^-15);
 Kfm=5000; % kHz
 
 % Modulator source signal: SIN ->0; RAMP->1; SQR->2;
-source_sel = 0;
+source_sel = 2;
 
 % Modulating frequency (kHz)
-fmod= 1; % kHz
+fmod= 2; % kHz
 
 
 conf_mod_filter_design
@@ -61,7 +61,7 @@ disp('*****************************************')
     pack_f=fopen('configuration.txt','w');
     %Writing data to output file
     fprintf(pack_f,[num2str(control_fm_am) '\n' ... %c_fm_am
-                    num2str(source_sel) '\n' ... %c_source
+                    dec2bin(source_sel) '\n' ... %c_source
                     num2bin(freq_mod_q, Pfrec_mod*2^-24) '\n' ... %frec_mod
                     num2bin(freq_por_q, frec_por*2^-24) '\n' ... %frec_por
                     num2bin(im_am_q, im_am*2^-15) '\n' ... %im_am
