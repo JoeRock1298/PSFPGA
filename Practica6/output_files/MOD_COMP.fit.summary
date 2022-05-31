@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 31 20:14:28 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Revision Name : MOD_COMP
+Top-level Entity Name : MOD_COMP
+Family : Cyclone IV E
+Device : EP4CE115F29C8
+Timing Models : Final
+Total logic elements : 3,057 / 114,480 ( 3 % )
+    Total combinational functions : 2,123 / 114,480 ( 2 % )
+    Dedicated logic registers : 2,474 / 114,480 ( 2 % )
+Total registers : 2488
+Total pins : 101 / 529 ( 19 % )
+Total virtual pins : 0
+Total memory bits : 786,432 / 3,981,312 ( 20 % )
+Embedded Multiplier 9-bit elements : 8 / 532 ( 2 % )
+Total PLLs : 3 / 4 ( 75 % )

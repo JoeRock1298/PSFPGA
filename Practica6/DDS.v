@@ -76,7 +76,7 @@ output val_out
 	always @(posedge clk )
 			addr_rom_pipe <= addr_rom;
 
-	rom_mem #(.DATA_WIDTH (W), .ADDR_WIDTH (L-2)) rom_sin (.addr(addr_rom_pipe),
+	rom_mem_DDS #(.DATA_WIDTH (W), .ADDR_WIDTH (L-2)) rom_sin (.addr(addr_rom_pipe),
 								 	 .clk(clk),
 									 .q(half_sin));
 
@@ -100,7 +100,7 @@ output val_out
 
 endmodule 
 
-module rom_mem
+module rom_mem_DDS
 #(parameter DATA_WIDTH=14, parameter ADDR_WIDTH=13)
 (
 	input [(ADDR_WIDTH-1):0] addr,
