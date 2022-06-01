@@ -10,19 +10,19 @@ READ = 1; % Lectura si -> 1, no ->0
 %% MOD AM/FM CONFIGURATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Control Power: ON-->1, OFF-->0
-control_on_off=0;
+control_on_off=1;
 
 % Control Mode: FM-->1, AM-->0
-control_fm_am=0;
+control_fm_am=1;
 
 % Modulator source signal: SIN ->0; RAMP->1; SQR->2 AUDIO_CODEC->3;
 source_sel = 0;
 
 % FM modulation index (kHz)
-Kfm=5000; % kHz
+Kfm=5000; % kHz // 2500, 
 
 % AM modulation index (range [0,1[)
-m_am=1*(1-2^-15);
+m_am=0.5*(1-2^-15); %0.5
 
 % Carrier frequency (MHz)
 fc=1; % MHz
