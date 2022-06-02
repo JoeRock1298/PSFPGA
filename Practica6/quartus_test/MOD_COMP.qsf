@@ -1,0 +1,97 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+# Date created = 00:24:32  June 03, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MOD_COMP_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY MOD_COMP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:24:32  JUNE 03, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/MOD_COMP.sdc
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/WR_CONTROL.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/SEC_FILTER.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/RS232COM.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/ROM.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/REGS_CONF.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/REG_MUX.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/RD_CONTROL.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/R_INT.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/preprocesado.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/postprocesado.v
+set_global_assignment -name QIP_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/pll_com.qip
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/MULT_ACC.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/MOD_COMP.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/MAIN_CONTROL.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/INT.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/GEN_CE.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/DP_MOD.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/DP_COMPLETMOD.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/DDS_test.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/DDS.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/CONTROL_FSMs.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/CONTROL.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/CONF_CONTROL.v
+set_global_assignment -name VHDL_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/comm_rs232.vhd
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/COMB.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/clock_generator.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/CIC.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/audio_codec.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/audio_and_video_config.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_SYNC_FIFO.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_Slow_Clock_Generator.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_I2C_LCM_Auto_Initialize.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_I2C_DC_Auto_Initialize.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_I2C_AV_Auto_Initialize.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_I2C.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_Clock_Edge.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_Audio_Out_Serializer.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_Audio_In_Deserializer.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/Altera_UP_Audio_Bit_Counter.v
+set_global_assignment -name VERILOG_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/accumulator.v
+set_global_assignment -name QIP_FILE //CORENTINE/VDI/ALUMNO/GSANDAR/Documentos/GitHub/PSFPGA/Practica6/pll_mod.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

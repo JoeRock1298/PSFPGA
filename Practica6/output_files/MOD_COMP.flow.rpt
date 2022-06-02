@@ -1,5 +1,5 @@
 Flow report for MOD_COMP
-Wed Jun 01 16:03:24 2022
+Fri Jun 03 00:19:37 2022
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                                  ;
 +------------------------------------+----------------------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 01 16:03:24 2022                    ;
+; Flow Status                        ; Flow Failed - Fri Jun 03 00:19:37 2022                   ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
 ; Revision Name                      ; MOD_COMP                                                 ;
 ; Top-level Entity Name              ; MOD_COMP                                                 ;
 ; Family                             ; Cyclone IV E                                             ;
 ; Device                             ; EP4CE115F29C8                                            ;
 ; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 3,342 / 114,480 ( 3 % )                                  ;
-;     Total combinational functions  ; 2,121 / 114,480 ( 2 % )                                  ;
-;     Dedicated logic registers      ; 2,744 / 114,480 ( 2 % )                                  ;
-; Total registers                    ; 2758                                                     ;
-; Total pins                         ; 101 / 529 ( 19 % )                                       ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 2,236,416 / 3,981,312 ( 56 % )                           ;
-; Embedded Multiplier 9-bit elements ; 8 / 532 ( 2 % )                                          ;
-; Total PLLs                         ; 3 / 4 ( 75 % )                                           ;
+; Total logic elements               ; N/A until Partition Merge                                ;
+;     Total combinational functions  ; N/A until Partition Merge                                ;
+;     Dedicated logic registers      ; N/A until Partition Merge                                ;
+; Total registers                    ; N/A until Partition Merge                                ;
+; Total pins                         ; N/A until Partition Merge                                ;
+; Total virtual pins                 ; N/A until Partition Merge                                ;
+; Total memory bits                  ; N/A until Partition Merge                                ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                                ;
+; Total PLLs                         ; N/A until Partition Merge                                ;
 +------------------------------------+----------------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/01/2022 16:01:46 ;
+; Start date & time ; 06/03/2022 00:18:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MOD_COMP            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                                             ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 242211431244498.165409210613376                                                   ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 345042518397.165420833813184                                                      ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                ; --            ; --          ; TB_MOD_COMP      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_MOD_COMP                                                                       ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                       ; --            ; --          ; eda_simulation   ;
@@ -134,41 +134,29 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:35     ; 1.0                     ; 4897 MB             ; 00:00:59                           ;
-; Fitter                    ; 00:00:40     ; 1.1                     ; 5884 MB             ; 00:01:06                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4707 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.2                     ; 4915 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4718 MB             ; 00:00:06                           ;
-; Total                     ; 00:01:30     ; --                      ; --                  ; 00:02:20                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 747 MB              ; 00:01:02                           ;
+; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; labpro14         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; labpro14         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; labpro14         ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; labpro14         ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; labpro14         ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; master-wetsit    ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MOD_COMP -c MOD_COMP
-quartus_fit --read_settings_files=off --write_settings_files=off MOD_COMP -c MOD_COMP
-quartus_asm --read_settings_files=off --write_settings_files=off MOD_COMP -c MOD_COMP
-quartus_sta MOD_COMP -c MOD_COMP
-quartus_eda --read_settings_files=off --write_settings_files=off MOD_COMP -c MOD_COMP
 
 
 

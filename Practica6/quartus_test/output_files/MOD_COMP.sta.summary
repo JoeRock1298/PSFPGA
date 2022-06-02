@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -7.387
+TNS   : -1945.465
+
+Type  : Slow 1200mV 85C Model Setup 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : -5.627
+TNS   : -179.780
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.060
+TNS   : -99.764
+
+Type  : Slow 1200mV 85C Model Setup 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : -2.221
+TNS   : -2.221
+
+Type  : Slow 1200mV 85C Model Setup 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 35.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.824
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.703
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 40.706
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -6.570
+TNS   : -1716.390
+
+Type  : Slow 1200mV 0C Model Setup 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : -5.404
+TNS   : -172.098
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.962
+TNS   : -97.742
+
+Type  : Slow 1200mV 0C Model Setup 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : -1.997
+TNS   : -1.997
+
+Type  : Slow 1200mV 0C Model Setup 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 35.848
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.846
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.650
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 40.708
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.416
+TNS   : -991.133
+
+Type  : Fast 1200mV 0C Model Setup 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : -2.893
+TNS   : -92.559
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.173
+TNS   : -52.069
+
+Type  : Fast 1200mV 0C Model Setup 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : -1.213
+TNS   : -1.213
+
+Type  : Fast 1200mV 0C Model Setup 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 37.636
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : -0.236
+TNS   : -1.715
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DP_COMPLETMOD:U1|SEC_FILTER:CIC_comp|CONTROL:CONTROL0|ce_Acc'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.961
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.373
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|pll|clk[0]'
+Slack : 40.777
+TNS   : 0.000
+
+------------------------------------------------------------
